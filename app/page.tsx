@@ -90,7 +90,7 @@ export default function Page() {
     loadProducts();
   }
 
-  async function deleteProduct(id) {
+  async function deleteProduct(id: any) {
     if (!admin) return;
     await deleteDoc(doc(db, "products", id));
     loadProducts();
