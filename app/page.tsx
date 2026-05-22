@@ -44,7 +44,7 @@ export default function Page() {
 
   const [view, setView] = useState("home");
 
-  const [products, setProducts] = useState([]);
+  const [products, setProducts] = useState<any[]>([]);
   const [search, setSearch] = useState("");
 
   const [form, setForm] = useState({
