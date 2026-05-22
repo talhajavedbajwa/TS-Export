@@ -119,7 +119,6 @@ export default function Page() {
 
       {/* HOME */}
       {view === "admin" && (
-{view === "admin" && (
   <div className="p-6 max-w-md mx-auto">
 
     {!user ? (
