@@ -162,8 +162,104 @@ export default function Page() {
 
         </div>
       </div>
-    )}
+    {/* PREMIUM SCROLL SECTIONS */}
 
+<div className="mt-32 space-y-40">
+
+  {/* SECTION 1 */}
+  <div className="text-center px-6">
+
+    <p className="uppercase tracking-[8px] text-gray-500 text-sm">
+      TS EXPORTS
+    </p>
+
+    <h1 className="text-6xl md:text-8xl font-bold mt-6 leading-tight">
+      Built For <br /> Global Brands
+    </h1>
+
+    <p className="max-w-2xl mx-auto text-gray-400 mt-8 text-lg leading-8">
+      Premium sportswear manufacturing from Sialkot with
+      export-quality production, modern fabrics and global shipping.
+    </p>
+
+  </div>
+
+  {/* BIG IMAGE */}
+  <div className="px-6">
+    <img
+      src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438"
+      className="w-full h-[700px] object-cover rounded-3xl"
+    />
+  </div>
+
+  {/* SECTION 2 */}
+  <div className="grid md:grid-cols-2 gap-16 items-center px-10">
+
+    <div>
+      <p className="uppercase tracking-[6px] text-gray-500 text-sm">
+        PERFORMANCE
+      </p>
+
+      <h2 className="text-5xl font-bold mt-4 leading-tight">
+        Designed For <br /> Athletes
+      </h2>
+    </div>
+
+    <div>
+      <p className="text-gray-400 leading-8 text-lg">
+        Every stitch is engineered for comfort, durability
+        and elite-level performance. Our products are trusted
+        by teams, brands and distributors worldwide.
+      </p>
+    </div>
+
+  </div>
+
+  {/* STATS */}
+  <div className="grid md:grid-cols-4 gap-6 px-10 text-center">
+
+    <div className="border border-white/10 p-8 rounded-2xl">
+      <h1 className="text-5xl font-bold">50+</h1>
+      <p className="text-gray-400 mt-2">Global Clients</p>
+    </div>
+
+    <div className="border border-white/10 p-8 rounded-2xl">
+      <h1 className="text-5xl font-bold">20K+</h1>
+      <p className="text-gray-400 mt-2">Products Exported</p>
+    </div>
+
+    <div className="border border-white/10 p-8 rounded-2xl">
+      <h1 className="text-5xl font-bold">15+</h1>
+      <p className="text-gray-400 mt-2">Countries</p>
+    </div>
+
+    <div className="border border-white/10 p-8 rounded-2xl">
+      <h1 className="text-5xl font-bold">24/7</h1>
+      <p className="text-gray-400 mt-2">Support</p>
+    </div>
+
+  </div>
+
+  {/* FINAL BIG TEXT */}
+  <div className="text-center py-32 px-6">
+
+    <p className="uppercase tracking-[8px] text-gray-500 text-sm">
+      FUTURE OF SPORTSWEAR
+    </p>
+
+    <h1 className="text-7xl md:text-9xl font-bold mt-6 leading-none">
+      ELEVATE <br /> YOUR BRAND
+    </h1>
+
+    <button
+      onClick={() => setView("shop")}
+      className="mt-10 bg-white text-black px-10 py-4 rounded-full text-lg"
+    >
+      Explore Collection
+    </button>
+  </div>
+  )
+ }
     {/* ABOUT */}
     {view === "about" && (
       <div className="max-w-4xl mx-auto px-6 py-20">
