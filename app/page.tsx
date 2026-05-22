@@ -103,204 +103,236 @@ export default function Page() {
 
   /* ---------------- UI ---------------- */
   return (
-    <div className="min-h-screen bg-black text-white">
+  <div className="min-h-screen bg-black text-white">
 
-      {/* NAVBAR */}
-      <div className="flex justify-between items-center p-4 border-b border-white/10 sticky top-0 bg-black z-50">
-        <h1 className="font-bold text-xl">TS EXPORTS</h1>
+    {/* NAVBAR */}
+    <div className="flex justify-between items-center p-4 border-b border-white/10 sticky top-0 bg-black z-50">
+      <h1 className="font-bold text-xl">TS EXPORTS</h1>
 
-        <div className="flex gap-4 text-sm">
-          <button onClick={() => setView("home")}>Home</button>
-          <button onClick={() => setView("shop")}>Products</button>
-          <button onClick={() => setView("about")}>About</button>
-          <button onClick={() => setView("admin")}>Admin</button>
+      <div className="flex gap-4 text-sm">
+        <button onClick={() => setView("home")}>Home</button>
+        <button onClick={() => setView("shop")}>Products</button>
+        <button onClick={() => setView("about")}>About</button>
+        <button onClick={() => setView("admin")}>Admin</button>
+      </div>
+    </div>
+
+    {/* HOME */}
+    {view === "home" && (
+      <div className="text-center py-24 px-4">
+
+        <h1 className="text-5xl font-bold">
+          Premium Sportswear Export From Sialkot
+        </h1>
+
+        <p className="text-gray-400 mt-4 max-w-2xl mx-auto">
+          We manufacture premium football kits, cricket uniforms,
+          gym wear and custom sportswear for global brands.
+        </p>
+
+        <button
+          onClick={() => setView("shop")}
+          className="mt-6 bg-white text-black px-6 py-3 rounded"
+        >
+          Explore Products
+        </button>
+
+        <div className="grid md:grid-cols-3 gap-6 mt-20 px-10">
+
+          <div className="border border-white/10 p-6 rounded">
+            <h2 className="font-bold text-xl">Premium Quality</h2>
+            <p className="text-gray-400 mt-2">
+              Export-quality stitching and fabrics.
+            </p>
+          </div>
+
+          <div className="border border-white/10 p-6 rounded">
+            <h2 className="font-bold text-xl">Worldwide Shipping</h2>
+            <p className="text-gray-400 mt-2">
+              Delivering products globally.
+            </p>
+          </div>
+
+          <div className="border border-white/10 p-6 rounded">
+            <h2 className="font-bold text-xl">Low MOQ</h2>
+            <p className="text-gray-400 mt-2">
+              Flexible minimum order quantities.
+            </p>
+          </div>
+
         </div>
       </div>
-
-      {/* HOME */}
-      {view === "admin" && (
-  <div className="p-6 max-w-md mx-auto">
-
-    {!user ? (
-      <>
-        <h2 className="text-2xl font-bold mb-4">Admin Login</h2>
-
-        <input
-          className="w-full p-2 mb-3 bg-white/10 border border-white/20 rounded"
-          placeholder="Email"
-          onChange={(e) => setEmail(e.target.value)}
-        />
-
-        <input
-          type="password"
-          className="w-full p-2 mb-3 bg-white/10 border border-white/20 rounded"
-          placeholder="Password"
-          onChange={(e) => setPassword(e.target.value)}
-        />
-
-        <button
-          onClick={login}
-          className="w-full bg-white text-black py-2 rounded mb-2"
-        >
-          Login
-        </button>
-
-        <button
-          onClick={register}
-          className="w-full border border-white/20 py-2 rounded"
-        >
-          Register
-        </button>
-      </>
-    ) : admin ? (
-      <>
-        <h2 className="text-2xl font-bold mb-4">Admin Panel</h2>
-
-        <input
-          className="w-full p-2 mb-2 bg-white/10 border border-white/20 rounded"
-          placeholder="Product Name"
-          onChange={(e) =>
-            setForm({ ...form, name: e.target.value })
-          }
-        />
-
-        <input
-          className="w-full p-2 mb-2 bg-white/10 border border-white/20 rounded"
-          placeholder="Price"
-          onChange={(e) =>
-            setForm({ ...form, price: e.target.value })
-          }
-        />
-
-        <input
-          className="w-full p-2 mb-2 bg-white/10 border border-white/20 rounded"
-          placeholder="Category"
-          onChange={(e) =>
-            setForm({ ...form, category: e.target.value })
-          }
-        />
-
-        <input
-          className="w-full p-2 mb-2 bg-white/10 border border-white/20 rounded"
-          placeholder="Image URL"
-          onChange={(e) =>
-            setForm({ ...form, image: e.target.value })
-          }
-        />
-
-        <input
-          className="w-full p-2 mb-4 bg-white/10 border border-white/20 rounded"
-          placeholder="MOQ"
-          onChange={(e) =>
-            setForm({ ...form, moq: e.target.value })
-          }
-        />
-
-        <button
-          onClick={addProduct}
-          className="w-full bg-white text-black py-2 rounded"
-        >
-          Add Product
-        </button>
-
-        <button
-          onClick={logout}
-          className="w-full mt-3 border border-red-500 text-red-500 py-2 rounded"
-        >
-          Logout
-        </button>
-      </>
-    ) : (
-      <p className="text-red-400">
-        You are not admin.
-      </p>
     )}
-  </div>
-)}
 
-      {/* ABOUT */}
-      {view === "about" && (
-        <div className="p-10 max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-4">About TS Exports</h2>
-          <p className="text-gray-300 leading-7">
-            We are based in Sialkot, Pakistan — the global hub of sportswear manufacturing.
-            We supply premium quality sports kits worldwide with low MOQ, custom designs,
-            and export-grade production quality.
-          </p>
-        </div>
-      )}
+    {/* ABOUT */}
+    {view === "about" && (
+      <div className="max-w-4xl mx-auto px-6 py-20">
 
-      {/* SHOP */}
-      {view === "shop" && (
-        <div className="p-6">
+        <h1 className="text-4xl font-bold mb-6">
+          About TS Exports
+        </h1>
 
-          {/* SEARCH */}
-          <input
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            placeholder="Search products..."
-            className="w-full p-3 mb-6 bg-white/10 border border-white/20 rounded"
-          />
+        <p className="text-gray-300 leading-8">
+          TS Exports is a Sialkot-based sportswear manufacturer
+          specializing in football kits, cricket uniforms,
+          gym wear and custom team apparel.
+        </p>
 
-          {/* PRODUCTS */}
-          <div className="grid md:grid-cols-3 gap-6">
-            {filteredProducts.map((p) => (
-              <div
-                key={p.id}
-                className="bg-white/5 border border-white/10 rounded-xl p-4 hover:scale-105 transition"
-              >
-                <img
-                  src={p.image}
-                  className="h-44 w-full object-cover rounded-lg"
-                />
+        <p className="text-gray-300 leading-8 mt-4">
+          We provide export-quality manufacturing with competitive pricing,
+          fast production and worldwide delivery.
+        </p>
 
-                <h2 className="font-bold mt-3 text-lg">{p.name}</h2>
+      </div>
+    )}
 
-                <p className="text-gray-400 text-sm">{p.category}</p>
+    {/* SHOP */}
+    {view === "shop" && (
+      <div className="p-6">
 
-                <div className="flex justify-between mt-2 text-sm">
-                  <span>MOQ: {p.moq}</span>
-                  <span className="font-bold text-green-400">${p.price}</span>
-                </div>
+        <input
+          placeholder="Search products..."
+          className="w-full p-3 mb-8 bg-white/10 border border-white/20 rounded"
+        />
 
-                <button className="w-full mt-3 bg-white text-black py-2 rounded">
-                  Request Quote
-                </button>
+        <div className="grid md:grid-cols-3 gap-6">
+          {products.map((p: any) => (
+            <div
+              key={p.id}
+              className="border border-white/10 rounded overflow-hidden"
+            >
+
+              <img
+                src={p.image}
+                className="h-56 w-full object-cover"
+              />
+
+              <div className="p-4">
+                <h2 className="font-bold text-xl">{p.name}</h2>
+
+                <p className="text-gray-400 mt-1">
+                  {p.category}
+                </p>
+
+                <p className="mt-2">
+                  MOQ: {p.moq}
+                </p>
+
+                <p className="font-bold text-2xl mt-2">
+                  ${p.price}
+                </p>
               </div>
-            ))}
-          </div>
+
+            </div>
+          ))}
         </div>
-      )}
+      </div>
+    )}
 
-      {/* ADMIN */}
-      {view === "admin" && admin && (
-        <div className="p-6 max-w-md mx-auto">
-          <h2 className="text-xl font-bold mb-4">Admin Panel</h2>
+    {/* ADMIN */}
+    {view === "admin" && (
+      <div className="p-6 max-w-md mx-auto">
 
-          <input className="w-full p-2 mb-2 border" placeholder="Name"
-            onChange={(e) => setForm({ ...form, name: e.target.value })} />
+        {!user ? (
+          <>
+            <h2 className="text-2xl font-bold mb-4">
+              Admin Login
+            </h2>
 
-          <input className="w-full p-2 mb-2 border" placeholder="Price"
-            onChange={(e) => setForm({ ...form, price: e.target.value })} />
+            <input
+              placeholder="Email"
+              className="w-full p-3 mb-3 bg-white/10 border border-white/20 rounded"
+              onChange={(e) => setEmail(e.target.value)}
+            />
 
-          <input className="w-full p-2 mb-2 border" placeholder="Category"
-            onChange={(e) => setForm({ ...form, category: e.target.value })} />
+            <input
+              type="password"
+              placeholder="Password"
+              className="w-full p-3 mb-3 bg-white/10 border border-white/20 rounded"
+              onChange={(e) => setPassword(e.target.value)}
+            />
 
-          <input className="w-full p-2 mb-2 border" placeholder="Image URL"
-            onChange={(e) => setForm({ ...form, image: e.target.value })} />
+            <button
+              onClick={login}
+              className="w-full bg-white text-black py-3 rounded mb-3"
+            >
+              Login
+            </button>
 
-          <input className="w-full p-2 mb-2 border" placeholder="MOQ"
-            onChange={(e) => setForm({ ...form, moq: e.target.value })} />
+            <button
+              onClick={register}
+              className="w-full border border-white/20 py-3 rounded"
+            >
+              Register
+            </button>
+          </>
+        ) : admin ? (
+          <>
+            <h2 className="text-2xl font-bold mb-4">
+              Admin Dashboard
+            </h2>
 
-          <button
-            onClick={addProduct}
-            className="w-full bg-white text-black py-2 mt-2 rounded"
-          >
-            Add Product
-          </button>
-        </div>
-      )}
+            <input
+              placeholder="Product Name"
+              className="w-full p-3 mb-3 bg-white/10 border border-white/20 rounded"
+              onChange={(e) =>
+                setForm({ ...form, name: e.target.value })
+              }
+            />
 
-    </div>
-  );
+            <input
+              placeholder="Price"
+              className="w-full p-3 mb-3 bg-white/10 border border-white/20 rounded"
+              onChange={(e) =>
+                setForm({ ...form, price: e.target.value })
+              }
+            />
+
+            <input
+              placeholder="Category"
+              className="w-full p-3 mb-3 bg-white/10 border border-white/20 rounded"
+              onChange={(e) =>
+                setForm({ ...form, category: e.target.value })
+              }
+            />
+
+            <input
+              placeholder="Image URL"
+              className="w-full p-3 mb-3 bg-white/10 border border-white/20 rounded"
+              onChange={(e) =>
+                setForm({ ...form, image: e.target.value })
+              }
+            />
+
+            <input
+              placeholder="MOQ"
+              className="w-full p-3 mb-4 bg-white/10 border border-white/20 rounded"
+              onChange={(e) =>
+                setForm({ ...form, moq: e.target.value })
+              }
+            />
+
+            <button
+              onClick={addProduct}
+              className="w-full bg-white text-black py-3 rounded"
+            >
+              Add Product
+            </button>
+
+            <button
+              onClick={logout}
+              className="w-full mt-3 border border-red-500 text-red-500 py-3 rounded"
+            >
+              Logout
+            </button>
+          </>
+        ) : (
+          <p>You are not admin.</p>
+        )}
+
+      </div>
+    )}
+
+  </div>
+);
 }
