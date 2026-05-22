@@ -118,30 +118,106 @@ export default function Page() {
       </div>
 
       {/* HOME */}
-      {view === "home" && (
-        <div className="text-center py-28 px-6 bg-gradient-to-b from-black to-gray-900">
-          <h1 className="text-6xl font-bold">
-            Sialkot Sportswear Export House
-          </h1>
+      {view === "admin" && (
+{view === "admin" && (
+  <div className="p-6 max-w-md mx-auto">
 
-          <p className="text-gray-300 mt-4 text-lg">
-            Premium Football • Cricket • Gym Wear Manufacturing for Global Brands
-          </p>
+    {!user ? (
+      <>
+        <h2 className="text-2xl font-bold mb-4">Admin Login</h2>
 
-          <div className="mt-6 flex justify-center gap-4">
-            <button
-              onClick={() => setView("shop")}
-              className="bg-white text-black px-6 py-3 rounded"
-            >
-              Explore Products
-            </button>
+        <input
+          className="w-full p-2 mb-3 bg-white/10 border border-white/20 rounded"
+          placeholder="Email"
+          onChange={(e) => setEmail(e.target.value)}
+        />
 
-            <button className="border border-white px-6 py-3 rounded">
-              Contact Us
-            </button>
-          </div>
-        </div>
-      )}
+        <input
+          type="password"
+          className="w-full p-2 mb-3 bg-white/10 border border-white/20 rounded"
+          placeholder="Password"
+          onChange={(e) => setPassword(e.target.value)}
+        />
+
+        <button
+          onClick={login}
+          className="w-full bg-white text-black py-2 rounded mb-2"
+        >
+          Login
+        </button>
+
+        <button
+          onClick={register}
+          className="w-full border border-white/20 py-2 rounded"
+        >
+          Register
+        </button>
+      </>
+    ) : admin ? (
+      <>
+        <h2 className="text-2xl font-bold mb-4">Admin Panel</h2>
+
+        <input
+          className="w-full p-2 mb-2 bg-white/10 border border-white/20 rounded"
+          placeholder="Product Name"
+          onChange={(e) =>
+            setForm({ ...form, name: e.target.value })
+          }
+        />
+
+        <input
+          className="w-full p-2 mb-2 bg-white/10 border border-white/20 rounded"
+          placeholder="Price"
+          onChange={(e) =>
+            setForm({ ...form, price: e.target.value })
+          }
+        />
+
+        <input
+          className="w-full p-2 mb-2 bg-white/10 border border-white/20 rounded"
+          placeholder="Category"
+          onChange={(e) =>
+            setForm({ ...form, category: e.target.value })
+          }
+        />
+
+        <input
+          className="w-full p-2 mb-2 bg-white/10 border border-white/20 rounded"
+          placeholder="Image URL"
+          onChange={(e) =>
+            setForm({ ...form, image: e.target.value })
+          }
+        />
+
+        <input
+          className="w-full p-2 mb-4 bg-white/10 border border-white/20 rounded"
+          placeholder="MOQ"
+          onChange={(e) =>
+            setForm({ ...form, moq: e.target.value })
+          }
+        />
+
+        <button
+          onClick={addProduct}
+          className="w-full bg-white text-black py-2 rounded"
+        >
+          Add Product
+        </button>
+
+        <button
+          onClick={logout}
+          className="w-full mt-3 border border-red-500 text-red-500 py-2 rounded"
+        >
+          Logout
+        </button>
+      </>
+    ) : (
+      <p className="text-red-400">
+        You are not admin.
+      </p>
+    )}
+  </div>
+)}
 
       {/* ABOUT */}
       {view === "about" && (
