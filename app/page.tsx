@@ -36,7 +36,7 @@ const db = getFirestore(app);
 
 /* ---------------- MAIN APP ---------------- */
 export default function Page() {
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState<any>(null);
   const [admin, setAdmin] = useState(false);
 
   const [email, setEmail] = useState("");
