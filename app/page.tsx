@@ -835,53 +835,101 @@ export default function Page() {
 
       )}
 
-      {/* PREMIUM FOOTER */}
-<footer className="border-t border-white/10 bg-black px-6 pt-24 pb-10">
+      {/* ULTRA PREMIUM FOOTER */}
+<footer className="relative border-t border-white/10 bg-black overflow-hidden">
 
-  <div className="max-w-7xl mx-auto">
+  {/* BACKGROUND TEXT */}
+  <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
 
-    {/* TOP */}
+    <h1 className="text-[120px] md:text-[240px] font-bold text-white/[0.03] leading-none select-none">
+      TS EXPORTS
+    </h1>
+
+  </div>
+
+  <div className="relative z-10 max-w-7xl mx-auto px-6 py-28">
+
+    {/* TOP AREA */}
     <div className="grid md:grid-cols-4 gap-16">
 
       {/* BRAND */}
       <div>
 
-        <h1 className="text-3xl font-bold tracking-widest">
+        <h1 className="text-3xl font-bold tracking-[6px]">
           TS EXPORTS
         </h1>
 
-        <p className="text-gray-400 mt-6 leading-8">
-          Premium sportswear manufacturer from Sialkot,
-          Pakistan specializing in export-quality apparel,
-          OEM manufacturing and global distribution.
+        <p className="text-gray-400 mt-8 leading-8">
+          Premium sportswear manufacturer from Sialkot
+          producing export-quality apparel for brands,
+          teams and distributors worldwide.
         </p>
+
+        {/* SOCIALS */}
+        <div className="flex gap-4 mt-8">
+
+          <a
+            href="#"
+            className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center hover:bg-white hover:text-black transition"
+          >
+            IG
+          </a>
+
+          <a
+            href="#"
+            className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center hover:bg-white hover:text-black transition"
+          >
+            FB
+          </a>
+
+          <a
+            href="#"
+            className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center hover:bg-white hover:text-black transition"
+          >
+            WA
+          </a>
+
+        </div>
 
       </div>
 
-      {/* COMPANY */}
+      {/* QUICK LINKS */}
       <div>
 
-        <h2 className="text-xl font-semibold mb-6">
-          Company
+        <h2 className="text-xl font-semibold mb-8">
+          Quick Links
         </h2>
 
-        <div className="space-y-4 text-gray-400">
+        <div className="space-y-5 text-gray-400">
 
-          <p className="hover:text-white transition cursor-pointer">
+          <button
+            onClick={() => setView("home")}
+            className="block hover:text-white transition"
+          >
+            Home
+          </button>
+
+          <button
+            onClick={() => setView("shop")}
+            className="block hover:text-white transition"
+          >
+            Products
+          </button>
+
+          <button
+            onClick={() => setView("about")}
+            className="block hover:text-white transition"
+          >
             About Us
-          </p>
+          </button>
 
-          <p className="hover:text-white transition cursor-pointer">
-            Manufacturing
-          </p>
+          <button className="block hover:text-white transition">
+            OEM Manufacturing
+          </button>
 
-          <p className="hover:text-white transition cursor-pointer">
-            OEM Services
-          </p>
-
-          <p className="hover:text-white transition cursor-pointer">
-            Contact
-          </p>
+          <button className="block hover:text-white transition">
+            Global Shipping
+          </button>
 
         </div>
 
@@ -890,27 +938,31 @@ export default function Page() {
       {/* COLLECTIONS */}
       <div>
 
-        <h2 className="text-xl font-semibold mb-6">
+        <h2 className="text-xl font-semibold mb-8">
           Collections
         </h2>
 
-        <div className="space-y-4 text-gray-400">
+        <div className="space-y-5 text-gray-400">
 
-          <p className="hover:text-white transition cursor-pointer">
+          <button className="block hover:text-white transition">
             Football Wear
-          </p>
+          </button>
 
-          <p className="hover:text-white transition cursor-pointer">
+          <button className="block hover:text-white transition">
             Gym Wear
-          </p>
+          </button>
 
-          <p className="hover:text-white transition cursor-pointer">
+          <button className="block hover:text-white transition">
             Cricket Uniforms
-          </p>
+          </button>
 
-          <p className="hover:text-white transition cursor-pointer">
+          <button className="block hover:text-white transition">
+            Training Wear
+          </button>
+
+          <button className="block hover:text-white transition">
             Hoodies
-          </p>
+          </button>
 
         </div>
 
@@ -919,27 +971,78 @@ export default function Page() {
       {/* CONTACT */}
       <div>
 
-        <h2 className="text-xl font-semibold mb-6">
+        <h2 className="text-xl font-semibold mb-8">
           Contact
         </h2>
 
-        <div className="space-y-4 text-gray-400 leading-7">
+        <div className="space-y-6 text-gray-400 leading-7">
 
-          <p>
-            Sialkot, Pakistan
+          <div>
+            <p className="text-white font-medium mb-1">
+              Location
+            </p>
+
+            <p>Sialkot, Pakistan</p>
+          </div>
+
+          <div>
+            <p className="text-white font-medium mb-1">
+              Email
+            </p>
+
+            <p>info@tsexports.com</p>
+          </div>
+
+          <div>
+            <p className="text-white font-medium mb-1">
+              Phone
+            </p>
+
+            <p>+92 300 0000000</p>
+          </div>
+
+        </div>
+
+        {/* BUTTON */}
+        <button className="mt-10 border border-white/20 px-8 py-4 rounded-full hover:bg-white hover:text-black transition">
+
+          Contact Now
+
+        </button>
+
+      </div>
+
+    </div>
+
+    {/* NEWSLETTER */}
+    <div className="mt-32 border-t border-white/10 pt-16">
+
+      <div className="grid md:grid-cols-2 gap-10 items-center">
+
+        <div>
+
+          <p className="uppercase tracking-[8px] text-gray-500 text-sm">
+            STAY UPDATED
           </p>
 
-          <p>
-            info@tsexports.com
-          </p>
+          <h2 className="text-4xl md:text-5xl font-bold mt-4">
+            Subscribe For Updates
+          </h2>
 
-          <p>
-            +92 300 0000000
-          </p>
+        </div>
 
-          <p>
-            Worldwide Shipping Available
-          </p>
+        <div className="flex gap-4">
+
+          <input
+            placeholder="Enter your email"
+            className="flex-1 bg-white/5 border border-white/10 px-6 py-4 rounded-full outline-none"
+          />
+
+          <button className="bg-white text-black px-8 rounded-full hover:scale-105 transition">
+
+            Subscribe
+
+          </button>
 
         </div>
 
@@ -947,35 +1050,26 @@ export default function Page() {
 
     </div>
 
-    {/* BIG TEXT */}
-    <div className="mt-32 border-t border-white/10 pt-16">
-
-      <h1 className="text-[70px] md:text-[140px] font-bold text-center leading-none text-white/5 select-none">
-        TS EXPORTS
-      </h1>
-
-    </div>
-
     {/* BOTTOM */}
-    <div className="flex flex-col md:flex-row justify-between items-center mt-10 text-sm text-gray-500 gap-4">
+    <div className="mt-20 pt-10 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6 text-gray-500 text-sm">
 
       <p>
         © 2026 TS Exports. All rights reserved.
       </p>
 
-      <div className="flex gap-6">
+      <div className="flex gap-8">
 
-        <p className="hover:text-white transition cursor-pointer">
+        <button className="hover:text-white transition">
           Privacy Policy
-        </p>
+        </button>
 
-        <p className="hover:text-white transition cursor-pointer">
+        <button className="hover:text-white transition">
           Terms & Conditions
-        </p>
+        </button>
 
-        <p className="hover:text-white transition cursor-pointer">
+        <button className="hover:text-white transition">
           Shipping Policy
-        </p>
+        </button>
 
       </div>
 
