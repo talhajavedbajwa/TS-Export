@@ -305,9 +305,22 @@ export default function Page() {
                 Logout
               </button>
             </>
-          ) : (
-            <p>You are not admin.</p>
-          )}
+) : (
+  <div>
+
+    <p className="text-red-400 mb-4">
+      You are not admin.
+    </p>
+
+    <button
+      onClick={logout}
+      className="w-full border border-red-500 text-red-500 py-3 rounded"
+    >
+      Logout
+    </button>
+
+  </div>
+)}
 
         </div>
       )}
