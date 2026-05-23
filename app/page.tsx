@@ -163,6 +163,12 @@ export default function Page() {
             </div>
 
           </div>
+
+          {/* ✅ ADDED FEATURE (scroll prompt like big websites) */}
+          <div className="mt-24 text-center text-gray-500 text-sm animate-bounce">
+            Scroll to explore ↓
+          </div>
+
         </div>
       )}
 
