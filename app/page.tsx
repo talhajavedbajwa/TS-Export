@@ -964,7 +964,28 @@ const categories = [
                   <p className="text-3xl font-bold mt-4">
                     ${p.price}
                   </p>
+<a
+  href={`https://wa.me/923000000000?text=Hello, I want to inquire about: ${p.name}`}
+  target="_blank"
+  className="mt-4 block text-center bg-green-500 text-white py-3 rounded-xl"
+>
+  Contact on WhatsApp
+</a>
 
+<button
+  onClick={async () => {
+    await addDoc(collection(db, "inquiries"), {
+      product: p.name,
+      email: user?.email || "guest",
+      time: new Date().toISOString()
+    });
+
+    alert("Inquiry sent successfully!");
+  }}
+  className="mt-4 w-full bg-white text-black py-3 rounded-xl"
+>
+  Request Quote
+</button>
                   {/* DELETE BUTTON */}
 
                   {admin && (
