@@ -1406,7 +1406,6 @@ const categories = [
 
   </div>
 
-</footer>
      {view === "contact" && (
   <div className="max-w-7xl mx-auto px-6 py-24">
 
@@ -1503,10 +1502,14 @@ const categories = [
       <p className="text-gray-400 mt-4">
         OEM manufacturing • Private label • Bulk export
       </p>
+      
+
     </div>
 
   </div>
+  
 )}
+</footer>
 </div>
 );
 }
