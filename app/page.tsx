@@ -164,9 +164,29 @@ export default function Page() {
 
           </div>
 
-          {/* ✅ ADDED FEATURE (scroll prompt like big websites) */}
-          <div className="mt-24 text-center text-gray-500 text-sm animate-bounce">
-            Scroll to explore ↓
+          {/* 🍎 APPLE STYLE END SECTION */}
+          <div className="mt-32 relative flex flex-col items-center justify-center text-center">
+
+            <h1 className="text-[120px] md:text-[180px] font-bold text-white/5 select-none leading-none">
+              SCROLL
+            </h1>
+
+            <div className="absolute">
+              <p className="text-gray-400 tracking-[6px] uppercase text-xs">
+                Continue Exploring
+              </p>
+
+              <h2 className="text-2xl md:text-4xl font-light mt-3 text-white/80">
+                Crafted for Global Performance
+              </h2>
+
+              <div className="w-24 h-[1px] bg-white/20 mx-auto mt-6"></div>
+
+              <p className="text-gray-500 text-sm mt-6">
+                Designed with precision • Built in Sialkot • Exported worldwide
+              </p>
+            </div>
+
           </div>
 
         </div>
