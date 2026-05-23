@@ -236,6 +236,9 @@ const categories = [
             Admin
           </button>
 
+          <button onClick={() => setView("contact")}>
+            Contact
+          </button>
         </div>
 
       </div>
@@ -965,7 +968,7 @@ const categories = [
                     ${p.price}
                   </p>
 <a
-  href={`https://wa.me/923000000000?text=Hello, I want to inquire about: ${p.name}`}
+  href={`https://wa.me/03428145366?text=Hello, I want to inquire about: ${p.name}`}
   target="_blank"
   className="mt-4 block text-center bg-green-500 text-white py-3 rounded-xl"
 >
@@ -1324,7 +1327,7 @@ const categories = [
               Phone
             </p>
 
-            <p>+92 300 0000000</p>
+            <p>+92 3426889767 </p>
           </div>
 
         </div>
@@ -1404,6 +1407,106 @@ const categories = [
   </div>
 
 </footer>
+     {view === "contact" && (
+  <div className="max-w-7xl mx-auto px-6 py-24">
+
+    {/* HEADER */}
+    <div className="text-center mb-20">
+      <h1 className="text-5xl md:text-7xl font-bold">
+        Contact Us
+      </h1>
+      <p className="text-gray-400 mt-6 max-w-2xl mx-auto">
+        Get in touch with TS Exports for custom sportswear manufacturing,
+        bulk orders, OEM production, and global distribution.
+      </p>
+    </div>
+
+    {/* GRID */}
+    <div className="grid md:grid-cols-2 gap-16">
+
+      {/* LEFT - CONTACT INFO */}
+      <div className="space-y-8">
+
+        <div className="border border-white/10 p-8 rounded-3xl bg-white/[0.02]">
+          <h2 className="text-2xl font-bold">Location</h2>
+          <p className="text-gray-400 mt-3">Sialkot, Pakistan</p>
+        </div>
+
+        <div className="border border-white/10 p-8 rounded-3xl bg-white/[0.02]">
+          <h2 className="text-2xl font-bold">Email</h2>
+          <p className="text-gray-400 mt-3">info@tsexports.com</p>
+        </div>
+
+        <div className="border border-white/10 p-8 rounded-3xl bg-white/[0.02]">
+          <h2 className="text-2xl font-bold">WhatsApp</h2>
+          <p className="text-gray-400 mt-3">
+            +92 342 8145366
+          </p>
+
+          <a
+            href="https://wa.me/923428145366"
+            target="_blank"
+            className="inline-block mt-4 bg-green-500 text-white px-6 py-3 rounded-xl"
+          >
+            Chat on WhatsApp
+          </a>
+        </div>
+
+      </div>
+
+      {/* RIGHT - FORM */}
+      <div className="border border-white/10 p-10 rounded-3xl bg-white/[0.02]">
+
+        <h2 className="text-3xl font-bold mb-6">
+          Send Inquiry
+        </h2>
+
+        <input
+          placeholder="Your Name"
+          className="w-full p-4 mb-4 bg-white/10 rounded-xl"
+        />
+
+        <input
+          placeholder="Your Email"
+          className="w-full p-4 mb-4 bg-white/10 rounded-xl"
+        />
+
+        <input
+          placeholder="Company Name"
+          className="w-full p-4 mb-4 bg-white/10 rounded-xl"
+        />
+
+        <textarea
+          placeholder="Your Message"
+          className="w-full p-4 mb-6 bg-white/10 rounded-xl h-40"
+        />
+
+        <button
+          className="w-full bg-white text-black py-4 rounded-xl font-bold"
+        >
+          Send Message
+        </button>
+
+        <p className="text-gray-500 text-sm mt-4">
+          We usually respond within 24 hours.
+        </p>
+
+      </div>
+
+    </div>
+
+    {/* BOTTOM CTA */}
+    <div className="text-center mt-24">
+      <h2 className="text-4xl font-bold">
+        Let’s Build Your Brand Together
+      </h2>
+      <p className="text-gray-400 mt-4">
+        OEM manufacturing • Private label • Bulk export
+      </p>
+    </div>
+
+  </div>
+)}
 </div>
 );
 }
