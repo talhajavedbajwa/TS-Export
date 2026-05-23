@@ -53,7 +53,45 @@ export default function Page() {
   const [products, setProducts] = useState<any[]>([]);
 // CATEGORY FILTER (NEW)
 const [selectedCategory, setSelectedCategory] = useState("");
-  const [form, setForm] = useState({
+  // ABOUT PAGE DATA (PREMIUM B2B STRUCTURE)
+
+const aboutStats = [
+  { label: "Global Clients", value: "50+" },
+  { label: "Products Exported", value: "20K+" },
+  { label: "Countries Served", value: "15+" },
+  { label: "Production Support", value: "24/7" }
+];
+
+const whyUs = [
+  {
+    title: "Premium Manufacturing",
+    desc: "We use high-quality performance fabrics and export-grade stitching standards trusted by global brands."
+  },
+  {
+    title: "OEM & Private Label",
+    desc: "We build your brand from scratch — custom logos, designs, packaging, and full private label production."
+  },
+  {
+    title: "Fast Production Cycle",
+    desc: "Optimized manufacturing workflow ensures quick sampling and fast bulk production timelines."
+  },
+  {
+    title: "Global Export Experience",
+    desc: "We supply sportswear to multiple countries with reliable logistics and export documentation."
+  }
+];
+
+const whatWeProvide = [
+  "Custom Sportswear Manufacturing",
+  "Football Kits & Team Uniforms",
+  "Gym & Fitness Apparel",
+  "Cricket Uniform Production",
+  "Private Label Branding",
+  "Bulk Export Orders",
+  "Sample Development (5–7 Days)",
+  "Worldwide Shipping Support"
+];
+const [form, setForm] = useState({
     name: "",
     price: "",
     category: "",
@@ -746,28 +784,118 @@ const categories = [
       {/* ABOUT */}
 
       {view === "about" && (
+  <div className="px-6 py-24 max-w-7xl mx-auto">
 
-        <div className="max-w-5xl mx-auto px-6 py-24">
+    {/* HERO ABOUT */}
+    <div className="text-center mb-20">
+      <h1 className="text-5xl md:text-7xl font-bold">
+        About TS Exports
+      </h1>
 
-          <h1 className="text-5xl font-bold mb-8">
-            About TS Exports
-          </h1>
+      <p className="text-gray-400 mt-6 max-w-3xl mx-auto leading-8">
+        We are a Sialkot-based premium sportswear manufacturer specializing in
+        high-performance apparel for global brands, clubs, and distributors.
+      </p>
+    </div>
 
-          <p className="text-gray-300 leading-8 text-lg">
-            TS Exports is a Sialkot-based sportswear manufacturer
-            specializing in football kits, cricket uniforms,
-            gym wear and custom team apparel.
-          </p>
-
-          <p className="text-gray-400 leading-8 mt-6 text-lg">
-            We provide export-quality manufacturing with
-            competitive pricing, fast production and
-            worldwide delivery.
-          </p>
-
+    {/* STATS */}
+    <div className="grid md:grid-cols-4 gap-6 mb-24">
+      {aboutStats.map((s, i) => (
+        <div
+          key={i}
+          className="border border-white/10 bg-white/[0.02] rounded-2xl p-8 text-center"
+        >
+          <h2 className="text-4xl font-bold">{s.value}</h2>
+          <p className="text-gray-400 mt-3">{s.label}</p>
         </div>
+      ))}
+    </div>
 
-      )}
+    {/* STORY SECTION */}
+    <div className="grid md:grid-cols-2 gap-16 items-center mb-32">
+
+      <div>
+        <h2 className="text-4xl font-bold mb-6">
+          Who We Are
+        </h2>
+
+        <p className="text-gray-400 leading-8">
+          TS Exports is built on precision manufacturing, export reliability,
+          and long-term partnerships. We work with brands worldwide to produce
+          custom sportswear with premium quality and consistent delivery.
+        </p>
+
+        <p className="text-gray-400 leading-8 mt-6">
+          From concept to final production, we handle every step including
+          fabric selection, sampling, bulk manufacturing, branding, and global shipping.
+        </p>
+      </div>
+
+      <img
+        src="https://images.unsplash.com/photo-1514996937319-344454492b37"
+        className="rounded-3xl h-[500px] object-cover"
+      />
+    </div>
+
+    {/* WHY CHOOSE US */}
+    <div className="mb-32">
+
+      <h2 className="text-5xl font-bold text-center mb-16">
+        Why Choose Us
+      </h2>
+
+      <div className="grid md:grid-cols-2 gap-10">
+        {whyUs.map((item, i) => (
+          <div
+            key={i}
+            className="border border-white/10 bg-white/[0.02] rounded-3xl p-10"
+          >
+            <h3 className="text-2xl font-bold">{item.title}</h3>
+            <p className="text-gray-400 mt-4 leading-8">
+              {item.desc}
+            </p>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    {/* WHAT WE PROVIDE */}
+    <div className="mb-32 text-center">
+
+      <h2 className="text-5xl font-bold mb-12">
+        What We Provide
+      </h2>
+
+      <div className="flex flex-wrap justify-center gap-4">
+        {whatWeProvide.map((item, i) => (
+          <span
+            key={i}
+            className="px-6 py-3 border border-white/10 rounded-full bg-white/[0.02] text-gray-300"
+          >
+            {item}
+          </span>
+        ))}
+      </div>
+
+    </div>
+
+    {/* DIFFERENTIATION SECTION */}
+    <div className="text-center">
+
+      <h2 className="text-5xl font-bold mb-8">
+        What Makes Us Different
+      </h2>
+
+      <p className="text-gray-400 max-w-3xl mx-auto leading-8">
+        Unlike traditional manufacturers, we focus on brand building,
+        consistent quality control, and scalable production systems.
+        Our goal is not just to produce — but to help your brand grow globally.
+      </p>
+
+    </div>
+
+  </div>
+)}
 
       {/* SHOP */}
 
