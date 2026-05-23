@@ -367,7 +367,196 @@ export default function Page() {
       </div>
 
     </section>
+{/* PARALLAX IMAGE SECTION */}
+<section className="relative h-[800px] overflow-hidden">
 
+  <img
+    src="https://images.unsplash.com/photo-1523398002811-999ca8dec234"
+    className="w-full h-full object-cover"
+  />
+
+  <div className="absolute inset-0 bg-black/60 flex items-center justify-center">
+
+    <div className="text-center px-6">
+
+      <p className="uppercase tracking-[8px] text-gray-400 text-sm">
+        PERFORMANCE MEETS DESIGN
+      </p>
+
+      <h1 className="text-6xl md:text-8xl font-bold mt-8 leading-tight">
+        MADE FOR <br />
+        CHAMPIONS
+      </h1>
+
+    </div>
+
+  </div>
+
+</section>
+
+{/* WHY CHOOSE US */}
+<section className="py-40 px-6">
+
+  <div className="text-center mb-24">
+
+    <p className="uppercase tracking-[8px] text-gray-500 text-sm">
+      WHY TS EXPORTS
+    </p>
+
+    <h1 className="text-5xl md:text-7xl font-bold mt-6">
+      Global Manufacturing Excellence
+    </h1>
+
+  </div>
+
+  <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+
+    <div className="border border-white/10 rounded-3xl p-10 bg-white/[0.02]">
+
+      <h2 className="text-3xl font-bold">
+        Premium Fabrics
+      </h2>
+
+      <p className="text-gray-400 mt-6 leading-8">
+        Breathable, durable and performance-engineered materials
+        for professional sportswear.
+      </p>
+
+    </div>
+
+    <div className="border border-white/10 rounded-3xl p-10 bg-white/[0.02]">
+
+      <h2 className="text-3xl font-bold">
+        OEM & Private Label
+      </h2>
+
+      <p className="text-gray-400 mt-6 leading-8">
+        Fully customized sportswear manufacturing for
+        international brands and distributors.
+      </p>
+
+    </div>
+
+    <div className="border border-white/10 rounded-3xl p-10 bg-white/[0.02]">
+
+      <h2 className="text-3xl font-bold">
+        Worldwide Delivery
+      </h2>
+
+      <p className="text-gray-400 mt-6 leading-8">
+        Reliable global shipping with fast production
+        timelines and export-quality standards.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+{/* SPLIT SECTION */}
+<section className="py-40 px-6">
+
+  <div className="grid md:grid-cols-2 gap-20 items-center max-w-7xl mx-auto">
+
+    <div>
+
+      <img
+        src="https://images.unsplash.com/photo-1514996937319-344454492b37"
+        className="rounded-3xl h-[700px] object-cover"
+      />
+
+    </div>
+
+    <div>
+
+      <p className="uppercase tracking-[8px] text-gray-500 text-sm">
+        CUSTOM SPORTSWEAR
+      </p>
+
+      <h1 className="text-5xl md:text-7xl font-bold mt-6 leading-tight">
+        Crafted <br />
+        With Precision
+      </h1>
+
+      <p className="text-gray-400 mt-8 text-lg leading-8">
+        From football kits to gym apparel,
+        every piece is built with precision,
+        comfort and elite-level aesthetics.
+      </p>
+
+      <button
+        onClick={() => setView("shop")}
+        className="mt-10 border border-white/20 px-8 py-4 rounded-full hover:bg-white hover:text-black transition"
+      >
+        View Products
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
+
+{/* TESTIMONIALS */}
+<section className="py-40 px-6 bg-white/[0.02]">
+
+  <div className="text-center mb-24">
+
+    <p className="uppercase tracking-[8px] text-gray-500 text-sm">
+      CLIENTS
+    </p>
+
+    <h1 className="text-5xl md:text-7xl font-bold mt-6">
+      Trusted Worldwide
+    </h1>
+
+  </div>
+
+  <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+
+    <div className="border border-white/10 p-10 rounded-3xl">
+
+      <p className="text-gray-300 leading-8">
+        “Outstanding product quality and
+        fast international delivery.”
+      </p>
+
+      <h3 className="mt-8 font-bold">
+        — UK Distributor
+      </h3>
+
+    </div>
+
+    <div className="border border-white/10 p-10 rounded-3xl">
+
+      <p className="text-gray-300 leading-8">
+        “Professional OEM manufacturing with
+        premium stitching quality.”
+      </p>
+
+      <h3 className="mt-8 font-bold">
+        — Germany Brand Owner
+      </h3>
+
+    </div>
+
+    <div className="border border-white/10 p-10 rounded-3xl">
+
+      <p className="text-gray-300 leading-8">
+        “One of the best sportswear suppliers
+        we’ve worked with.”
+      </p>
+
+      <h3 className="mt-8 font-bold">
+        — UAE Importer
+      </h3>
+
+    </div>
+
+  </div>
+
+</section>
     {/* FINAL CTA */}
     <section className="text-center py-40 px-6">
 
