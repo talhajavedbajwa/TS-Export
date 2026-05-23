@@ -180,173 +180,218 @@ export default function Page() {
 
       </div>
 
-      {/* HOME */}
+  {/* HOME */}
+{view === "home" && (
 
-      {view === "home" && (
+  <div>
 
-        <div>
+    {/* HERO SECTION */}
+    <section className="relative h-screen flex items-center justify-center text-center overflow-hidden">
 
-          {/* HERO */}
+      <img
+        src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438"
+        className="absolute inset-0 w-full h-full object-cover"
+      />
 
-          <div className="text-center py-28 px-6">
+      <div className="absolute inset-0 bg-black/70" />
 
-            <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-              Premium Sportswear Export <br />
-              From Sialkot
-            </h1>
+      <div className="relative z-10 px-6">
 
-            <p className="text-gray-400 max-w-2xl mx-auto mt-8 text-lg leading-8">
-              Manufacturing export-quality football kits,
-              cricket uniforms, gym wear and custom apparel
-              for global brands.
-            </p>
+        <p className="uppercase tracking-[10px] text-gray-400 text-sm">
+          TS EXPORTS
+        </p>
 
-            <button
-              onClick={() => setView("shop")}
-              className="mt-10 bg-white text-black px-8 py-4 rounded-full text-lg"
-            >
-              Explore Products
-            </button>
+        <h1 className="text-6xl md:text-8xl font-bold leading-tight mt-8">
+          BUILT FOR <br />
+          GLOBAL BRANDS
+        </h1>
 
-          </div>
+        <p className="max-w-2xl mx-auto mt-8 text-gray-300 text-lg leading-8">
+          Premium sportswear manufacturing from Sialkot with
+          export-quality production, modern fabrics and worldwide delivery.
+        </p>
 
-          {/* FEATURES */}
+        <button
+          onClick={() => setView("shop")}
+          className="mt-10 bg-white text-black px-8 py-4 rounded-full text-lg hover:scale-105 transition"
+        >
+          Explore Collection
+        </button>
 
-          <div className="grid md:grid-cols-3 gap-6 px-10">
+      </div>
 
-            <div className="border border-white/10 rounded-2xl p-8">
-              <h2 className="text-2xl font-bold">
-                Premium Quality
-              </h2>
+    </section>
 
-              <p className="text-gray-400 mt-4 leading-7">
-                High-end stitching and export fabrics.
-              </p>
-            </div>
+    {/* COLLECTIONS */}
+    <section className="py-32 px-6 bg-black">
 
-            <div className="border border-white/10 rounded-2xl p-8">
-              <h2 className="text-2xl font-bold">
-                Worldwide Shipping
-              </h2>
+      <div className="text-center mb-20">
 
-              <p className="text-gray-400 mt-4 leading-7">
-                Delivering products globally with reliability.
-              </p>
-            </div>
+        <p className="uppercase tracking-[8px] text-gray-500 text-sm">
+          COLLECTIONS
+        </p>
 
-            <div className="border border-white/10 rounded-2xl p-8">
-              <h2 className="text-2xl font-bold">
-                Low MOQ
-              </h2>
+        <h1 className="text-5xl md:text-7xl font-bold mt-4">
+          Premium Categories
+        </h1>
 
-              <p className="text-gray-400 mt-4 leading-7">
-                Flexible quantities for all businesses.
-              </p>
-            </div>
+      </div>
 
-          </div>
+      <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
 
-          {/* PREMIUM SECTION */}
+        {/* CARD 1 */}
+        <div className="group relative overflow-hidden rounded-3xl h-[500px]">
 
-          <div className="mt-40 space-y-40">
+          <img
+            src="https://images.unsplash.com/photo-1574629810360-7efbbe195018"
+            className="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+          />
 
-            <div className="text-center px-6">
+          <div className="absolute inset-0 bg-black/40" />
 
-              <p className="uppercase tracking-[8px] text-gray-500 text-sm">
-                TS EXPORTS
-              </p>
+          <div className="absolute bottom-10 left-10">
 
-              <h1 className="text-6xl md:text-8xl font-bold mt-6 leading-tight">
-                Built For <br />
-                Global Brands
-              </h1>
-
-              <p className="max-w-2xl mx-auto text-gray-400 mt-8 text-lg leading-8">
-                Premium sportswear manufacturing from Sialkot
-                with modern fabrics, precision production and
-                worldwide export.
-              </p>
-
-            </div>
-
-            <div className="px-6">
-
-              <img
-                src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438"
-                className="w-full h-[700px] object-cover rounded-3xl"
-              />
-
-            </div>
-
-            {/* STATS */}
-
-            <div className="grid md:grid-cols-4 gap-6 px-10 text-center">
-
-              <div className="border border-white/10 p-8 rounded-2xl">
-                <h1 className="text-5xl font-bold">
-                  50+
-                </h1>
-
-                <p className="text-gray-400 mt-2">
-                  Global Clients
-                </p>
-              </div>
-
-              <div className="border border-white/10 p-8 rounded-2xl">
-                <h1 className="text-5xl font-bold">
-                  20K+
-                </h1>
-
-                <p className="text-gray-400 mt-2">
-                  Products Exported
-                </p>
-              </div>
-
-              <div className="border border-white/10 p-8 rounded-2xl">
-                <h1 className="text-5xl font-bold">
-                  15+
-                </h1>
-
-                <p className="text-gray-400 mt-2">
-                  Countries
-                </p>
-              </div>
-
-              <div className="border border-white/10 p-8 rounded-2xl">
-                <h1 className="text-5xl font-bold">
-                  24/7
-                </h1>
-
-                <p className="text-gray-400 mt-2">
-                  Support
-                </p>
-              </div>
-
-            </div>
-
-            {/* FINAL CTA */}
-
-            <div className="text-center py-32">
-
-              <h1 className="text-7xl md:text-9xl font-bold leading-none">
-                ELEVATE <br />
-                YOUR BRAND
-              </h1>
-
-              <button
-                onClick={() => setView("shop")}
-                className="mt-10 bg-white text-black px-10 py-4 rounded-full text-lg"
-              >
-                Explore Collection
-              </button>
-
-            </div>
+            <h2 className="text-4xl font-bold">
+              Football Wear
+            </h2>
 
           </div>
 
         </div>
 
-      )}
+        {/* CARD 2 */}
+        <div className="group relative overflow-hidden rounded-3xl h-[500px]">
+
+          <img
+            src="https://images.unsplash.com/photo-1518611012118-696072aa579a"
+            className="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+          />
+
+          <div className="absolute inset-0 bg-black/40" />
+
+          <div className="absolute bottom-10 left-10">
+
+            <h2 className="text-4xl font-bold">
+              Gym Wear
+            </h2>
+
+          </div>
+
+        </div>
+
+        {/* CARD 3 */}
+        <div className="group relative overflow-hidden rounded-3xl h-[500px]">
+
+          <img
+            src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e"
+            className="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+          />
+
+          <div className="absolute inset-0 bg-black/40" />
+
+          <div className="absolute bottom-10 left-10">
+
+            <h2 className="text-4xl font-bold">
+              Cricket Uniforms
+            </h2>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    {/* STATS */}
+    <section className="py-32 px-6">
+
+      <div className="grid md:grid-cols-4 gap-6 max-w-7xl mx-auto text-center">
+
+        <div className="border border-white/10 p-10 rounded-3xl bg-white/[0.02]">
+          <h1 className="text-6xl font-bold">50+</h1>
+          <p className="text-gray-400 mt-4">Global Clients</p>
+        </div>
+
+        <div className="border border-white/10 p-10 rounded-3xl bg-white/[0.02]">
+          <h1 className="text-6xl font-bold">20K+</h1>
+          <p className="text-gray-400 mt-4">Products Exported</p>
+        </div>
+
+        <div className="border border-white/10 p-10 rounded-3xl bg-white/[0.02]">
+          <h1 className="text-6xl font-bold">15+</h1>
+          <p className="text-gray-400 mt-4">Countries</p>
+        </div>
+
+        <div className="border border-white/10 p-10 rounded-3xl bg-white/[0.02]">
+          <h1 className="text-6xl font-bold">24/7</h1>
+          <p className="text-gray-400 mt-4">Support</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    {/* MANUFACTURING SECTION */}
+    <section className="py-32 px-6">
+
+      <div className="grid md:grid-cols-2 gap-20 items-center max-w-7xl mx-auto">
+
+        <div>
+
+          <p className="uppercase tracking-[8px] text-gray-500 text-sm">
+            OEM MANUFACTURING
+          </p>
+
+          <h1 className="text-5xl md:text-7xl font-bold mt-6 leading-tight">
+            Designed For <br />
+            Performance
+          </h1>
+
+          <p className="text-gray-400 mt-8 leading-8 text-lg">
+            Every product is manufactured with export-quality
+            fabrics, precision stitching and modern performance-focused design.
+          </p>
+
+        </div>
+
+        <div>
+
+          <img
+            src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f"
+            className="rounded-3xl"
+          />
+
+        </div>
+
+      </div>
+
+    </section>
+
+    {/* FINAL CTA */}
+    <section className="text-center py-40 px-6">
+
+      <p className="uppercase tracking-[10px] text-gray-500 text-sm">
+        FUTURE OF SPORTSWEAR
+      </p>
+
+      <h1 className="text-7xl md:text-9xl font-bold mt-8 leading-none">
+        ELEVATE <br />
+        YOUR BRAND
+      </h1>
+
+      <button
+        onClick={() => setView("shop")}
+        className="mt-12 bg-white text-black px-10 py-5 rounded-full text-xl hover:scale-105 transition"
+      >
+        Explore Products
+      </button>
+
+    </section>
+
+  </div>
+
+)}
 
       {/* ABOUT */}
 
