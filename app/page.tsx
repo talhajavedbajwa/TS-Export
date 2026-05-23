@@ -9,6 +9,7 @@ import {
   onAuthStateChanged,
   signOut
 } from "firebase/auth";
+
 import {
   getFirestore,
   collection,
@@ -18,7 +19,8 @@ import {
   doc
 } from "firebase/firestore";
 
-/* ---------------- FIREBASE CONFIG ---------------- */
+/* ---------------- FIREBASE ---------------- */
+
 const firebaseConfig = {
   apiKey: "AIzaSyCLMaaMNBeoNrtJ19dMff1G5nwR5yI_znE",
   authDomain: "ts-exports.firebaseapp.com",
@@ -34,8 +36,10 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);
 
-/* ---------------- MAIN APP ---------------- */
+/* ---------------- APP ---------------- */
+
 export default function Page() {
+
   const [user, setUser] = useState<any>(null);
   const [admin, setAdmin] = useState(false);
 
@@ -44,8 +48,9 @@ export default function Page() {
 
   const [view, setView] = useState("home");
 
-  const [products, setProducts] = useState<any[]>([]);
   const [search, setSearch] = useState("");
+
+  const [products, setProducts] = useState<any[]>([]);
 
   const [form, setForm] = useState({
     name: "",
@@ -56,21 +61,40 @@ export default function Page() {
   });
 
   /* ---------------- AUTH ---------------- */
+
   useEffect(() => {
+
     const unsub = onAuthStateChanged(auth, (u) => {
       setUser(u);
-      if (u?.email === "admin@tsexports.com") setAdmin(true);
+
+      if (u?.email === "admin@tsexports.com") {
+        setAdmin(true);
+      } else {
+        setAdmin(false);
+      }
     });
 
     loadProducts();
 
     return () => unsub();
+
   }, []);
 
+  /* ---------------- LOAD PRODUCTS ---------------- */
+
   async function loadProducts() {
+
     const snap = await getDocs(collection(db, "products"));
-    setProducts(snap.docs.map((d) => ({ id: d.id, ...d.data() })));
+
+    setProducts(
+      snap.docs.map((d) => ({
+        id: d.id,
+        ...d.data()
+      }))
+    );
   }
+
+  /* ---------------- LOGIN ---------------- */
 
   async function login() {
     await signInWithEmailAndPassword(auth, email, password);
@@ -85,246 +109,525 @@ export default function Page() {
   }
 
   /* ---------------- ADMIN ---------------- */
+
   async function addProduct() {
-    if (!admin) return alert("Not admin");
+
+    if (!admin) {
+      return alert("Not admin");
+    }
+
     await addDoc(collection(db, "products"), form);
-    setForm({ name: "", price: "", category: "", image: "", moq: "" });
+
+    setForm({
+      name: "",
+      price: "",
+      category: "",
+      image: "",
+      moq: ""
+    });
+
     loadProducts();
   }
 
   async function deleteProduct(id: any) {
+
     if (!admin) return;
+
     await deleteDoc(doc(db, "products", id));
+
     loadProducts();
   }
 
-  /* ---------------- FILTERED PRODUCTS ---------------- */
+  /* ---------------- FILTER ---------------- */
+
   const filteredProducts = products.filter((p: any) =>
     p.name?.toLowerCase().includes(search.toLowerCase())
   );
 
   /* ---------------- UI ---------------- */
+
   return (
+
     <div className="min-h-screen bg-black text-white">
 
       {/* NAVBAR */}
-      <div className="flex justify-between items-center p-4 border-b border-white/10 sticky top-0 bg-black z-50">
-        <h1 className="font-bold text-xl">TS EXPORTS</h1>
 
-        <div className="flex gap-4 text-sm">
-          <button onClick={() => setView("home")}>Home</button>
-          <button onClick={() => setView("shop")}>Products</button>
-          <button onClick={() => setView("about")}>About</button>
-          <button onClick={() => setView("admin")}>Admin</button>
+      <div className="sticky top-0 z-50 flex justify-between items-center px-6 py-5 border-b border-white/10 bg-black">
+
+        <h1 className="font-bold text-2xl tracking-wide">
+          TS EXPORTS
+        </h1>
+
+        <div className="flex gap-6 text-sm">
+
+          <button onClick={() => setView("home")}>
+            Home
+          </button>
+
+          <button onClick={() => setView("shop")}>
+            Products
+          </button>
+
+          <button onClick={() => setView("about")}>
+            About
+          </button>
+
+          <button onClick={() => setView("admin")}>
+            Admin
+          </button>
+
         </div>
+
       </div>
 
       {/* HOME */}
+
       {view === "home" && (
-        <div className="text-center py-24 px-4">
 
-          <h1 className="text-5xl font-bold">
-            Premium Sportswear Export From Sialkot
-          </h1>
+        <div>
 
-          <p className="text-gray-400 mt-4 max-w-2xl mx-auto">
-            We manufacture premium football kits, cricket uniforms,
-            gym wear and custom sportswear for global brands.
-          </p>
+          {/* HERO */}
 
-          <button
-            onClick={() => setView("shop")}
-            className="mt-6 bg-white text-black px-6 py-3 rounded"
-          >
-            Explore Products
-          </button>
+          <div className="text-center py-28 px-6">
 
-          <div className="grid md:grid-cols-3 gap-6 mt-20 px-10">
+            <h1 className="text-5xl md:text-7xl font-bold leading-tight">
+              Premium Sportswear Export <br />
+              From Sialkot
+            </h1>
 
-            <div className="border border-white/10 p-6 rounded">
-              <h2 className="font-bold text-xl">Premium Quality</h2>
-              <p className="text-gray-400 mt-2">
-                Export-quality stitching and fabrics.
+            <p className="text-gray-400 max-w-2xl mx-auto mt-8 text-lg leading-8">
+              Manufacturing export-quality football kits,
+              cricket uniforms, gym wear and custom apparel
+              for global brands.
+            </p>
+
+            <button
+              onClick={() => setView("shop")}
+              className="mt-10 bg-white text-black px-8 py-4 rounded-full text-lg"
+            >
+              Explore Products
+            </button>
+
+          </div>
+
+          {/* FEATURES */}
+
+          <div className="grid md:grid-cols-3 gap-6 px-10">
+
+            <div className="border border-white/10 rounded-2xl p-8">
+              <h2 className="text-2xl font-bold">
+                Premium Quality
+              </h2>
+
+              <p className="text-gray-400 mt-4 leading-7">
+                High-end stitching and export fabrics.
               </p>
             </div>
 
-            <div className="border border-white/10 p-6 rounded">
-              <h2 className="font-bold text-xl">Worldwide Shipping</h2>
-              <p className="text-gray-400 mt-2">
-                Delivering products globally.
+            <div className="border border-white/10 rounded-2xl p-8">
+              <h2 className="text-2xl font-bold">
+                Worldwide Shipping
+              </h2>
+
+              <p className="text-gray-400 mt-4 leading-7">
+                Delivering products globally with reliability.
               </p>
             </div>
 
-            <div className="border border-white/10 p-6 rounded">
-              <h2 className="font-bold text-xl">Low MOQ</h2>
-              <p className="text-gray-400 mt-2">
-                Flexible minimum order quantities.
+            <div className="border border-white/10 rounded-2xl p-8">
+              <h2 className="text-2xl font-bold">
+                Low MOQ
+              </h2>
+
+              <p className="text-gray-400 mt-4 leading-7">
+                Flexible quantities for all businesses.
               </p>
             </div>
 
           </div>
 
-          {/* 🍎 APPLE STYLE END SECTION */}
-          <div className="mt-32 relative flex flex-col items-center justify-center text-center">
+          {/* PREMIUM SECTION */}
 
-            <h1 className="text-[120px] md:text-[180px] font-bold text-white/5 select-none leading-none">
-              SCROLL
-            </h1>
+          <div className="mt-40 space-y-40">
 
-            <div className="absolute">
-              <p className="text-gray-400 tracking-[6px] uppercase text-xs">
-                Continue Exploring
+            <div className="text-center px-6">
+
+              <p className="uppercase tracking-[8px] text-gray-500 text-sm">
+                TS EXPORTS
               </p>
 
-              <h2 className="text-2xl md:text-4xl font-light mt-3 text-white/80">
-                Crafted for Global Performance
-              </h2>
+              <h1 className="text-6xl md:text-8xl font-bold mt-6 leading-tight">
+                Built For <br />
+                Global Brands
+              </h1>
 
-              <div className="w-24 h-[1px] bg-white/20 mx-auto mt-6"></div>
-
-              <p className="text-gray-500 text-sm mt-6">
-                Designed with precision • Built in Sialkot • Exported worldwide
+              <p className="max-w-2xl mx-auto text-gray-400 mt-8 text-lg leading-8">
+                Premium sportswear manufacturing from Sialkot
+                with modern fabrics, precision production and
+                worldwide export.
               </p>
+
+            </div>
+
+            <div className="px-6">
+
+              <img
+                src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438"
+                className="w-full h-[700px] object-cover rounded-3xl"
+              />
+
+            </div>
+
+            {/* STATS */}
+
+            <div className="grid md:grid-cols-4 gap-6 px-10 text-center">
+
+              <div className="border border-white/10 p-8 rounded-2xl">
+                <h1 className="text-5xl font-bold">
+                  50+
+                </h1>
+
+                <p className="text-gray-400 mt-2">
+                  Global Clients
+                </p>
+              </div>
+
+              <div className="border border-white/10 p-8 rounded-2xl">
+                <h1 className="text-5xl font-bold">
+                  20K+
+                </h1>
+
+                <p className="text-gray-400 mt-2">
+                  Products Exported
+                </p>
+              </div>
+
+              <div className="border border-white/10 p-8 rounded-2xl">
+                <h1 className="text-5xl font-bold">
+                  15+
+                </h1>
+
+                <p className="text-gray-400 mt-2">
+                  Countries
+                </p>
+              </div>
+
+              <div className="border border-white/10 p-8 rounded-2xl">
+                <h1 className="text-5xl font-bold">
+                  24/7
+                </h1>
+
+                <p className="text-gray-400 mt-2">
+                  Support
+                </p>
+              </div>
+
+            </div>
+
+            {/* FINAL CTA */}
+
+            <div className="text-center py-32">
+
+              <h1 className="text-7xl md:text-9xl font-bold leading-none">
+                ELEVATE <br />
+                YOUR BRAND
+              </h1>
+
+              <button
+                onClick={() => setView("shop")}
+                className="mt-10 bg-white text-black px-10 py-4 rounded-full text-lg"
+              >
+                Explore Collection
+              </button>
+
             </div>
 
           </div>
 
         </div>
+
       )}
 
       {/* ABOUT */}
-      {view === "about" && (
-        <div className="max-w-4xl mx-auto px-6 py-20">
 
-          <h1 className="text-4xl font-bold mb-6">
+      {view === "about" && (
+
+        <div className="max-w-5xl mx-auto px-6 py-24">
+
+          <h1 className="text-5xl font-bold mb-8">
             About TS Exports
           </h1>
 
-          <p className="text-gray-300 leading-8">
+          <p className="text-gray-300 leading-8 text-lg">
             TS Exports is a Sialkot-based sportswear manufacturer
             specializing in football kits, cricket uniforms,
             gym wear and custom team apparel.
           </p>
 
+          <p className="text-gray-400 leading-8 mt-6 text-lg">
+            We provide export-quality manufacturing with
+            competitive pricing, fast production and
+            worldwide delivery.
+          </p>
+
         </div>
+
       )}
 
       {/* SHOP */}
+
       {view === "shop" && (
+
         <div className="p-6">
+
+          {/* SEARCH */}
 
           <input
             placeholder="Search products..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className="w-full p-3 mb-8 bg-white/10 border border-white/20 rounded"
+            className="w-full p-4 mb-10 bg-white/10 border border-white/20 rounded-2xl"
           />
 
-          <div className="grid md:grid-cols-3 gap-6">
+          {/* PRODUCTS */}
+
+          <div className="grid md:grid-cols-3 gap-8">
+
             {filteredProducts.map((p: any) => (
-              <div key={p.id} className="border border-white/10 rounded overflow-hidden">
 
-                <img src={p.image} className="h-56 w-full object-cover" />
+              <div
+                key={p.id}
+                className="border border-white/10 rounded-3xl overflow-hidden bg-white/[0.02]"
+              >
 
-                <div className="p-4">
-                  <h2 className="font-bold text-xl">{p.name}</h2>
-                  <p className="text-gray-400 mt-1">{p.category}</p>
-                  <p className="mt-2">MOQ: {p.moq}</p>
-                  <p className="font-bold text-2xl mt-2">${p.price}</p>
+                {/* PRODUCT IMAGE */}
+
+                <img
+                  src={p.image}
+                  className="w-full h-72 object-cover"
+                />
+
+                {/* PRODUCT INFO */}
+
+                <div className="p-6">
+
+                  <h2 className="text-2xl font-bold">
+                    {p.name}
+                  </h2>
+
+                  <p className="text-gray-400 mt-2">
+                    {p.category}
+                  </p>
+
+                  <p className="mt-3">
+                    MOQ: {p.moq}
+                  </p>
+
+                  <p className="text-3xl font-bold mt-4">
+                    ${p.price}
+                  </p>
+
+                  {/* DELETE BUTTON */}
+
+                  {admin && (
+
+                    <button
+                      onClick={() => deleteProduct(p.id)}
+                      className="mt-5 w-full border border-red-500 text-red-500 py-3 rounded-xl"
+                    >
+                      Delete Product
+                    </button>
+
+                  )}
+
                 </div>
 
               </div>
+
             ))}
+
           </div>
+
         </div>
+
       )}
 
       {/* ADMIN */}
+
       {view === "admin" && (
-        <div className="p-6 max-w-md mx-auto">
+
+        <div className="max-w-md mx-auto p-6 py-20">
 
           {!user ? (
+
             <>
-              <h2 className="text-2xl font-bold mb-4">Admin Login</h2>
+
+              <h1 className="text-4xl font-bold mb-8">
+                Admin Login
+              </h1>
 
               <input
                 placeholder="Email"
-                className="w-full p-3 mb-3 bg-white/10 border border-white/20 rounded"
+                className="w-full p-4 mb-4 bg-white/10 border border-white/20 rounded-2xl"
                 onChange={(e) => setEmail(e.target.value)}
               />
 
               <input
                 type="password"
                 placeholder="Password"
-                className="w-full p-3 mb-3 bg-white/10 border border-white/20 rounded"
+                className="w-full p-4 mb-4 bg-white/10 border border-white/20 rounded-2xl"
                 onChange={(e) => setPassword(e.target.value)}
               />
 
-              <button onClick={login} className="w-full bg-white text-black py-3 rounded mb-3">
+              <button
+                onClick={login}
+                className="w-full bg-white text-black py-4 rounded-2xl"
+              >
                 Login
               </button>
 
-              <button onClick={register} className="w-full border border-white/20 py-3 rounded">
+              <button
+                onClick={register}
+                className="w-full border border-white/20 py-4 rounded-2xl mt-4"
+              >
                 Register
               </button>
+
             </>
+
           ) : admin ? (
+
             <>
-              <h2 className="text-2xl font-bold mb-4">Admin Dashboard</h2>
 
-              <input placeholder="Product Name"
-                className="w-full p-3 mb-3 bg-white/10 border border-white/20 rounded"
-                onChange={(e) => setForm({ ...form, name: e.target.value })}
+              <h1 className="text-4xl font-bold mb-8">
+                Admin Dashboard
+              </h1>
+
+              {/* PRODUCT NAME */}
+
+              <input
+                placeholder="Product Name"
+                value={form.name}
+                className="w-full p-4 mb-4 bg-white/10 border border-white/20 rounded-2xl"
+                onChange={(e) =>
+                  setForm({ ...form, name: e.target.value })
+                }
               />
 
-              <input placeholder="Price"
-                className="w-full p-3 mb-3 bg-white/10 border border-white/20 rounded"
-                onChange={(e) => setForm({ ...form, price: e.target.value })}
+              {/* PRICE */}
+
+              <input
+                placeholder="Price"
+                value={form.price}
+                className="w-full p-4 mb-4 bg-white/10 border border-white/20 rounded-2xl"
+                onChange={(e) =>
+                  setForm({ ...form, price: e.target.value })
+                }
               />
 
-              <input placeholder="Category"
-                className="w-full p-3 mb-3 bg-white/10 border border-white/20 rounded"
-                onChange={(e) => setForm({ ...form, category: e.target.value })}
+              {/* CATEGORY */}
+
+              <input
+                placeholder="Category"
+                value={form.category}
+                className="w-full p-4 mb-4 bg-white/10 border border-white/20 rounded-2xl"
+                onChange={(e) =>
+                  setForm({ ...form, category: e.target.value })
+                }
               />
 
-              <input placeholder="Image URL"
-                className="w-full p-3 mb-3 bg-white/10 border border-white/20 rounded"
-                onChange={(e) => setForm({ ...form, image: e.target.value })}
+              {/* IMAGE URL */}
+
+              <input
+                placeholder="Image URL"
+                value={form.image}
+                className="w-full p-4 mb-4 bg-white/10 border border-white/20 rounded-2xl"
+                onChange={(e) =>
+                  setForm({ ...form, image: e.target.value })
+                }
               />
 
-              <input placeholder="MOQ"
-                className="w-full p-3 mb-4 bg-white/10 border border-white/20 rounded"
-                onChange={(e) => setForm({ ...form, moq: e.target.value })}
+              {/* MOQ */}
+
+              <input
+                placeholder="MOQ"
+                value={form.moq}
+                className="w-full p-4 mb-6 bg-white/10 border border-white/20 rounded-2xl"
+                onChange={(e) =>
+                  setForm({ ...form, moq: e.target.value })
+                }
               />
 
-              <button onClick={addProduct} className="w-full bg-white text-black py-3 rounded">
+              {/* ADD PRODUCT */}
+
+              <button
+                onClick={addProduct}
+                className="w-full bg-white text-black py-4 rounded-2xl"
+              >
                 Add Product
               </button>
 
-              <button onClick={logout} className="w-full mt-3 border border-red-500 text-red-500 py-3 rounded">
+              {/* LOGOUT */}
+
+              <button
+                onClick={logout}
+                className="w-full mt-4 border border-red-500 text-red-500 py-4 rounded-2xl"
+              >
                 Logout
               </button>
+
             </>
-) : (
-  <div>
 
-    <p className="text-red-400 mb-4">
-      You are not admin.
-    </p>
+          ) : (
 
-    <button
-      onClick={logout}
-      className="w-full border border-red-500 text-red-500 py-3 rounded"
-    >
-      Logout
-    </button>
+            <div>
 
-  </div>
-)}
+              <p className="text-red-400 mb-4">
+                You are not admin.
+              </p>
+
+              <button
+                onClick={logout}
+                className="w-full border border-red-500 text-red-500 py-4 rounded-2xl"
+              >
+                Logout
+              </button>
+
+            </div>
+
+          )}
 
         </div>
+
       )}
 
+      {/* FOOTER */}
+
+      <footer className="border-t border-white/10 mt-32 py-10 px-6 text-center">
+
+        <h2 className="text-2xl font-bold">
+          TS EXPORTS
+        </h2>
+
+        <p className="text-gray-400 mt-4 max-w-xl mx-auto leading-7">
+          Premium sportswear manufacturer from Sialkot, Pakistan.
+          Exporting high-quality custom sports apparel worldwide.
+        </p>
+
+        <div className="flex justify-center gap-6 mt-6 text-sm text-gray-500 flex-wrap">
+          <p>Football Wear</p>
+          <p>Gym Wear</p>
+          <p>Cricket Uniforms</p>
+          <p>Custom Apparel</p>
+        </div>
+
+        <p className="text-gray-600 text-sm mt-8">
+          © 2026 TS Exports. All rights reserved.
+        </p>
+
+      </footer>
+
     </div>
+
   );
 }
