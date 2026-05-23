@@ -835,33 +835,155 @@ export default function Page() {
 
       )}
 
-      {/* FOOTER */}
+      {/* PREMIUM FOOTER */}
+<footer className="border-t border-white/10 bg-black px-6 pt-24 pb-10">
 
-      <footer className="border-t border-white/10 mt-32 py-10 px-6 text-center">
+  <div className="max-w-7xl mx-auto">
 
-        <h2 className="text-2xl font-bold">
+    {/* TOP */}
+    <div className="grid md:grid-cols-4 gap-16">
+
+      {/* BRAND */}
+      <div>
+
+        <h1 className="text-3xl font-bold tracking-widest">
           TS EXPORTS
+        </h1>
+
+        <p className="text-gray-400 mt-6 leading-8">
+          Premium sportswear manufacturer from Sialkot,
+          Pakistan specializing in export-quality apparel,
+          OEM manufacturing and global distribution.
+        </p>
+
+      </div>
+
+      {/* COMPANY */}
+      <div>
+
+        <h2 className="text-xl font-semibold mb-6">
+          Company
         </h2>
 
-        <p className="text-gray-400 mt-4 max-w-xl mx-auto leading-7">
-          Premium sportswear manufacturer from Sialkot, Pakistan.
-          Exporting high-quality custom sports apparel worldwide.
-        </p>
+        <div className="space-y-4 text-gray-400">
 
-        <div className="flex justify-center gap-6 mt-6 text-sm text-gray-500 flex-wrap">
-          <p>Football Wear</p>
-          <p>Gym Wear</p>
-          <p>Cricket Uniforms</p>
-          <p>Custom Apparel</p>
+          <p className="hover:text-white transition cursor-pointer">
+            About Us
+          </p>
+
+          <p className="hover:text-white transition cursor-pointer">
+            Manufacturing
+          </p>
+
+          <p className="hover:text-white transition cursor-pointer">
+            OEM Services
+          </p>
+
+          <p className="hover:text-white transition cursor-pointer">
+            Contact
+          </p>
+
         </div>
 
-        <p className="text-gray-600 text-sm mt-8">
-          © 2026 TS Exports. All rights reserved.
-        </p>
+      </div>
 
-      </footer>
+      {/* COLLECTIONS */}
+      <div>
+
+        <h2 className="text-xl font-semibold mb-6">
+          Collections
+        </h2>
+
+        <div className="space-y-4 text-gray-400">
+
+          <p className="hover:text-white transition cursor-pointer">
+            Football Wear
+          </p>
+
+          <p className="hover:text-white transition cursor-pointer">
+            Gym Wear
+          </p>
+
+          <p className="hover:text-white transition cursor-pointer">
+            Cricket Uniforms
+          </p>
+
+          <p className="hover:text-white transition cursor-pointer">
+            Hoodies
+          </p>
+
+        </div>
+
+      </div>
+
+      {/* CONTACT */}
+      <div>
+
+        <h2 className="text-xl font-semibold mb-6">
+          Contact
+        </h2>
+
+        <div className="space-y-4 text-gray-400 leading-7">
+
+          <p>
+            Sialkot, Pakistan
+          </p>
+
+          <p>
+            info@tsexports.com
+          </p>
+
+          <p>
+            +92 300 0000000
+          </p>
+
+          <p>
+            Worldwide Shipping Available
+          </p>
+
+        </div>
+
+      </div>
 
     </div>
 
-  );
+    {/* BIG TEXT */}
+    <div className="mt-32 border-t border-white/10 pt-16">
+
+      <h1 className="text-[70px] md:text-[140px] font-bold text-center leading-none text-white/5 select-none">
+        TS EXPORTS
+      </h1>
+
+    </div>
+
+    {/* BOTTOM */}
+    <div className="flex flex-col md:flex-row justify-between items-center mt-10 text-sm text-gray-500 gap-4">
+
+      <p>
+        © 2026 TS Exports. All rights reserved.
+      </p>
+
+      <div className="flex gap-6">
+
+        <p className="hover:text-white transition cursor-pointer">
+          Privacy Policy
+        </p>
+
+        <p className="hover:text-white transition cursor-pointer">
+          Terms & Conditions
+        </p>
+
+        <p className="hover:text-white transition cursor-pointer">
+          Shipping Policy
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+</div>
+);
 }
