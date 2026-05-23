@@ -51,7 +51,8 @@ export default function Page() {
   const [search, setSearch] = useState("");
 
   const [products, setProducts] = useState<any[]>([]);
-
+// CATEGORY FILTER (NEW)
+const [selectedCategory, setSelectedCategory] = useState("");
   const [form, setForm] = useState({
     name: "",
     price: "",
@@ -139,10 +140,31 @@ export default function Page() {
   }
 
   /* ---------------- FILTER ---------------- */
+// CATEGORY BLOCKS DATA (WEZIO STYLE)
+const categories = [
+  {
+    name: "Football Wear",
+    img: "https://images.unsplash.com/photo-1574629810360-7efbbe195018"
+  },
+  {
+    name: "Gym Wear",
+    img: "https://images.unsplash.com/photo-1518611012118-696072aa579a"
+  },
+  {
+    name: "Cricket Uniforms",
+    img: "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e"
+  }
+];
+  const filteredProducts = products.filter((p: any) => {
 
-  const filteredProducts = products.filter((p: any) =>
-    p.name?.toLowerCase().includes(search.toLowerCase())
-  );
+  const matchSearch =
+    p.name?.toLowerCase().includes(search.toLowerCase());
+
+  const matchCategory =
+    selectedCategory ? p.category === selectedCategory : true;
+
+  return matchSearch && matchCategory;
+});
 
   /* ---------------- UI ---------------- */
 
@@ -221,7 +243,54 @@ export default function Page() {
       </div>
 
     </section>
+{/* CATEGORY SECTION */}
+<section className="py-32 px-6">
 
+  <div className="text-center mb-16">
+    <h1 className="text-5xl font-bold">
+      Premium Categories
+    </h1>
+    <p className="text-gray-400 mt-4">
+      Tap a category to explore products
+    </p>
+  </div>
+
+  <div className="grid md:grid-cols-3 gap-10 max-w-7xl mx-auto">
+
+    {categories.map((cat, i) => (
+
+      <div
+        key={i}
+        onClick={() => {
+          setSelectedCategory(cat.name);
+          setView("shop");
+        }}
+        className="relative h-[420px] rounded-3xl overflow-hidden cursor-pointer group"
+      >
+
+        <img
+          src={cat.img}
+          className="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+        />
+
+        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent" />
+
+        <div className="absolute bottom-8 left-8">
+          <h2 className="text-3xl font-bold">
+            {cat.name}
+          </h2>
+          <p className="text-gray-300 text-sm mt-2">
+            View Collection →
+          </p>
+        </div>
+
+      </div>
+
+    ))}
+
+  </div>
+
+</section>
     {/* COLLECTIONS */}
     <section className="py-32 px-6 bg-black">
 
@@ -557,6 +626,98 @@ export default function Page() {
   </div>
 
 </section>
+    {/* MANUFACTURING INFO */}
+<section className="py-40 px-6 bg-white/[0.02]">
+
+  <div className="text-center mb-24">
+
+    <p className="uppercase tracking-[8px] text-gray-500 text-sm">
+      MANUFACTURING DETAILS
+    </p>
+
+    <h1 className="text-5xl md:text-7xl font-bold mt-6">
+      Export Process
+    </h1>
+
+  </div>
+
+  <div className="grid md:grid-cols-4 gap-8 max-w-7xl mx-auto">
+
+    {/* MOQ */}
+    <div className="border border-white/10 rounded-3xl p-10 bg-black">
+
+      <h2 className="text-3xl font-bold">
+        MOQ
+      </h2>
+
+      <h1 className="text-5xl font-bold mt-6">
+        30 PCS
+      </h1>
+
+      <p className="text-gray-400 mt-6 leading-8">
+        Flexible minimum order quantities
+        for startups and brands.
+      </p>
+
+    </div>
+
+    {/* SAMPLE */}
+    <div className="border border-white/10 rounded-3xl p-10 bg-black">
+
+      <h2 className="text-3xl font-bold">
+        Samples
+      </h2>
+
+      <h1 className="text-5xl font-bold mt-6">
+        5–7 Days
+      </h1>
+
+      <p className="text-gray-400 mt-6 leading-8">
+        Fast sample production for testing
+        quality and sizing.
+      </p>
+
+    </div>
+
+    {/* PRODUCTION */}
+    <div className="border border-white/10 rounded-3xl p-10 bg-black">
+
+      <h2 className="text-3xl font-bold">
+        Production
+      </h2>
+
+      <h1 className="text-5xl font-bold mt-6">
+        2–4 Weeks
+      </h1>
+
+      <p className="text-gray-400 mt-6 leading-8">
+        Efficient manufacturing timelines
+        with export-quality standards.
+      </p>
+
+    </div>
+
+    {/* SHIPPING */}
+    <div className="border border-white/10 rounded-3xl p-10 bg-black">
+
+      <h2 className="text-3xl font-bold">
+        Shipping
+      </h2>
+
+      <h1 className="text-5xl font-bold mt-6">
+        Worldwide
+      </h1>
+
+      <p className="text-gray-400 mt-6 leading-8">
+        Global delivery with reliable
+        export logistics support.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
     {/* FINAL CTA */}
     <section className="text-center py-40 px-6">
 
@@ -613,7 +774,22 @@ export default function Page() {
       {view === "shop" && (
 
         <div className="p-6">
+{selectedCategory && (
+  <div className="mb-6 flex justify-between items-center">
 
+    <h2 className="text-xl font-bold">
+      Category: {selectedCategory}
+    </h2>
+
+    <button
+      onClick={() => setSelectedCategory("")}
+      className="border px-4 py-2 rounded-xl"
+    >
+      Clear Filter
+    </button>
+
+  </div>
+)}
           {/* SEARCH */}
 
           <input
@@ -850,6 +1026,7 @@ export default function Page() {
   <div className="relative z-10 max-w-7xl mx-auto px-6 py-28">
 
     {/* TOP AREA */}
+
     <div className="grid md:grid-cols-4 gap-16">
 
       {/* BRAND */}
