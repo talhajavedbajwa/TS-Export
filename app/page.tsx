@@ -1611,26 +1611,29 @@ const categories = [
         {/* SOCIALS */}
         <div className="flex gap-4 mt-8">
 
-          <a
-            href="#"
-            className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center hover:bg-white hover:text-black transition"
-          >
-            IG
-          </a>
+       <a
+  href="https://instagram.com/ri.zwana6887"
+  target="_blank"
+  className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center hover:bg-white hover:text-black transition"
+>
+  IG
+</a>
 
-          <a
-            href="#"
-            className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center hover:bg-white hover:text-black transition"
-          >
-            FB
-          </a>
+        <a
+  href="https://facebook.com/Rizwana Javed"
+  target="_blank"
+  className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center hover:bg-white hover:text-black transition"
+>
+  FB
+</a>
 
-          <a
-            href="#"
-            className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center hover:bg-white hover:text-black transition"
-          >
-            WA
-          </a>
+         <a
+  href="https://wa.me/923428145366"
+  target="_blank"
+  className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center hover:bg-white hover:text-black transition"
+>
+  WA
+</a>
 
         </div>
 
