@@ -47,6 +47,14 @@ export default function Page() {
   const [password, setPassword] = useState("");
 
  const [view, setView] = useState("home");
+ useEffect(() => {
+
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+
+}, [view]);
 
 /* POLICY PAGES */
 const policyPages = [
