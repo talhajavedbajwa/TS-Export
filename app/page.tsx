@@ -1653,26 +1653,18 @@ const categories = [
           </button>
 
           <button
-            onClick={() => setView("shop")}
-            className="block hover:text-white transition"
-          >
-            Products
-          </button>
+  onClick={() => setView("about")}
+  className="block hover:text-white transition"
+>
+  About Us
+</button>
 
-          <button
-            onClick={() => setView("about")}
-            className="block hover:text-white transition"
-          >
-            About Us
-          </button>
-
-          <button className="block hover:text-white transition">
-            OEM Manufacturing
-          </button>
-
-          <button className="block hover:text-white transition">
-            Global Shipping
-          </button>
+<button
+  onClick={() => setView("contact")}
+  className="block hover:text-white transition"
+>
+  Contact Us
+</button>
 
         </div>
 
@@ -1697,14 +1689,6 @@ const categories = [
 
           <button className="block hover:text-white transition">
             Cricket Uniforms
-          </button>
-
-          <button className="block hover:text-white transition">
-            Training Wear
-          </button>
-
-          <button className="block hover:text-white transition">
-            Hoodies
           </button>
 
         </div>
@@ -1747,11 +1731,14 @@ const categories = [
         </div>
 
         {/* BUTTON */}
-        <button className="mt-10 border border-white/20 px-8 py-4 rounded-full hover:bg-white hover:text-black transition">
+<button
+  onClick={() => setView("contact")}
+  className="mt-10 border border-white/20 px-8 py-4 rounded-full hover:bg-white hover:text-black transition"
+>
 
-          Contact Now
+  Contact Now
 
-        </button>
+</button>
 
       </div>
 
@@ -1786,9 +1773,14 @@ const categories = [
   <button
     onClick={async () => {
 
-      if (!subscriberEmail) {
-        return alert("Please enter your email");
-      }
+   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+if (!subscriberEmail || !emailRegex.test(subscriberEmail)) {
+
+  alert("Unsuccessful subscription. Please enter a valid email address.");
+
+  return;
+}
 
       try {
 
