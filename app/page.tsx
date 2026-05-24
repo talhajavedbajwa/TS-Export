@@ -46,7 +46,14 @@ export default function Page() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const [view, setView] = useState("home");
+ const [view, setView] = useState("home");
+
+/* POLICY PAGES */
+const policyPages = [
+  "privacy",
+  "terms",
+  "shipping"
+];
 
   const [search, setSearch] = useState("");
 
@@ -968,7 +975,7 @@ const categories = [
                     ${p.price}
                   </p>
 <a
-  href={`https://wa.me/03428145366?text=Hello, I want to inquire about: ${p.name}`}
+  href={`https://wa.me/923428145366?text=Hello, I want to inquire about: ${p.name}`}
   target="_blank"
   className="mt-4 block text-center bg-green-500 text-white py-3 rounded-xl"
 >
@@ -1162,6 +1169,262 @@ const categories = [
         </div>
 
       )}
+
+           {view === "contact" && (
+  <div className="max-w-7xl mx-auto px-6 py-24">
+
+    {/* HEADER */}
+    <div className="text-center mb-20">
+      <h1 className="text-5xl md:text-7xl font-bold">
+        Contact Us
+      </h1>
+      <p className="text-gray-400 mt-6 max-w-2xl mx-auto">
+        Get in touch with TS Exports for custom sportswear manufacturing,
+        bulk orders, OEM production, and global distribution.
+      </p>
+    </div>
+
+    {/* GRID */}
+    <div className="grid md:grid-cols-2 gap-16">
+
+      {/* LEFT - CONTACT INFO */}
+      <div className="space-y-8">
+
+        <div className="border border-white/10 p-8 rounded-3xl bg-white/[0.02]">
+          <h2 className="text-2xl font-bold">Location</h2>
+          <p className="text-gray-400 mt-3">Sialkot, Pakistan</p>
+        </div>
+
+        <div className="border border-white/10 p-8 rounded-3xl bg-white/[0.02]">
+          <h2 className="text-2xl font-bold">Email</h2>
+          <p className="text-gray-400 mt-3">info@tsexports.com</p>
+        </div>
+
+        <div className="border border-white/10 p-8 rounded-3xl bg-white/[0.02]">
+          <h2 className="text-2xl font-bold">WhatsApp</h2>
+          <p className="text-gray-400 mt-3">
+            +92 342 8145366
+          </p>
+
+          <a
+            href="https://wa.me/923428145366"
+            target="_blank"
+            className="inline-block mt-4 bg-green-500 text-white px-6 py-3 rounded-xl"
+          >
+            Chat on WhatsApp
+          </a>
+        </div>
+
+      </div>
+
+      {/* RIGHT - FORM */}
+      <div className="border border-white/10 p-10 rounded-3xl bg-white/[0.02]">
+
+        <h2 className="text-3xl font-bold mb-6">
+          Send Inquiry
+        </h2>
+
+        <input
+          placeholder="Your Name"
+          className="w-full p-4 mb-4 bg-white/10 rounded-xl"
+        />
+
+        <input
+          placeholder="Your Email"
+          className="w-full p-4 mb-4 bg-white/10 rounded-xl"
+        />
+
+        <input
+          placeholder="Company Name"
+          className="w-full p-4 mb-4 bg-white/10 rounded-xl"
+        />
+
+        <textarea
+          placeholder="Your Message"
+          className="w-full p-4 mb-6 bg-white/10 rounded-xl h-40"
+        />
+
+        <button
+          className="w-full bg-white text-black py-4 rounded-xl font-bold"
+        >
+          Send Message
+        </button>
+
+        <p className="text-gray-500 text-sm mt-4">
+          We usually respond within 24 hours.
+        </p>
+
+      </div>
+
+    </div>
+
+    {/* BOTTOM CTA */}
+    <div className="text-center mt-24">
+      <h2 className="text-4xl font-bold">
+        Let’s Build Your Brand Together
+      </h2>
+      <p className="text-gray-400 mt-4">
+        OEM manufacturing • Private label • Bulk export
+      </p>
+      
+
+    </div>
+
+  </div>
+  
+)}
+
+{/* PRIVACY POLICY */}
+{view === "privacy" && (
+
+  <div className="max-w-5xl mx-auto px-6 py-24">
+
+    <h1 className="text-5xl md:text-7xl font-bold mb-10">
+      Privacy Policy
+    </h1>
+
+    <div className="space-y-10 text-gray-400 leading-8">
+
+      <div>
+        <h2 className="text-2xl font-bold text-white mb-4">
+          Information Collection
+        </h2>
+
+        <p>
+          TS Exports collects customer information including names,
+          email addresses, phone numbers and shipping details
+          for communication, order processing and customer support.
+        </p>
+      </div>
+
+      <div>
+        <h2 className="text-2xl font-bold text-white mb-4">
+          Data Protection
+        </h2>
+
+        <p>
+          We maintain secure systems and never sell customer
+          information to third parties. Your information is used
+          only for business communication and order fulfillment.
+        </p>
+      </div>
+
+      <div>
+        <h2 className="text-2xl font-bold text-white mb-4">
+          Cookies & Analytics
+        </h2>
+
+        <p>
+          Our website may use cookies and analytics tools
+          to improve user experience and website performance.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+)}
+
+{/* TERMS PAGE */}
+{view === "terms" && (
+
+  <div className="max-w-5xl mx-auto px-6 py-24">
+
+    <h1 className="text-5xl md:text-7xl font-bold mb-10">
+      Terms & Conditions
+    </h1>
+
+    <div className="space-y-10 text-gray-400 leading-8">
+
+      <div>
+        <h2 className="text-2xl font-bold text-white mb-4">
+          Orders
+        </h2>
+
+        <p>
+          All orders are subject to confirmation,
+          production approval and payment verification.
+        </p>
+      </div>
+
+      <div>
+        <h2 className="text-2xl font-bold text-white mb-4">
+          Manufacturing
+        </h2>
+
+        <p>
+          Production timelines vary depending on quantity,
+          customization and fabric availability.
+        </p>
+      </div>
+
+      <div>
+        <h2 className="text-2xl font-bold text-white mb-4">
+          Payments
+        </h2>
+
+        <p>
+          Customers must complete agreed payment terms
+          before shipment dispatch.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+)}
+
+{/* SHIPPING POLICY */}
+{view === "shipping" && (
+
+  <div className="max-w-5xl mx-auto px-6 py-24">
+
+    <h1 className="text-5xl md:text-7xl font-bold mb-10">
+      Shipping Policy
+    </h1>
+
+    <div className="space-y-10 text-gray-400 leading-8">
+
+      <div>
+        <h2 className="text-2xl font-bold text-white mb-4">
+          Global Delivery
+        </h2>
+
+        <p>
+          TS Exports ships products worldwide using
+          trusted courier and cargo services.
+        </p>
+      </div>
+
+      <div>
+        <h2 className="text-2xl font-bold text-white mb-4">
+          Processing Time
+        </h2>
+
+        <p>
+          Sample orders typically require 5–7 days while
+          bulk production may require 2–4 weeks.
+        </p>
+      </div>
+
+      <div>
+        <h2 className="text-2xl font-bold text-white mb-4">
+          Tracking
+        </h2>
+
+        <p>
+          Tracking information is provided after shipment dispatch
+          for all international orders.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+)}
 
       {/* ULTRA PREMIUM FOOTER */}
 <footer className="relative border-t border-white/10 bg-black overflow-hidden">
@@ -1388,17 +1651,26 @@ const categories = [
 
       <div className="flex gap-8">
 
-        <button className="hover:text-white transition">
-          Privacy Policy
-        </button>
+       <button
+  onClick={() => setView("privacy")}
+  className="hover:text-white transition"
+>
+  Privacy Policy
+</button>
 
-        <button className="hover:text-white transition">
-          Terms & Conditions
-        </button>
+<button
+  onClick={() => setView("terms")}
+  className="hover:text-white transition"
+>
+  Terms & Conditions
+</button>
 
-        <button className="hover:text-white transition">
-          Shipping Policy
-        </button>
+<button
+  onClick={() => setView("shipping")}
+  className="hover:text-white transition"
+>
+  Shipping Policy
+</button>
 
       </div>
 
@@ -1406,110 +1678,8 @@ const categories = [
 
   </div>
 
-     {view === "contact" && (
-  <div className="max-w-7xl mx-auto px-6 py-24">
-
-    {/* HEADER */}
-    <div className="text-center mb-20">
-      <h1 className="text-5xl md:text-7xl font-bold">
-        Contact Us
-      </h1>
-      <p className="text-gray-400 mt-6 max-w-2xl mx-auto">
-        Get in touch with TS Exports for custom sportswear manufacturing,
-        bulk orders, OEM production, and global distribution.
-      </p>
-    </div>
-
-    {/* GRID */}
-    <div className="grid md:grid-cols-2 gap-16">
-
-      {/* LEFT - CONTACT INFO */}
-      <div className="space-y-8">
-
-        <div className="border border-white/10 p-8 rounded-3xl bg-white/[0.02]">
-          <h2 className="text-2xl font-bold">Location</h2>
-          <p className="text-gray-400 mt-3">Sialkot, Pakistan</p>
-        </div>
-
-        <div className="border border-white/10 p-8 rounded-3xl bg-white/[0.02]">
-          <h2 className="text-2xl font-bold">Email</h2>
-          <p className="text-gray-400 mt-3">info@tsexports.com</p>
-        </div>
-
-        <div className="border border-white/10 p-8 rounded-3xl bg-white/[0.02]">
-          <h2 className="text-2xl font-bold">WhatsApp</h2>
-          <p className="text-gray-400 mt-3">
-            +92 342 8145366
-          </p>
-
-          <a
-            href="https://wa.me/923428145366"
-            target="_blank"
-            className="inline-block mt-4 bg-green-500 text-white px-6 py-3 rounded-xl"
-          >
-            Chat on WhatsApp
-          </a>
-        </div>
-
-      </div>
-
-      {/* RIGHT - FORM */}
-      <div className="border border-white/10 p-10 rounded-3xl bg-white/[0.02]">
-
-        <h2 className="text-3xl font-bold mb-6">
-          Send Inquiry
-        </h2>
-
-        <input
-          placeholder="Your Name"
-          className="w-full p-4 mb-4 bg-white/10 rounded-xl"
-        />
-
-        <input
-          placeholder="Your Email"
-          className="w-full p-4 mb-4 bg-white/10 rounded-xl"
-        />
-
-        <input
-          placeholder="Company Name"
-          className="w-full p-4 mb-4 bg-white/10 rounded-xl"
-        />
-
-        <textarea
-          placeholder="Your Message"
-          className="w-full p-4 mb-6 bg-white/10 rounded-xl h-40"
-        />
-
-        <button
-          className="w-full bg-white text-black py-4 rounded-xl font-bold"
-        >
-          Send Message
-        </button>
-
-        <p className="text-gray-500 text-sm mt-4">
-          We usually respond within 24 hours.
-        </p>
-
-      </div>
-
-    </div>
-
-    {/* BOTTOM CTA */}
-    <div className="text-center mt-24">
-      <h2 className="text-4xl font-bold">
-        Let’s Build Your Brand Together
-      </h2>
-      <p className="text-gray-400 mt-4">
-        OEM manufacturing • Private label • Bulk export
-      </p>
-      
-
-    </div>
-
-  </div>
-  
-)}
 </footer>
+
 </div>
 );
 }
