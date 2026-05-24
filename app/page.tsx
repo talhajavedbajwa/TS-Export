@@ -47,6 +47,7 @@ export default function Page() {
   const [password, setPassword] = useState("");
 
  const [view, setView] = useState("home");
+ const [selectedCategory, setSelectedCategory] = useState("");
 useEffect(() => {
 
   // NORMAL PAGE CHANGE
@@ -85,7 +86,7 @@ const policyPages = [
 
   const [products, setProducts] = useState<any[]>([]);
 // CATEGORY FILTER (NEW)
-const [selectedCategory, setSelectedCategory] = useState("");
+
 const [currentSlide, setCurrentSlide] = useState(0);
   // ABOUT PAGE DATA (PREMIUM B2B STRUCTURE)
 
