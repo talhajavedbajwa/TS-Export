@@ -287,19 +287,49 @@ const heroSlides = [
   /* ---------------- FILTER ---------------- */
 // CATEGORY BLOCKS DATA (WEZIO STYLE)
 const categories = [
+
   {
-    name: "Football Wear",
+    name: "Football Uniforms",
     img: "https://images.unsplash.com/photo-1574629810360-7efbbe195018"
   },
+
   {
     name: "Gym Wear",
     img: "https://images.unsplash.com/photo-1518611012118-696072aa579a"
   },
+
   {
     name: "Cricket Uniforms",
     img: "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e"
+  },
+
+  {
+    name: "Tracksuits",
+    img: "https://images.unsplash.com/photo-1523398002811-999ca8dec234"
+  },
+
+  {
+    name: "Hoodies",
+    img: "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c"
+  },
+
+  {
+    name: "Compression Wear",
+    img: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438"
+  },
+
+  {
+    name: "Training Wear",
+    img: "https://images.unsplash.com/photo-1514996937319-344454492b37"
+  },
+
+  {
+    name: "Basketball Uniforms",
+    img: "https://images.unsplash.com/photo-1546519638-68e109498ffc"
   }
+
 ];
+
   const filteredProducts = products.filter((p: any) => {
 
   const matchSearch =
@@ -339,9 +369,11 @@ const categories = [
             About
           </button>
 
+          {admin && (
           <button onClick={() => setView("admin")}>
             Admin
           </button>
+          )}
 
           <button onClick={() => setView("contact")}>
             Contact
@@ -1241,14 +1273,48 @@ const categories = [
 
               {/* CATEGORY */}
 
-              <input
-                placeholder="Category"
-                value={form.category}
-                className="w-full p-4 mb-4 bg-white/10 border border-white/20 rounded-2xl"
-                onChange={(e) =>
-                  setForm({ ...form, category: e.target.value })
-                }
-              />
+              <select
+  value={form.category}
+  className="w-full p-4 mb-4 bg-white/10 border border-white/20 rounded-2xl"
+  onChange={(e) =>
+    setForm({ ...form, category: e.target.value })
+  }
+>
+
+  <option value="">Select Category</option>
+
+  {categories.map((cat, i) => (
+
+    <option
+      key={i}
+      value={cat.name}
+      className="text-black"
+    >
+      {cat.name}
+    </option>
+
+  ))}
+
+  <option value="Other" className="text-black">
+    Other
+  </option>
+
+</select>
+
+{form.category === "Other" && (
+
+  <input
+    placeholder="Custom Category"
+    className="w-full p-4 mb-4 bg-white/10 border border-white/20 rounded-2xl"
+    onChange={(e) =>
+      setForm({
+        ...form,
+        category: e.target.value
+      })
+    }
+  />
+
+)}
 
               {/* IMAGE URL */}
 
@@ -1846,30 +1912,24 @@ const categories = [
 
       </div>
 
-      {/* COLLECTIONS */}
-      <div>
+  <div className="space-y-5 text-gray-400">
 
-        <h2 className="text-xl font-semibold mb-8">
-          Collections
-        </h2>
+  {categories.map((cat, i) => (
 
-        <div className="space-y-5 text-gray-400">
+    <button
+      key={i}
+      onClick={() => {
+        setSelectedCategory(cat.name);
+        setView("shop");
+      }}
+      className="block hover:text-white transition"
+    >
+      {cat.name}
+    </button>
 
-          <button className="block hover:text-white transition">
-            Football Wear
-          </button>
+  ))}
 
-          <button className="block hover:text-white transition">
-            Gym Wear
-          </button>
-
-          <button className="block hover:text-white transition">
-            Cricket Uniforms
-          </button>
-
-        </div>
-
-      </div>
+</div>
 
       {/* CONTACT */}
       <div>
