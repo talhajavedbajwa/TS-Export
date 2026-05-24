@@ -61,6 +61,7 @@ const policyPages = [
   const [products, setProducts] = useState<any[]>([]);
 // CATEGORY FILTER (NEW)
 const [selectedCategory, setSelectedCategory] = useState("");
+const [currentSlide, setCurrentSlide] = useState(0);
   // ABOUT PAGE DATA (PREMIUM B2B STRUCTURE)
 
 const aboutStats = [
@@ -133,6 +134,22 @@ const [form, setForm] = useState({
     return () => unsub();
 
   }, []);
+
+  /* ---------------- AUTO HERO SLIDER ---------------- */
+
+useEffect(() => {
+
+  const interval = setInterval(() => {
+
+    setCurrentSlide((prev) =>
+      prev === 2 ? 0 : prev + 1
+    );
+
+  }, 4000);
+
+  return () => clearInterval(interval);
+
+}, []);
 
   /* ---------------- LOAD PRODUCTS ---------------- */
 
@@ -229,6 +246,36 @@ async function sendContactInquiry() {
   alert("Message sent successfully!");
 }
 
+/* ---------------- HERO SLIDES ---------------- */
+
+const heroSlides = [
+
+  {
+    title: "BUILT FOR GLOBAL BRANDS",
+    subtitle:
+      "Premium sportswear manufacturing with export-quality production and worldwide delivery.",
+    image:
+      "https://images.unsplash.com/photo-1517836357463-d25dfeac3438"
+  },
+
+  {
+    title: "PERFORMANCE MEETS LUXURY",
+    subtitle:
+      "Elite fabrics, precision stitching and premium athletic apparel for modern brands.",
+    image:
+      "https://images.unsplash.com/photo-1518611012118-696072aa579a"
+  },
+
+  {
+    title: "OEM & PRIVATE LABEL",
+    subtitle:
+      "Custom manufacturing solutions for clubs, startups and global sportswear companies.",
+    image:
+      "https://images.unsplash.com/photo-1523398002811-999ca8dec234"
+  }
+
+];
+
   /* ---------------- FILTER ---------------- */
 // CATEGORY BLOCKS DATA (WEZIO STYLE)
 const categories = [
@@ -300,42 +347,87 @@ const categories = [
 
   <div>
 
-    {/* HERO SECTION */}
-    <section className="relative h-screen flex items-center justify-center text-center overflow-hidden">
+{/* LUXURY HERO SLIDER */}
+<section className="relative h-screen overflow-hidden">
 
+  {/* SLIDES */}
+  {heroSlides.map((slide, index) => (
+
+    <div
+      key={index}
+      className={`absolute inset-0 transition-all duration-1000 ${
+        currentSlide === index
+          ? "opacity-100 scale-100"
+          : "opacity-0 scale-105"
+      }`}
+    >
+
+      {/* IMAGE */}
       <img
-        src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438"
-        className="absolute inset-0 w-full h-full object-cover"
+        src={slide.image}
+        className="w-full h-full object-cover"
       />
 
-      <div className="absolute inset-0 bg-black/70" />
+      {/* OVERLAY */}
+      <div className="absolute inset-0 bg-black/65" />
 
-      <div className="relative z-10 px-6">
+      {/* CONTENT */}
+      <div className="absolute inset-0 flex items-center justify-center text-center px-6">
 
-        <p className="uppercase tracking-[10px] text-gray-400 text-sm">
-          TS EXPORTS
-        </p>
+        <div className="max-w-4xl">
 
-        <h1 className="text-6xl md:text-8xl font-bold leading-tight mt-8">
-          BUILT FOR <br />
-          GLOBAL BRANDS
-        </h1>
+          <p className="uppercase tracking-[10px] text-gray-400 text-sm mb-6">
+            TS EXPORTS
+          </p>
 
-        <p className="max-w-2xl mx-auto mt-8 text-gray-300 text-lg leading-8">
-          Premium sportswear manufacturing from Sialkot with
-          export-quality production, modern fabrics and worldwide delivery.
-        </p>
+          <h1 className="text-6xl md:text-8xl font-bold leading-tight animate-pulse">
 
-        <button
-          onClick={() => setView("shop")}
-          className="mt-10 bg-white text-black px-8 py-4 rounded-full text-lg hover:scale-105 transition"
-        >
-          Explore Collection
-        </button>
+            {slide.title}
+
+          </h1>
+
+          <p className="text-gray-300 text-lg md:text-xl leading-8 mt-8 max-w-2xl mx-auto">
+
+            {slide.subtitle}
+
+          </p>
+
+          <button
+            onClick={() => setView("shop")}
+            className="mt-10 bg-white text-black px-8 py-4 rounded-full text-lg hover:scale-105 transition"
+          >
+            Explore Collection
+          </button>
+
+        </div>
 
       </div>
 
-    </section>
+    </div>
+
+  ))}
+
+  {/* SLIDER DOTS */}
+  <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex gap-4 z-20">
+
+    {heroSlides.map((_, index) => (
+
+      <button
+        key={index}
+        onClick={() => setCurrentSlide(index)}
+        className={`w-3 h-3 rounded-full transition ${
+          currentSlide === index
+            ? "bg-white scale-125"
+            : "bg-white/40"
+        }`}
+      />
+
+    ))}
+
+  </div>
+
+</section>
+
 {/* CATEGORY SECTION */}
 <section className="py-32 px-6">
 
