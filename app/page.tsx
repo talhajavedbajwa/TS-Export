@@ -56,6 +56,7 @@ const policyPages = [
 ];
 
   const [search, setSearch] = useState("");
+  const [subscriberEmail, setSubscriberEmail] = useState("");
 
   const [products, setProducts] = useState<any[]>([]);
 // CATEGORY FILTER (NEW)
@@ -1773,20 +1774,48 @@ const categories = [
 
         </div>
 
-        <div className="flex gap-4">
+      <div className="flex gap-4">
 
-          <input
-            placeholder="Enter your email"
-            className="flex-1 bg-white/5 border border-white/10 px-6 py-4 rounded-full outline-none"
-          />
+  <input
+    placeholder="Enter your email"
+    value={subscriberEmail}
+    onChange={(e) => setSubscriberEmail(e.target.value)}
+    className="flex-1 bg-white/5 border border-white/10 px-6 py-4 rounded-full outline-none"
+  />
 
-          <button className="bg-white text-black px-8 rounded-full hover:scale-105 transition">
+  <button
+    onClick={async () => {
 
-            Subscribe
+      if (!subscriberEmail) {
+        return alert("Please enter your email");
+      }
 
-          </button>
+      try {
 
-        </div>
+        await addDoc(collection(db, "subscribers"), {
+          email: subscriberEmail,
+          time: new Date().toISOString()
+        });
+
+        alert("Subscribed successfully!");
+
+        setSubscriberEmail("");
+
+      } catch (err) {
+
+        alert("Something went wrong");
+
+      }
+
+    }}
+    className="bg-white text-black px-8 rounded-full hover:scale-105 transition"
+  >
+
+    Subscribe
+
+  </button>
+
+</div>
 
       </div>
 
