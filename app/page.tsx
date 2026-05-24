@@ -47,14 +47,31 @@ export default function Page() {
   const [password, setPassword] = useState("");
 
  const [view, setView] = useState("home");
- useEffect(() => {
+useEffect(() => {
 
+  // NORMAL PAGE CHANGE
   window.scrollTo({
     top: 0,
     behavior: "smooth"
   });
 
-}, [view]);
+  // CATEGORY PRODUCTS SCROLL
+  if (view === "shop" && selectedCategory) {
+
+    setTimeout(() => {
+
+      const section =
+        document.getElementById("products-section");
+
+      section?.scrollIntoView({
+        behavior: "smooth"
+      });
+
+    }, 100);
+
+  }
+
+}, [view, selectedCategory]);
 
 /* POLICY PAGES */
 const policyPages = [
@@ -1088,7 +1105,10 @@ const categories = [
 
       {view === "shop" && (
 
-        <div className="p-6">
+  <div
+    id="products-section"
+    className="p-6"
+  >
 {selectedCategory && (
   <div className="mb-6 flex justify-between items-center">
 
@@ -1912,22 +1932,46 @@ const categories = [
 
       </div>
 
+ {/* PRODUCT CATEGORIES */}
+<div>
+
+  <h2 className="text-xl font-semibold mb-8">
+    Categories
+  </h2>
+
   <div className="space-y-5 text-gray-400">
 
-  {categories.map((cat, i) => (
+    {categories.map((cat, i) => (
 
-    <button
-      key={i}
-      onClick={() => {
-        setSelectedCategory(cat.name);
-        setView("shop");
-      }}
-      className="block hover:text-white transition"
-    >
-      {cat.name}
-    </button>
+      <button
+        key={i}
+        onClick={() => {
 
-  ))}
+          setSelectedCategory(cat.name);
+
+          setView("shop");
+
+          // SCROLL TO PRODUCTS TOP
+          setTimeout(() => {
+
+            const section =
+              document.getElementById("products-section");
+
+            section?.scrollIntoView({
+              behavior: "smooth"
+            });
+
+          }, 100);
+
+        }}
+        className="block hover:text-white transition"
+      >
+        {cat.name}
+      </button>
+
+    ))}
+
+  </div>
 
 </div>
 
