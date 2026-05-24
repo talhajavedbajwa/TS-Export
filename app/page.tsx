@@ -395,15 +395,22 @@ const categories = [
   <div className="absolute top-full left-0 mt-4 w-72 bg-black border border-white/10 rounded-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 overflow-hidden">
 
     {/* ALL PRODUCTS */}
-    <button
-      onClick={() => {
-        setSelectedCategory("");
-        setView("shop");
-      }}
-      className="w-full text-left px-6 py-4 hover:bg-white hover:text-black transition border-b border-white/10"
-    >
-      All Products
-    </button>
+   <button
+  onClick={() => {
+    setSelectedCategory("");
+    setView("shop");
+  }}
+  className="flex items-center gap-2 hover:text-gray-300 transition"
+>
+
+  Products
+
+  {/* DOWN ARROW */}
+  <span className="text-xs group-hover:rotate-180 transition duration-300">
+    ▼
+  </span>
+
+</button>
 
     {/* CATEGORY LIST */}
     {categories.map((cat, i) => (
