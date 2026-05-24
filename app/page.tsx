@@ -395,14 +395,31 @@ const categories = [
   <div className="absolute top-full left-0 mt-4 w-72 bg-black border border-white/10 rounded-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 overflow-hidden">
 
     {/* ALL PRODUCTS */}
-  <button
+<button
   onClick={() => {
     setSelectedCategory("");
     setView("shop");
   }}
-  className="hover:text-gray-300 transition"
+  className="flex items-center gap-2 hover:text-gray-300 transition font-medium"
 >
+
   Products
+
+  {/* LUXURY CHEVRON */}
+  <svg
+    className="w-4 h-4 mt-[1px] group-hover:rotate-180 transition duration-300"
+    fill="none"
+    stroke="currentColor"
+    viewBox="0 0 24 24"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M19 9l-7 7-7-7"
+    />
+  </svg>
+
 </button>
 
     {/* CATEGORY LIST */}
