@@ -1274,153 +1274,303 @@ const categories = [
   
 )}
 
-{/* PRIVACY POLICY */}
+{/* ================= PRIVACY POLICY ================= */}
 {view === "privacy" && (
 
-  <div className="max-w-5xl mx-auto px-6 py-24">
+  <div className="bg-black text-white">
 
-    <h1 className="text-5xl md:text-7xl font-bold mb-10">
-      Privacy Policy
-    </h1>
+    {/* HERO */}
+    <section className="relative py-40 px-6 text-center overflow-hidden">
 
-    <div className="space-y-10 text-gray-400 leading-8">
+      <div className="absolute inset-0 bg-gradient-to-b from-white/[0.03] to-transparent" />
 
-      <div>
-        <h2 className="text-2xl font-bold text-white mb-4">
-          Information Collection
-        </h2>
+      <div className="relative z-10 max-w-5xl mx-auto">
 
-        <p>
-          TS Exports collects customer information including names,
-          email addresses, phone numbers and shipping details
-          for communication, order processing and customer support.
+        <p className="uppercase tracking-[10px] text-gray-500 text-sm">
+          TS EXPORTS
         </p>
+
+        <h1 className="text-6xl md:text-8xl font-bold mt-8 leading-tight">
+          Privacy <br />
+          Policy
+        </h1>
+
+        <p className="text-gray-400 max-w-3xl mx-auto mt-10 leading-8 text-lg">
+          TS Exports values transparency, privacy and data protection.
+          This policy explains how information is collected, used and protected.
+        </p>
+
       </div>
 
-      <div>
-        <h2 className="text-2xl font-bold text-white mb-4">
-          Data Protection
-        </h2>
+    </section>
 
-        <p>
-          We maintain secure systems and never sell customer
-          information to third parties. Your information is used
-          only for business communication and order fulfillment.
-        </p>
+    {/* CONTENT */}
+    <section className="max-w-6xl mx-auto px-6 pb-32">
+
+      <div className="grid md:grid-cols-2 gap-10">
+
+        <div className="border border-white/10 rounded-3xl p-10 bg-white/[0.02]">
+          <h2 className="text-3xl font-bold mb-6">
+            Information We Collect
+          </h2>
+
+          <p className="text-gray-400 leading-8">
+            We may collect customer names, email addresses,
+            phone numbers, shipping information, inquiry details
+            and order-related information for communication,
+            production and delivery purposes.
+          </p>
+        </div>
+
+        <div className="border border-white/10 rounded-3xl p-10 bg-white/[0.02]">
+          <h2 className="text-3xl font-bold mb-6">
+            Usage Of Information
+          </h2>
+
+          <p className="text-gray-400 leading-8">
+            Information is used to process orders,
+            improve customer experience, provide support,
+            handle production updates and maintain
+            long-term business relationships.
+          </p>
+        </div>
+
+        <div className="border border-white/10 rounded-3xl p-10 bg-white/[0.02]">
+          <h2 className="text-3xl font-bold mb-6">
+            Security Protection
+          </h2>
+
+          <p className="text-gray-400 leading-8">
+            TS Exports implements secure systems
+            and restricted access procedures to
+            protect customer information from
+            unauthorized access or misuse.
+          </p>
+        </div>
+
+        <div className="border border-white/10 rounded-3xl p-10 bg-white/[0.02]">
+          <h2 className="text-3xl font-bold mb-6">
+            Third Party Services
+          </h2>
+
+          <p className="text-gray-400 leading-8">
+            Trusted third-party logistics, payment
+            and analytics services may process limited
+            information strictly required for business operations.
+          </p>
+        </div>
+
       </div>
 
-      <div>
-        <h2 className="text-2xl font-bold text-white mb-4">
-          Cookies & Analytics
+      {/* LARGE SECTION */}
+      <div className="mt-20 border border-white/10 rounded-3xl p-14 bg-white/[0.02]">
+
+        <h2 className="text-5xl font-bold mb-10">
+          Data Transparency
         </h2>
 
-        <p>
-          Our website may use cookies and analytics tools
-          to improve user experience and website performance.
+        <p className="text-gray-400 leading-9 text-lg">
+          We are committed to responsible data handling practices.
+          Customer information is never sold or distributed for
+          unauthorized marketing purposes. We continuously improve
+          our digital infrastructure to ensure secure communication,
+          safe inquiry handling and protected business transactions.
         </p>
+
       </div>
 
-    </div>
+    </section>
 
   </div>
 
 )}
 
-{/* TERMS PAGE */}
+{/* ================= TERMS ================= */}
 {view === "terms" && (
 
-  <div className="max-w-5xl mx-auto px-6 py-24">
+  <div className="bg-black text-white">
 
-    <h1 className="text-5xl md:text-7xl font-bold mb-10">
-      Terms & Conditions
-    </h1>
+    {/* HERO */}
+    <section className="py-40 px-6 text-center">
 
-    <div className="space-y-10 text-gray-400 leading-8">
+      <p className="uppercase tracking-[10px] text-gray-500 text-sm">
+        TS EXPORTS
+      </p>
 
-      <div>
-        <h2 className="text-2xl font-bold text-white mb-4">
-          Orders
-        </h2>
+      <h1 className="text-6xl md:text-8xl font-bold mt-8">
+        Terms & <br />
+        Conditions
+      </h1>
 
-        <p>
-          All orders are subject to confirmation,
-          production approval and payment verification.
-        </p>
+      <p className="text-gray-400 max-w-3xl mx-auto mt-10 leading-8 text-lg">
+        These terms define the conditions regarding manufacturing,
+        orders, payments, shipping and customer responsibilities.
+      </p>
+
+    </section>
+
+    {/* CONTENT */}
+    <section className="max-w-6xl mx-auto px-6 pb-32">
+
+      <div className="space-y-10">
+
+        <div className="border border-white/10 rounded-3xl p-12 bg-white/[0.02]">
+
+          <h2 className="text-4xl font-bold mb-6">
+            Orders & Confirmation
+          </h2>
+
+          <p className="text-gray-400 leading-9 text-lg">
+            All orders are subject to design approval,
+            payment verification and production scheduling.
+            Production begins only after final confirmation
+            from both parties.
+          </p>
+
+        </div>
+
+        <div className="border border-white/10 rounded-3xl p-12 bg-white/[0.02]">
+
+          <h2 className="text-4xl font-bold mb-6">
+            Manufacturing Process
+          </h2>
+
+          <p className="text-gray-400 leading-9 text-lg">
+            Production timelines may vary depending on
+            customization, fabric sourcing, seasonal demand
+            and order quantities. TS Exports maintains
+            export-grade quality control standards during production.
+          </p>
+
+        </div>
+
+        <div className="border border-white/10 rounded-3xl p-12 bg-white/[0.02]">
+
+          <h2 className="text-4xl font-bold mb-6">
+            Payments
+          </h2>
+
+          <p className="text-gray-400 leading-9 text-lg">
+            Customers are required to complete agreed
+            payment terms before shipment dispatch.
+            Delayed payments may affect production
+            and delivery timelines.
+          </p>
+
+        </div>
+
+        <div className="border border-white/10 rounded-3xl p-12 bg-white/[0.02]">
+
+          <h2 className="text-4xl font-bold mb-6">
+            Intellectual Property
+          </h2>
+
+          <p className="text-gray-400 leading-9 text-lg">
+            Customer logos, artwork and branding
+            remain the intellectual property of their respective owners.
+            TS Exports uses provided assets strictly for manufacturing purposes.
+          </p>
+
+        </div>
+
       </div>
 
-      <div>
-        <h2 className="text-2xl font-bold text-white mb-4">
-          Manufacturing
-        </h2>
-
-        <p>
-          Production timelines vary depending on quantity,
-          customization and fabric availability.
-        </p>
-      </div>
-
-      <div>
-        <h2 className="text-2xl font-bold text-white mb-4">
-          Payments
-        </h2>
-
-        <p>
-          Customers must complete agreed payment terms
-          before shipment dispatch.
-        </p>
-      </div>
-
-    </div>
+    </section>
 
   </div>
 
 )}
 
-{/* SHIPPING POLICY */}
+{/* ================= SHIPPING POLICY ================= */}
 {view === "shipping" && (
 
-  <div className="max-w-5xl mx-auto px-6 py-24">
+  <div className="bg-black text-white">
 
-    <h1 className="text-5xl md:text-7xl font-bold mb-10">
-      Shipping Policy
-    </h1>
+    {/* HERO */}
+    <section className="py-40 px-6 text-center">
 
-    <div className="space-y-10 text-gray-400 leading-8">
+      <p className="uppercase tracking-[10px] text-gray-500 text-sm">
+        GLOBAL EXPORT LOGISTICS
+      </p>
 
-      <div>
-        <h2 className="text-2xl font-bold text-white mb-4">
-          Global Delivery
-        </h2>
+      <h1 className="text-6xl md:text-8xl font-bold mt-8">
+        Shipping <br />
+        Policy
+      </h1>
 
-        <p>
-          TS Exports ships products worldwide using
-          trusted courier and cargo services.
-        </p>
+      <p className="text-gray-400 max-w-3xl mx-auto mt-10 leading-8 text-lg">
+        Fast, reliable and secure worldwide shipping
+        for samples, bulk orders and OEM manufacturing projects.
+      </p>
+
+    </section>
+
+    {/* CARDS */}
+    <section className="max-w-7xl mx-auto px-6 pb-32">
+
+      <div className="grid md:grid-cols-3 gap-8">
+
+        <div className="border border-white/10 rounded-3xl p-10 bg-white/[0.02]">
+
+          <h2 className="text-3xl font-bold mb-6">
+            Sample Orders
+          </h2>
+
+          <p className="text-gray-400 leading-8">
+            Sample development generally requires
+            5–7 business days depending on
+            customization requirements.
+          </p>
+
+        </div>
+
+        <div className="border border-white/10 rounded-3xl p-10 bg-white/[0.02]">
+
+          <h2 className="text-3xl font-bold mb-6">
+            Bulk Production
+          </h2>
+
+          <p className="text-gray-400 leading-8">
+            Bulk manufacturing timelines typically
+            range between 2–4 weeks depending
+            on order volume and fabric sourcing.
+          </p>
+
+        </div>
+
+        <div className="border border-white/10 rounded-3xl p-10 bg-white/[0.02]">
+
+          <h2 className="text-3xl font-bold mb-6">
+            Worldwide Delivery
+          </h2>
+
+          <p className="text-gray-400 leading-8">
+            TS Exports ships globally using trusted
+            logistics partners and export handling services.
+          </p>
+
+        </div>
+
       </div>
 
-      <div>
-        <h2 className="text-2xl font-bold text-white mb-4">
-          Processing Time
+      {/* BIG SECTION */}
+      <div className="mt-20 border border-white/10 rounded-3xl p-14 bg-white/[0.02]">
+
+        <h2 className="text-5xl font-bold mb-10">
+          Export Logistics Support
         </h2>
 
-        <p>
-          Sample orders typically require 5–7 days while
-          bulk production may require 2–4 weeks.
+        <p className="text-gray-400 leading-9 text-lg">
+          Our team provides complete export assistance including
+          shipment coordination, invoice handling, tracking support,
+          packaging standards and international dispatch management.
+          Customers receive shipment tracking details after dispatch
+          for transparent global delivery operations.
         </p>
+
       </div>
 
-      <div>
-        <h2 className="text-2xl font-bold text-white mb-4">
-          Tracking
-        </h2>
-
-        <p>
-          Tracking information is provided after shipment dispatch
-          for all international orders.
-        </p>
-      </div>
-
-    </div>
+    </section>
 
   </div>
 
