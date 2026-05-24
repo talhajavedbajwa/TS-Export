@@ -99,6 +99,13 @@ const whatWeProvide = [
   "Sample Development (5–7 Days)",
   "Worldwide Shipping Support"
 ];
+
+const [contactForm, setContactForm] = useState({
+  name: "",
+  email: "",
+  company: "",
+  message: ""
+});
 const [form, setForm] = useState({
     name: "",
     price: "",
@@ -184,6 +191,43 @@ const [form, setForm] = useState({
 
     loadProducts();
   }
+
+  /* ---------------- CONTACT FORM ---------------- */
+
+async function sendContactInquiry() {
+
+  // EMAIL VALIDATION
+  const emailRegex =
+    /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if (
+    !contactForm.name ||
+    !contactForm.email ||
+    !contactForm.message
+  ) {
+    return alert("Please fill all required fields.");
+  }
+
+  if (!emailRegex.test(contactForm.email)) {
+    return alert("Please enter a valid email address.");
+  }
+
+  // SAVE TO FIREBASE
+  await addDoc(collection(db, "contactMessages"), {
+    ...contactForm,
+    createdAt: new Date().toISOString()
+  });
+
+  // CLEAR FORM
+  setContactForm({
+    name: "",
+    email: "",
+    company: "",
+    message: ""
+  });
+
+  alert("Message sent successfully!");
+}
 
   /* ---------------- FILTER ---------------- */
 // CATEGORY BLOCKS DATA (WEZIO STYLE)
@@ -1226,30 +1270,59 @@ const categories = [
         </h2>
 
         <input
-          placeholder="Your Name"
-          className="w-full p-4 mb-4 bg-white/10 rounded-xl"
-        />
+  placeholder="Your Name"
+  value={contactForm.name}
+  onChange={(e) =>
+    setContactForm({
+      ...contactForm,
+      name: e.target.value
+    })
+  }
+  className="w-full p-4 mb-4 bg-white/10 rounded-xl"
+/>
 
         <input
-          placeholder="Your Email"
-          className="w-full p-4 mb-4 bg-white/10 rounded-xl"
-        />
+  placeholder="Your Email"
+  value={contactForm.email}
+  onChange={(e) =>
+    setContactForm({
+      ...contactForm,
+      email: e.target.value
+    })
+  }
+  className="w-full p-4 mb-4 bg-white/10 rounded-xl"
+/>
 
-        <input
-          placeholder="Company Name"
-          className="w-full p-4 mb-4 bg-white/10 rounded-xl"
-        />
+     <input
+  placeholder="Company Name"
+  value={contactForm.company}
+  onChange={(e) =>
+    setContactForm({
+      ...contactForm,
+      company: e.target.value
+    })
+  }
+  className="w-full p-4 mb-4 bg-white/10 rounded-xl"
+/>
 
-        <textarea
-          placeholder="Your Message"
-          className="w-full p-4 mb-6 bg-white/10 rounded-xl h-40"
-        />
+       <textarea
+  placeholder="Your Message"
+  value={contactForm.message}
+  onChange={(e) =>
+    setContactForm({
+      ...contactForm,
+      message: e.target.value
+    })
+  }
+  className="w-full p-4 mb-6 bg-white/10 rounded-xl h-40"
+/>
 
-        <button
-          className="w-full bg-white text-black py-4 rounded-xl font-bold"
-        >
-          Send Message
-        </button>
+      <button
+  onClick={sendContactInquiry}
+  className="w-full bg-white text-black py-4 rounded-xl font-bold"
+>
+  Send Message
+</button>
 
         <p className="text-gray-500 text-sm mt-4">
           We usually respond within 24 hours.
