@@ -308,17 +308,17 @@ const categories = [
 
   {
     name: "Football Uniforms",
-    img: "https://images.unsplash.com/photo-1574629810360-7efbbe195018"
+    img: "https://images.unsplash.com/photo-1551958219-acbc608c6377"
   },
 
   {
     name: "Gym Wear",
-    img: "https://images.unsplash.com/photo-1518611012118-696072aa579a"
+    img: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438"
   },
 
   {
     name: "Cricket Uniforms",
-    img: "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e"
+    img: "https://images.unsplash.com/photo-1624880357913-a8539238245b"
   },
 
   {
@@ -333,7 +333,7 @@ const categories = [
 
   {
     name: "Compression Wear",
-    img: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438"
+    img: "https://images.unsplash.com/photo-1518611012118-696072aa579a"
   },
 
   {
@@ -878,6 +878,144 @@ const categories = [
       </button>
 
     </div>
+
+  </div>
+
+</section>
+
+{/* MANUFACTURING SERVICES */}
+<section className="py-40 px-6 bg-zinc-950">
+
+  <div className="text-center mb-24">
+
+    <p className="uppercase tracking-[8px] text-gray-500 text-sm">
+      SERVICES
+    </p>
+
+    <h1 className="text-5xl md:text-7xl font-bold mt-6">
+      Manufacturing Services
+    </h1>
+
+  </div>
+
+  <div className="grid md:grid-cols-4 gap-8 max-w-7xl mx-auto">
+
+    <div className="bg-white rounded-3xl overflow-hidden text-black">
+
+      <img
+        src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b"
+        className="h-64 w-full object-cover"
+      />
+
+      <div className="p-8">
+        <h2 className="text-2xl font-bold">
+          OEM Manufacturing
+        </h2>
+
+        <p className="mt-4 text-gray-600 leading-7">
+          Full-scale OEM production for global brands.
+        </p>
+      </div>
+
+    </div>
+
+    <div className="bg-white rounded-3xl overflow-hidden text-black">
+
+      <img
+        src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
+        className="h-64 w-full object-cover"
+      />
+
+      <div className="p-8">
+        <h2 className="text-2xl font-bold">
+          Custom Designs
+        </h2>
+
+        <p className="mt-4 text-gray-600 leading-7">
+          Custom sublimation and private label solutions.
+        </p>
+      </div>
+
+    </div>
+
+    <div className="bg-white rounded-3xl overflow-hidden text-black">
+
+      <img
+        src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518"
+        className="h-64 w-full object-cover"
+      />
+
+      <div className="p-8">
+        <h2 className="text-2xl font-bold">
+          Sampling
+        </h2>
+
+        <p className="mt-4 text-gray-600 leading-7">
+          Fast prototype and sample development services.
+        </p>
+      </div>
+
+    </div>
+
+    <div className="bg-white rounded-3xl overflow-hidden text-black">
+
+      <img
+        src="https://images.unsplash.com/photo-1483985988355-763728e1935b"
+        className="h-64 w-full object-cover"
+      />
+
+      <div className="p-8">
+        <h2 className="text-2xl font-bold">
+          Global Export
+        </h2>
+
+        <p className="mt-4 text-gray-600 leading-7">
+          Worldwide logistics and export handling support.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+{/* CLIENTS */}
+<section className="py-24 px-6 bg-white text-black">
+
+  <div className="text-center mb-20">
+
+    <p className="uppercase tracking-[8px] text-gray-500 text-sm">
+      TRUSTED BY
+    </p>
+
+    <h1 className="text-5xl font-bold mt-6">
+      Global Partners
+    </h1>
+
+  </div>
+
+  <div className="grid md:grid-cols-5 gap-10 items-center max-w-6xl mx-auto opacity-70">
+
+    <h2 className="text-3xl font-bold text-center">
+      FITZONE
+    </h2>
+
+    <h2 className="text-3xl font-bold text-center">
+      ATHLEX
+    </h2>
+
+    <h2 className="text-3xl font-bold text-center">
+      VELORA
+    </h2>
+
+    <h2 className="text-3xl font-bold text-center">
+      SPORTIVA
+    </h2>
+
+    <h2 className="text-3xl font-bold text-center">
+      FORCEWEAR
+    </h2>
 
   </div>
 
@@ -1910,8 +2048,92 @@ const categories = [
 
 )}
 
+{/* BLOG SECTION */}
+<section className="py-40 px-6 bg-stone-100 text-black">
+
+  <div className="text-center mb-24">
+
+    <p className="uppercase tracking-[8px] text-gray-500 text-sm">
+      INSIGHTS
+    </p>
+
+    <h1 className="text-5xl md:text-7xl font-bold mt-6">
+      Latest Articles
+    </h1>
+
+  </div>
+
+  <div className="grid md:grid-cols-3 gap-10 max-w-7xl mx-auto">
+
+    <div className="bg-white rounded-3xl overflow-hidden shadow-xl">
+
+      <img
+        src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f"
+        className="h-72 w-full object-cover"
+      />
+
+      <div className="p-8">
+
+        <p className="text-gray-500 text-sm">
+          Manufacturing
+        </p>
+
+        <h2 className="text-3xl font-bold mt-4">
+          How Premium Sportswear Is Manufactured
+        </h2>
+
+      </div>
+
+    </div>
+
+    <div className="bg-white rounded-3xl overflow-hidden shadow-xl">
+
+      <img
+        src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab"
+        className="h-72 w-full object-cover"
+      />
+
+      <div className="p-8">
+
+        <p className="text-gray-500 text-sm">
+          Branding
+        </p>
+
+        <h2 className="text-3xl font-bold mt-4">
+          Building A Global Sportswear Brand
+        </h2>
+
+      </div>
+
+    </div>
+
+    <div className="bg-white rounded-3xl overflow-hidden shadow-xl">
+
+      <img
+        src="https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb"
+        className="h-72 w-full object-cover"
+      />
+
+      <div className="p-8">
+
+        <p className="text-gray-500 text-sm">
+          Export
+        </p>
+
+        <h2 className="text-3xl font-bold mt-4">
+          Why Sialkot Leads Sportswear Exports
+        </h2>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
       {/* ULTRA PREMIUM FOOTER */}
-<footer className="relative border-t border-white/10 bg-black overflow-hidden">
+<footer className="relative border-t border-black/10 bg-white text-black overflow-hidden">
 
   {/* BACKGROUND TEXT */}
   <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
@@ -1935,7 +2157,7 @@ const categories = [
           TS EXPORTS
         </h1>
 
-        <p className="text-gray-400 mt-8 leading-8">
+        <p className="text-gray-500 mt-8 leading-8">
           Premium sportswear manufacturer from Sialkot
           producing export-quality apparel for brands,
           teams and distributors worldwide.
@@ -1947,7 +2169,7 @@ const categories = [
        <a
   href="https://instagram.com/ri.zwana6887"
   target="_blank"
-  className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center hover:bg-white hover:text-black transition"
+  className="w-12 h-12 rounded-full border border-black/10 flex items-center justify-center hover:bg-white hover:text-black transition"
 >
   IG
 </a>
@@ -1955,7 +2177,7 @@ const categories = [
         <a
   href="https://facebook.com/Rizwana Javed"
   target="_blank"
-  className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center hover:bg-white hover:text-black transition"
+  className="w-12 h-12 rounded-full border border-black/10 flex items-center justify-center hover:bg-white hover:text-black transition"
 >
   FB
 </a>
@@ -1963,7 +2185,7 @@ const categories = [
          <a
   href="https://wa.me/923428145366"
   target="_blank"
-  className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center hover:bg-white hover:text-black transition"
+  className="w-12 h-12 rounded-full border border-black/10 flex items-center justify-center hover:bg-white hover:text-black transition"
 >
   WA
 </a>
@@ -1979,7 +2201,7 @@ const categories = [
           Quick Links
         </h2>
 
-        <div className="space-y-5 text-gray-400">
+        <div className="space-y-5 text-gray-500">
 
           <button
             onClick={() => setView("home")}
@@ -2013,7 +2235,7 @@ const categories = [
     Categories
   </h2>
 
-  <div className="space-y-5 text-gray-400">
+  <div className="space-y-5 text-gray-500">
 
     {categories.map((cat, i) => (
 
@@ -2056,7 +2278,7 @@ const categories = [
           Contact
         </h2>
 
-        <div className="space-y-6 text-gray-400 leading-7">
+        <div className="space-y-6 text-gray-500 leading-7">
 
           <div>
             <p className="text-white font-medium mb-1">
@@ -2099,13 +2321,13 @@ const categories = [
     </div>
 
     {/* NEWSLETTER */}
-    <div className="mt-32 border-t border-white/10 pt-16">
+    <div className="mt-32 border-t border-black/10 pt-16">
 
       <div className="grid md:grid-cols-2 gap-10 items-center">
 
         <div>
 
-          <p className="uppercase tracking-[8px] text-gray-500 text-sm">
+          <p className="uppercase tracking-[8px] text-gray-600 text-sm">
             STAY UPDATED
           </p>
 
@@ -2121,7 +2343,7 @@ const categories = [
     placeholder="Enter your email"
     value={subscriberEmail}
     onChange={(e) => setSubscriberEmail(e.target.value)}
-    className="flex-1 bg-white/5 border border-white/10 px-6 py-4 rounded-full outline-none"
+    className="flex-1 bg-white/5 border border-black/10 px-6 py-4 rounded-full outline-none"
   />
 
   <button
@@ -2168,7 +2390,7 @@ if (!subscriberEmail || !emailRegex.test(subscriberEmail)) {
     </div>
 
     {/* BOTTOM */}
-    <div className="mt-20 pt-10 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6 text-gray-500 text-sm">
+    <div className="mt-20 pt-10 border-t border-black/10 flex flex-col md:flex-row justify-between items-center gap-6 text-gray-500 text-sm">
 
       <p>
         © 2026 TS Exports. All rights reserved.
