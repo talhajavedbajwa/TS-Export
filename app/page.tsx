@@ -88,6 +88,52 @@ const policyPages = [
 // CATEGORY FILTER (NEW)
 
 const [currentSlide, setCurrentSlide] = useState(0);
+/* BLOG SYSTEM */
+const [selectedBlog, setSelectedBlog] = useState<any>(null);
+
+const blogs = [
+
+  {
+    id: 1,
+    title: "How Premium Sportswear Is Manufactured",
+    category: "Manufacturing",
+    image:
+      "https://images.unsplash.com/photo-1522202176988-66273c2fd55f",
+    content:
+      "TS Exports follows a complete premium manufacturing workflow including fabric sourcing, cutting, sublimation printing, stitching, quality inspection and export packaging. Every product is developed with export-quality standards to ensure durability, comfort and elite performance."
+  },
+
+  {
+    id: 2,
+    title: "OEM & Private Label Production Explained",
+    category: "OEM Services",
+    image:
+      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3",
+    content:
+      "OEM manufacturing allows global brands to build custom sportswear under their own brand identity. TS Exports provides logo printing, labels, packaging, custom designs and full-scale private label production for startups and established companies."
+  },
+
+  {
+    id: 3,
+    title: "Why Sialkot Leads The Sportswear Industry",
+    category: "Industry",
+    image:
+      "https://images.unsplash.com/photo-1507679799987-c73779587ccf",
+    content:
+      "Sialkot is globally recognized for sports manufacturing excellence. The city produces world-class sportswear, footballs and athletic apparel for international brands due to its skilled workforce, manufacturing expertise and export infrastructure."
+  },
+
+  {
+    id: 4,
+    title: "How To Start Your Own Sportswear Brand",
+    category: "Branding",
+    image:
+      "https://images.unsplash.com/photo-1497366754035-f200968a6e72",
+    content:
+      "Starting a sportswear brand requires strong manufacturing partnerships, quality fabrics, reliable production and premium branding. TS Exports helps startups build collections from concept development to final export delivery."
+  }
+
+];
   // ABOUT PAGE DATA (PREMIUM B2B STRUCTURE)
 
 const aboutStats = [
@@ -465,6 +511,10 @@ const categories = [
             Admin
           </button>
           )}
+
+          <button onClick={() => setView("blogs")}>
+  Blogs
+</button>
 
           <button onClick={() => setView("contact")}>
             Contact
@@ -1746,6 +1796,166 @@ const categories = [
   
 )}
 
+{/* BLOGS PAGE */}
+{view === "blogs" && !selectedBlog && (
+
+  <div className="bg-[#f5f5f5] text-black min-h-screen">
+
+    {/* HERO */}
+    <section className="py-32 px-6 text-center">
+
+      <p className="uppercase tracking-[8px] text-gray-500 text-sm">
+        TS EXPORTS BLOGS
+      </p>
+
+      <h1 className="text-6xl md:text-8xl font-bold mt-6">
+        Manufacturing <br />
+        Insights
+      </h1>
+
+      <p className="max-w-3xl mx-auto mt-8 text-gray-600 leading-8 text-lg">
+        Explore sportswear manufacturing,
+        OEM production, branding and export industry insights.
+      </p>
+
+    </section>
+
+    {/* BLOG GRID */}
+    <section className="max-w-7xl mx-auto px-6 pb-32">
+
+      <div className="grid md:grid-cols-2 gap-10">
+
+        {blogs.map((blog) => (
+
+          <div
+            key={blog.id}
+            onClick={() => setSelectedBlog(blog)}
+            className="bg-white rounded-[40px] overflow-hidden shadow-xl cursor-pointer hover:-translate-y-2 transition duration-500"
+          >
+
+            <img
+              src={blog.image}
+              className="w-full h-[320px] object-cover"
+            />
+
+            <div className="p-10">
+
+              <p className="uppercase tracking-[5px] text-gray-500 text-sm">
+                {blog.category}
+              </p>
+
+              <h2 className="text-4xl font-bold mt-5 leading-tight">
+                {blog.title}
+              </h2>
+
+              <button className="mt-8 border border-black px-6 py-3 rounded-full hover:bg-black hover:text-white transition">
+
+                Read Article
+
+              </button>
+
+            </div>
+
+          </div>
+
+        ))}
+
+      </div>
+
+    </section>
+
+  </div>
+
+)}
+
+{/* SINGLE BLOG PAGE */}
+{selectedBlog && (
+
+  <div className="bg-white text-black min-h-screen">
+
+    {/* HERO IMAGE */}
+    <section className="relative h-[700px]">
+
+      <img
+        src={selectedBlog.image}
+        className="w-full h-full object-cover"
+      />
+
+      <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
+
+        <div className="text-center px-6 text-white max-w-5xl">
+
+          <p className="uppercase tracking-[8px] text-gray-300 text-sm">
+            {selectedBlog.category}
+          </p>
+
+          <h1 className="text-5xl md:text-8xl font-bold mt-8 leading-tight">
+            {selectedBlog.title}
+          </h1>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    {/* CONTENT */}
+    <section className="max-w-5xl mx-auto px-6 py-32">
+
+      <p className="text-2xl leading-[55px] text-gray-700">
+        {selectedBlog.content}
+      </p>
+
+      {/* EXTRA CONTENT */}
+      <div className="mt-20 grid md:grid-cols-2 gap-10">
+
+        <div className="bg-[#f5f5f5] p-10 rounded-[35px]">
+
+          <h2 className="text-3xl font-bold mb-6">
+            Manufacturing Expertise
+          </h2>
+
+          <p className="text-gray-600 leading-8">
+            TS Exports uses premium fabrics,
+            advanced stitching systems and
+            export-quality production methods
+            trusted by global clients.
+          </p>
+
+        </div>
+
+        <div className="bg-[#f5f5f5] p-10 rounded-[35px]">
+
+          <h2 className="text-3xl font-bold mb-6">
+            Global Export Standards
+          </h2>
+
+          <p className="text-gray-600 leading-8">
+            Every product passes quality checks,
+            sizing inspection and export packaging
+            before worldwide shipment dispatch.
+          </p>
+
+        </div>
+
+      </div>
+
+      {/* BACK BUTTON */}
+      <button
+        onClick={() => setSelectedBlog(null)}
+        className="mt-20 bg-black text-white px-10 py-5 rounded-full"
+      >
+
+        Back To Blogs
+
+      </button>
+
+    </section>
+
+  </div>
+
+)}
+
 {/* ================= PRIVACY POLICY ================= */}
 {view === "privacy" && (
 
@@ -2222,6 +2432,13 @@ const categories = [
   className="block hover:text-white transition"
 >
   Contact Us
+</button>
+
+<button
+  onClick={() => setView("blogs")}
+  className="block hover:text-white transition"
+>
+  Blogs
 </button>
 
         </div>
