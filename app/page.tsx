@@ -567,7 +567,7 @@ text-sm
   <div className="overflow-x-hidden">
 
 {/* LUXURY HERO SLIDER */}
-<section className="relative min-h-screen overflow-hidden px-6">
+<section className="relative min-h-screen overflow-hidden px-6 pt-20">
 
   {/* SLIDES */}
   {heroSlides.map((slide, index) => (
@@ -592,7 +592,7 @@ text-sm
       <div className="absolute inset-0 bg-black/65" />
 
       {/* CONTENT */}
-      <div className="absolute inset-0 flex items-center justify-center text-center px-6 pt-32">
+      <div className="absolute inset-0 flex items-center justify-center text-center px-6 pt-24">
 
         <div className="max-w-4xl">
 
@@ -601,16 +601,17 @@ text-sm
           </p>
 
           <h1 className="
-          text-[42px]
-          sm:text-[42px]
-          md:text-[100px]
-          lg:text-[120px]
-          font-semibold
-          leading-tight
-          tracking-[-3px]
-          uppercase
-          px-2
-          ">
+text-[34px]
+sm:text-[52px]
+md:text-[88px]
+lg:text-[110px]
+font-semibold
+leading-[0.9]
+tracking-[-2px]
+uppercase
+max-w-5xl
+mx-auto
+">
 
             {slide.title}
 
@@ -618,15 +619,16 @@ text-sm
 
           <p 
   className="
-  text-gray-300
-  text-lg
-  md:text-2xl
-  leading-10
-  mt-10
-  max-w-3xl
-  mx-auto
-  font-light
-  "
+text-gray-300
+text-base
+md:text-xl
+leading-8
+mt-6
+max-w-2xl
+mx-auto
+font-light
+px-2
+"
 >
 
             {slide.subtitle}
@@ -636,11 +638,11 @@ text-sm
           <button
             onClick={() => setView("shop")}
             className="
-mt-14
+mt-8
 border border-white
-px-10 py-5
-uppercase tracking-[4px]
-text-sm
+px-8 py-4
+uppercase tracking-[3px]
+text-xs md:text-sm
 hover:bg-white
 hover:text-black
 transition-all duration-500
