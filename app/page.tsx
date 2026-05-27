@@ -601,20 +601,16 @@ text-sm
           </p>
 
           <h1 className="
-text-[52px]
-sm:text-[72px]
-md:text-[110px]
-lg:text-[140px]
-xl:text-[170px]
-font-black
-leading-[0.9]
-tracking-[-4px]
-uppercase
-break-words
-max-w-full
-overflow-hidden
-px-2
-">
+          text-[42px]
+          sm:text-[58px]
+          md:text-[100px]
+          lg:text-[120px]
+          font-semibold
+          leading-tight
+          tracking-[-3px]
+          uppercase
+          px-2
+          ">
 
             {slide.title}
 
