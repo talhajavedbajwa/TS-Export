@@ -98,7 +98,7 @@ const blogs = [
     title: "How Premium Sportswear Is Manufactured",
     category: "Manufacturing",
     image:
-      "https://images.unsplash.com/photo-1522202176988-66273c2fd55f",
+      "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1600&auto=format&fit=crop",
     content:
       "TS Exports follows a complete premium manufacturing workflow including fabric sourcing, cutting, sublimation printing, stitching, quality inspection and export packaging. Every product is developed with export-quality standards to ensure durability, comfort and elite performance."
   },
@@ -108,7 +108,7 @@ const blogs = [
     title: "OEM & Private Label Production Explained",
     category: "OEM Services",
     image:
-      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3",
+      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1600&auto=format&fit=crop",
     content:
       "OEM manufacturing allows global brands to build custom sportswear under their own brand identity. TS Exports provides logo printing, labels, packaging, custom designs and full-scale private label production for startups and established companies."
   },
@@ -118,7 +118,7 @@ const blogs = [
     title: "Why Sialkot Leads The Sportswear Industry",
     category: "Industry",
     image:
-      "https://images.unsplash.com/photo-1507679799987-c73779587ccf",
+      "https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=1600&auto=format&fit=crop",
     content:
       "Sialkot is globally recognized for sports manufacturing excellence. The city produces world-class sportswear, footballs and athletic apparel for international brands due to its skilled workforce, manufacturing expertise and export infrastructure."
   },
@@ -128,7 +128,7 @@ const blogs = [
     title: "How To Start Your Own Sportswear Brand",
     category: "Branding",
     image:
-      "https://images.unsplash.com/photo-1497366754035-f200968a6e72",
+      "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1600&auto=format&fit=crop",
     content:
       "Starting a sportswear brand requires strong manufacturing partnerships, quality fabrics, reliable production and premium branding. TS Exports helps startups build collections from concept development to final export delivery."
   }
@@ -327,7 +327,7 @@ const heroSlides = [
     subtitle:
       "Premium sportswear manufacturing with export-quality production and worldwide delivery.",
     image:
-      "https://images.unsplash.com/photo-1517836357463-d25dfeac3438"
+      "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1600&auto=format&fit=crop"
   },
 
   {
@@ -335,7 +335,7 @@ const heroSlides = [
     subtitle:
       "Elite fabrics, precision stitching and premium athletic apparel for modern brands.",
     image:
-      "https://images.unsplash.com/photo-1518611012118-696072aa579a"
+      "https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1600&auto=format&fit=crop"
   },
 
   {
@@ -343,7 +343,7 @@ const heroSlides = [
     subtitle:
       "Custom manufacturing solutions for clubs, startups and global sportswear companies.",
     image:
-      "https://images.unsplash.com/photo-1523398002811-999ca8dec234"
+      "https://images.unsplash.com/photo-1523398002811-999ca8dec234?q=80&w=1600&auto=format&fit=crop"
   }
 
 ];
@@ -354,42 +354,42 @@ const categories = [
 
   {
     name: "Football Uniforms",
-    img: "https://images.unsplash.com/photo-1551958219-acbc608c6377"
+    img: "https://ajeerindustries.com/wp-content/uploads/2025/12/soccer-jersey-shorts-manufacturer.webp?q=80&w=1600&auto=format&fit=crop"
   },
 
   {
     name: "Gym Wear",
-    img: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438"
+    img: "https://icdn.tradew.com/file/202012/1574750/jpg/8335618.jpg?q=80&w=1600&auto=format&fit=crop"
   },
 
   {
     name: "Cricket Uniforms",
-    img: "https://images.unsplash.com/photo-1624880357913-a8539238245b"
+    img: "https://www.drhsports.com/uploaded_files/category_images/Cricket-Trousers21_03_2024_12_15_15.jpg?q=80&w=1600&auto=format&fit=crop"
   },
 
   {
     name: "Tracksuits",
-    img: "https://images.unsplash.com/photo-1523398002811-999ca8dec234"
+    img: "https://5.imimg.com/data5/SELLER/Default/2024/8/445681821/BI/RE/NF/73260699/hyflash-aala04583-500x500.jpg?q=80&w=1600&auto=format&fit=crop"
   },
 
   {
     name: "Hoodies",
-    img: "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c"
+    img: "https://argusapparel.com/wp-content/uploads/2024/01/newhoodie4_2000x.jpg?q=80&w=1600&auto=format&fit=crop"
   },
 
   {
     name: "Compression Wear",
-    img: "https://images.unsplash.com/photo-1518611012118-696072aa579a"
+    img: "https://icdn.tradew.com/file/202309/1575986/jpg/8084193.jpg?x-oss-process=image/resize,w_400/quality,Q_90?q=80&w=1600&auto=format&fit=crop"
   },
 
   {
     name: "Training Wear",
-    img: "https://images.unsplash.com/photo-1514996937319-344454492b37"
+    img: "https://cheezclothing.com/wp-content/uploads/2024/06/Men-Tank-Top-Casual-Sleeveless-Tops-Quick-Dry-Tank-T-Shirt-Vest-Top-For-Gym_ce61a97e-2dff-45c0-95f0-106b8125b0aa.22860232022cf00cd11d623dc89e9bf9.webp?q=80&w=1600&auto=format&fit=crop"
   },
 
   {
     name: "Basketball Uniforms",
-    img: "https://images.unsplash.com/photo-1546519638-68e109498ffc"
+    img: "https://www.alanicglobal.com/wp-content/uploads/2026/05/lightweight-basketball-uniforms.jpg?q=80&w=1600&auto=format&fit=crop"
   }
 
 ];
@@ -409,17 +409,33 @@ const categories = [
 
   return (
 
-    <div className="min-h-screen bg-black text-white">
+    <div className="
+min-h-screen
+bg-[#050505]
+text-white
+overflow-x-hidden
+selection:bg-white
+selection:text-black
+antialiased
+">
 
       {/* NAVBAR */}
 
-      <div className="sticky top-0 z-50 flex justify-between items-center px-6 py-5 border-b border-white/10 bg-black">
+      <div className="
+fixed top-0 left-0 w-full z-50
+flex justify-between items-center
+px-10 py-4
+backdrop-blur-xl
+bg-black/20
+border-b border-white/5 shadow-[0_8px_32px_rgba(0,0,0,0.4)]
+transition-all duration-500
+">
 
         <h1 className="font-bold text-2xl tracking-wide">
           TS EXPORTS
         </h1>
 
-        <div className="flex gap-6 text-sm">
+        <div className="flex gap-12 text-[13px] uppercase tracking-[4px] font-light items-center">
 
           <button onClick={() => setView("home")}>
             Home
@@ -432,13 +448,37 @@ const categories = [
       setSelectedCategory("");
       setView("shop");
     }}
-    className="hover:text-gray-300 transition"
+    className="
+    flex items-center gap-2
+    hover:text-gray-300
+    transition
+    "
   >
     Products
+
+    {/* LUXURY ARROW */}
+    <svg
+      className="
+      w-4 h-4
+      transition duration-300
+      group-hover:rotate-180
+      "
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M19 9l-7 7-7-7"
+      />
+    </svg>
+
   </button>
 
   {/* DROPDOWN */}
-  <div className="absolute top-full left-0 mt-4 w-72 bg-black border border-white/10 rounded-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 overflow-hidden">
+  <div className="absolute top-full left-0 mt-6 w-80 backdrop-blur-2xl bg-white/10 border border-white/10 rounded-3xl opacity-0 invisible translate-y-4 group-hover:translate-y-0 group-hover:opacity-100 group-hover:visible transition-all duration-500 z-50 overflow-hidden shadow-[0_20px_80px_rgba(0,0,0,0.6)]">
 
     {/* ALL PRODUCTS */}
 <button
@@ -446,26 +486,17 @@ const categories = [
     setSelectedCategory("");
     setView("shop");
   }}
-  className="flex items-center gap-2 hover:text-gray-300 transition font-medium"
+  className="
+  w-full text-left
+  px-6 py-4
+  border-b border-white/10
+  hover:bg-white/10
+  transition
+  uppercase tracking-[2px]
+  text-sm
+  "
 >
-
-  Products
-
-  {/* LUXURY CHEVRON */}
-  <svg
-    className="w-4 h-4 mt-[1px] group-hover:rotate-180 transition duration-300"
-    fill="none"
-    stroke="currentColor"
-    viewBox="0 0 24 24"
-  >
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      d="M19 9l-7 7-7-7"
-    />
-  </svg>
-
+  All Products
 </button>
 
     {/* CATEGORY LIST */}
@@ -491,7 +522,14 @@ const categories = [
           }, 100);
 
         }}
-        className="w-full text-left px-6 py-4 hover:bg-white hover:text-black transition"
+        className="
+w-full text-left
+px-6 py-4
+hover:bg-white/10
+transition
+uppercase tracking-[2px]
+text-sm
+"
       >
         {cat.name}
       </button>
@@ -529,7 +567,7 @@ const categories = [
   <div>
 
 {/* LUXURY HERO SLIDER */}
-<section className="relative h-screen overflow-hidden">
+<section className="relative h-screen overflow-hidden bg-black">
 
   {/* SLIDES */}
   {heroSlides.map((slide, index) => (
@@ -546,7 +584,8 @@ const categories = [
       {/* IMAGE */}
       <img
         src={slide.image}
-        className="w-full h-full object-cover"
+        loading="lazy"
+        className="w-full h-full object-cover scale-105 animate-[pulse_8s_ease-in-out_infinite]"
       />
 
       {/* OVERLAY */}
@@ -561,13 +600,31 @@ const categories = [
             TS EXPORTS
           </p>
 
-          <h1 className="text-6xl md:text-8xl font-bold leading-tight animate-pulse">
+          <h1 className="
+text-[58px]
+md:text-[160px]
+font-bold
+leading-none
+tracking-[-6px]
+uppercase
+">
 
             {slide.title}
 
           </h1>
 
-          <p className="text-gray-300 text-lg md:text-xl leading-8 mt-8 max-w-2xl mx-auto">
+          <p 
+  className="
+  text-gray-300
+  text-lg
+  md:text-2xl
+  leading-10
+  mt-10
+  max-w-3xl
+  mx-auto
+  font-light
+  "
+>
 
             {slide.subtitle}
 
@@ -575,7 +632,16 @@ const categories = [
 
           <button
             onClick={() => setView("shop")}
-            className="mt-10 bg-white text-black px-8 py-4 rounded-full text-lg hover:scale-105 transition"
+            className="
+mt-14
+border border-white
+px-10 py-5
+uppercase tracking-[4px]
+text-sm
+hover:bg-white
+hover:text-black
+transition-all duration-500
+"
           >
             Explore Collection
           </button>
@@ -636,13 +702,14 @@ const categories = [
 
         <img
           src={cat.img}
-          className="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+          loading="lazy"
+className="w-full h-full rounded-[40px] object-cover group-hover:scale-110 transition-all duration-700 ease-out transform-gpu will-change-transform"
         />
 
         <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent" />
 
-        <div className="absolute bottom-8 left-8">
-          <h2 className="text-3xl font-bold">
+        <div className="group absolute bottom-8 left-8">
+          <h2 className="text-3xl font-black tracking-tight group-hover:translate-x-2 transition duration-500">
             {cat.name}
           </h2>
           <p className="text-gray-300 text-sm mt-2">
@@ -657,115 +724,153 @@ const categories = [
   </div>
 
 </section>
-    {/* COLLECTIONS */}
-    <section className="py-32 px-6 bg-black">
 
-      <div className="text-center mb-20">
-
-        <p className="uppercase tracking-[8px] text-gray-500 text-sm">
-          COLLECTIONS
-        </p>
-
-        <h1 className="text-5xl md:text-7xl font-bold mt-4">
-          Premium Categories
-        </h1>
-
-      </div>
-
-      <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
-
-        {/* CARD 1 */}
-        <div className="group relative overflow-hidden rounded-3xl h-[500px]">
-
-          <img
-            src="https://images.unsplash.com/photo-1574629810360-7efbbe195018"
-            className="w-full h-full object-cover group-hover:scale-110 transition duration-700"
-          />
-
-          <div className="absolute inset-0 bg-black/40" />
-
-          <div className="absolute bottom-10 left-10">
-
-            <h2 className="text-4xl font-bold">
-              Football Wear
-            </h2>
-
-          </div>
-
-        </div>
-
-        {/* CARD 2 */}
-        <div className="group relative overflow-hidden rounded-3xl h-[500px]">
-
-          <img
-            src="https://images.unsplash.com/photo-1518611012118-696072aa579a"
-            className="w-full h-full object-cover group-hover:scale-110 transition duration-700"
-          />
-
-          <div className="absolute inset-0 bg-black/40" />
-
-          <div className="absolute bottom-10 left-10">
-
-            <h2 className="text-4xl font-bold">
-              Gym Wear
-            </h2>
-
-          </div>
-
-        </div>
-
-        {/* CARD 3 */}
-        <div className="group relative overflow-hidden rounded-3xl h-[500px]">
-
-          <img
-            src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e"
-            className="w-full h-full object-cover group-hover:scale-110 transition duration-700"
-          />
-
-          <div className="absolute inset-0 bg-black/40" />
-
-          <div className="absolute bottom-10 left-10">
-
-            <h2 className="text-4xl font-bold">
-              Cricket Uniforms
-            </h2>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
+<div className="max-w-7xl mx-auto border-t border-white/5" />
     {/* STATS */}
     <section className="py-32 px-6">
 
       <div className="grid md:grid-cols-4 gap-6 max-w-7xl mx-auto text-center">
 
-        <div className="border border-white/10 p-10 rounded-3xl bg-white/[0.02]">
-          <h1 className="text-6xl font-bold">50+</h1>
+        <div className="
+group
+border border-white/10
+p-10
+rounded-[40px]
+bg-white/[0.03]
+backdrop-blur-xl
+hover:bg-white/[0.06]
+hover:-translate-y-3
+hover:scale-[1.02]
+hover:border-white/20
+transition-all duration-500
+hover:shadow-[0_20px_60px_rgba(255,255,255,0.08)]
+relative
+before:absolute
+before:inset-0
+before:bg-gradient-to-b
+before:from-white/[0.06]
+before:to-transparent
+before:opacity-0
+hover:before:opacity-100
+before:transition
+before:duration-500
+">
+          <h1 className="
+text-6xl md:text-7xl
+font-black
+tracking-tight
+bg-gradient-to-r from-white to-gray-500
+bg-clip-text text-transparent
+">50+</h1>
           <p className="text-gray-400 mt-4">Global Clients</p>
         </div>
-
-        <div className="border border-white/10 p-10 rounded-3xl bg-white/[0.02]">
-          <h1 className="text-6xl font-bold">20K+</h1>
+<div className="
+group
+border border-white/10
+p-10
+rounded-[40px]
+bg-white/[0.03]
+backdrop-blur-xl
+hover:bg-white/[0.06]
+hover:-translate-y-3
+hover:scale-[1.02]
+hover:border-white/20
+transition-all duration-500
+hover:shadow-[0_20px_60px_rgba(255,255,255,0.08)]
+relative
+before:absolute
+before:inset-0
+before:bg-gradient-to-b
+before:from-white/[0.06]
+before:to-transparent
+before:opacity-0
+hover:before:opacity-100
+before:transition
+before:duration-500
+">
+          <h1 className="
+text-6xl md:text-7xl
+font-black
+tracking-tight
+bg-gradient-to-r from-white to-gray-500
+bg-clip-text text-transparent
+">20K+</h1>
           <p className="text-gray-400 mt-4">Products Exported</p>
         </div>
 
-        <div className="border border-white/10 p-10 rounded-3xl bg-white/[0.02]">
-          <h1 className="text-6xl font-bold">15+</h1>
+       <div className="
+group
+border border-white/10
+p-10
+rounded-[40px]
+bg-white/[0.03]
+backdrop-blur-xl
+hover:bg-white/[0.06]
+hover:-translate-y-3
+hover:scale-[1.02]
+hover:border-white/20
+transition-all duration-500
+hover:shadow-[0_20px_60px_rgba(255,255,255,0.08)]
+relative
+before:absolute
+before:inset-0
+before:bg-gradient-to-b
+before:from-white/[0.06]
+before:to-transparent
+before:opacity-0
+hover:before:opacity-100
+before:transition
+before:duration-500
+">
+          <h1 className="
+text-6xl md:text-7xl
+font-black
+tracking-tight
+bg-gradient-to-r from-white to-gray-500
+bg-clip-text text-transparent
+">15+</h1>
           <p className="text-gray-400 mt-4">Countries</p>
         </div>
 
-        <div className="border border-white/10 p-10 rounded-3xl bg-white/[0.02]">
-          <h1 className="text-6xl font-bold">24/7</h1>
+       <div className="
+group
+border border-white/10
+p-10
+rounded-[40px]
+bg-white/[0.03]
+backdrop-blur-xl
+hover:bg-white/[0.06]
+hover:-translate-y-3
+hover:scale-[1.02]
+hover:border-white/20
+transition-all duration-500
+hover:shadow-[0_20px_60px_rgba(255,255,255,0.08)]
+relative
+before:absolute
+before:inset-0
+before:bg-gradient-to-b
+before:from-white/[0.06]
+before:to-transparent
+before:opacity-0
+hover:before:opacity-100
+before:transition
+before:duration-500
+">
+          <h1 className="
+text-6xl md:text-7xl
+font-black
+tracking-tight
+bg-gradient-to-r from-white to-gray-500
+bg-clip-text text-transparent
+">24/7</h1>
           <p className="text-gray-400 mt-4">Support</p>
         </div>
 
       </div>
 
     </section>
+
+    <div className="max-w-7xl mx-auto border-t border-white/5" />
 
     {/* MANUFACTURING SECTION */}
     <section className="py-32 px-6">
@@ -790,11 +895,13 @@ const categories = [
 
         </div>
 
-        <div>
+        <div className="group relative overflow-hidden rounded-[40px]">
 
           <img
-            src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f"
-            className="rounded-3xl"
+            src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1600&auto=format&fit=crop"
+            loading="lazy"
+            className="w-full h-full rounded-[40px] object-cover group-hover:scale-110 transition-all duration-700 ease-out transform-gpu will-change-transform"
+          
           />
 
         </div>
@@ -802,15 +909,36 @@ const categories = [
       </div>
 
     </section>
+
+
 {/* PARALLAX IMAGE SECTION */}
-<section className="relative h-[800px] overflow-hidden">
+<section className="
+group relative h-screen
+overflow-hidden
+">
+  <div className="absolute inset-0 overflow-hidden"></div>
 
   <img
-    src="https://images.unsplash.com/photo-1523398002811-999ca8dec234"
-    className="w-full h-full object-cover"
-  />
+  src="https://images.unsplash.com/photo-1523398002811-999ca8dec234?q=80&w=1600&auto=format&fit=crop"
+  loading="lazy"
+  className="
+  w-full
+  h-full
+  rounded-[40px]
+  object-cover
+  group-hover:scale-110
+  transition-all duration-700 ease-out
+  transform-gpu
+  will-change-transform
+  "
+/>
 
-  <div className="absolute inset-0 bg-black/60 flex items-center justify-center">
+  <div className="
+absolute inset-0
+bg-black/75
+backdrop-blur-sm
+flex items-center justify-center
+">
 
     <div className="text-center px-6">
 
@@ -818,7 +946,17 @@ const categories = [
         PERFORMANCE MEETS DESIGN
       </p>
 
-      <h1 className="text-6xl md:text-8xl font-bold mt-8 leading-tight">
+      <h1 className="
+text-[70px]
+md:text-[180px]
+text-white
+font-black
+leading-none
+tracking-tight
+uppercase hover:text-white
+transition
+duration-500
+">
         MADE FOR <br />
         CHAMPIONS
       </h1>
@@ -829,8 +967,10 @@ const categories = [
 
 </section>
 
+<div className="max-w-7xl mx-auto border-t border-white/5" />
+
 {/* WHY CHOOSE US */}
-<section className="py-40 px-6">
+<section className="py-40 px-6 relative overflow-hidden">
 
   <div className="text-center mb-24">
 
@@ -838,7 +978,17 @@ const categories = [
       WHY TS EXPORTS
     </p>
 
-    <h1 className="text-5xl md:text-7xl font-bold mt-6">
+     <h1 className="
+text-5xl
+md:text-7xl
+font-bold
+mt-6
+leading-tight
+tracking-tight
+hover:text-white
+transition
+duration-500
+">
       Global Manufacturing Excellence
     </h1>
 
@@ -846,9 +996,30 @@ const categories = [
 
   <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
 
-    <div className="border border-white/10 rounded-3xl p-10 bg-white/[0.02]">
+    <div className="
+group
+relative
+overflow-hidden
+border border-white/10
+rounded-[35px]
+p-12
+bg-gradient-to-br from-white/[0.04] to-transparent
+backdrop-blur-xl
+hover:border-cyan-400/40
+hover:-translate-y-3
+transition-all duration-700
+before:absolute
+before:inset-0
+before:bg-gradient-to-b
+before:from-white/[0.06]
+before:to-transparent
+before:opacity-0
+hover:before:opacity-100
+before:transition
+before:duration-500
+">
 
-      <h2 className="text-3xl font-bold">
+      <h2 className="text-3xl font-black tracking-tight group-hover:translate-x-2 transition duration-500">
         Premium Fabrics
       </h2>
 
@@ -859,9 +1030,30 @@ const categories = [
 
     </div>
 
-    <div className="border border-white/10 rounded-3xl p-10 bg-white/[0.02]">
+    <div className="
+group
+relative
+overflow-hidden
+border border-white/10
+rounded-[35px]
+p-12
+bg-gradient-to-br from-white/[0.04] to-transparent
+backdrop-blur-xl
+hover:border-cyan-400/40
+hover:-translate-y-3
+transition-all duration-700
+before:absolute
+before:inset-0
+before:bg-gradient-to-b
+before:from-white/[0.06]
+before:to-transparent
+before:opacity-0
+hover:before:opacity-100
+before:transition
+before:duration-500
+">
 
-      <h2 className="text-3xl font-bold">
+      <h2 className="text-3xl font-black tracking-tight group-hover:translate-x-2 transition duration-500">
         OEM & Private Label
       </h2>
 
@@ -872,9 +1064,30 @@ const categories = [
 
     </div>
 
-    <div className="border border-white/10 rounded-3xl p-10 bg-white/[0.02]">
+    <div className="
+group
+relative
+overflow-hidden
+border border-white/10
+rounded-[35px]
+p-12
+bg-gradient-to-br from-white/[0.04] to-transparent
+backdrop-blur-xl
+hover:border-cyan-400/40
+hover:-translate-y-3
+transition-all duration-700
+before:absolute
+before:inset-0
+before:bg-gradient-to-b
+before:from-white/[0.06]
+before:to-transparent
+before:opacity-0
+hover:before:opacity-100
+before:transition
+before:duration-500
+">
 
-      <h2 className="text-3xl font-bold">
+      <h2 className="text-3xl font-black tracking-tight group-hover:translate-x-2 transition duration-500">
         Worldwide Delivery
       </h2>
 
@@ -889,17 +1102,93 @@ const categories = [
 
 </section>
 
+<div className="max-w-7xl mx-auto border-t border-white/5" />
+<div className="
+absolute
+w-[500px]
+h-[500px]
+bg-cyan-500/10
+blur-[140px]
+rounded-full
+top-0
+left-1/2
+-translate-x-1/2
+pointer-events-none
+" />
+
+{/* APPLE STYLE TYPOGRAPHY SECTION */}
+<section className="relative py-72 px-6 text-center max-w-7xl mx-auto">
+
+  <p className="uppercase tracking-[10px] text-gray-500 text-sm">
+    TS EXPORTS
+  </p>
+
+  <h1 className="
+  text-7xl
+  md:text-[180px]
+  tracking-[-6px]
+  font-black
+  leading-none
+  tracking-tight
+  mt-10
+  uppercase text-white/90 hover:text-white
+transition
+duration-500
+  ">
+    BUILT <br />
+    TO SCALE
+  </h1>
+
+  <p className="
+  text-gray-400
+  max-w-2xl
+  mx-auto
+  mt-10
+  text-xl
+  leading-9
+  ">
+    Manufacturing systems designed for modern
+    sportswear brands worldwide.
+  </p>
+
+</section>
+
+<div className="max-w-7xl mx-auto border-t border-white/5" />
+<div className="
+absolute
+w-[500px]
+h-[500px]
+bg-cyan-500/10
+blur-[140px]
+rounded-full
+top-0
+left-1/2
+-translate-x-1/2
+pointer-events-none
+" />
+
 {/* SPLIT SECTION */}
-<section className="py-40 px-6">
+<section className="py-40 px-6 relative overflow-hidden">
 
   <div className="grid md:grid-cols-2 gap-20 items-center max-w-7xl mx-auto">
 
-    <div>
+    <div className="group relative overflow-hidden rounded-[40px]">
 
-      <img
-        src="https://images.unsplash.com/photo-1514996937319-344454492b37"
-        className="rounded-3xl h-[700px] object-cover"
-      />
+  <img
+  src="https://images.unsplash.com/photo-1514996937319-344454492b37?q=80&w=1600&auto=format&fit=crop"
+  loading="lazy"
+  className="
+  w-full
+  h-full
+  rounded-[40px]
+  object-cover
+  group-hover:scale-110
+  transition-all duration-700 ease-out
+  transform-gpu
+  will-change-transform
+  "
+/>
+<div className="absolute inset-0 bg-black/20" />
 
     </div>
 
@@ -922,7 +1211,11 @@ const categories = [
 
       <button
         onClick={() => setView("shop")}
-        className="mt-10 border border-white/20 px-8 py-4 rounded-full hover:bg-white hover:text-black transition"
+        className="mt-10 border border-white/20 px-8 py-4 rounded-full hover:bg-white
+hover:text-black
+hover:scale-105
+transition-all duration-500
+hover:shadow-[0_20px_60px_rgba(255,255,255,0.08)]"
       >
         View Products
       </button>
@@ -933,8 +1226,12 @@ const categories = [
 
 </section>
 
+<div className="max-w-7xl mx-auto border-t border-white/5 hover:text-white
+transition
+duration-500" />
+
 {/* MANUFACTURING SERVICES */}
-<section className="py-40 px-6 bg-zinc-950">
+<section className="py-40 px-6 bg-[#111827]">
 
   <div className="text-center mb-24">
 
@@ -942,7 +1239,14 @@ const categories = [
       SERVICES
     </p>
 
-    <h1 className="text-5xl md:text-7xl font-bold mt-6">
+    <h1 className="
+text-5xl
+md:text-7xl
+font-bold
+mt-6
+leading-tight
+tracking-tight
+">
       Manufacturing Services
     </h1>
 
@@ -950,12 +1254,41 @@ const categories = [
 
   <div className="grid md:grid-cols-4 gap-8 max-w-7xl mx-auto">
 
-    <div className="bg-white rounded-3xl overflow-hidden text-black">
+    <div className="
+group
+bg-white
+rounded-[40px]
+overflow-hidden
+text-black
+hover:-translate-y-4
+transition-all duration-700
+shadow-2xl
+relative
+before:absolute
+before:inset-0
+before:bg-gradient-to-b
+before:from-white/[0.06]
+before:to-transparent
+before:opacity-0
+hover:before:opacity-100
+before:transition
+before:duration-500
+">
 
       <img
-        src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b"
-        className="h-64 w-full object-cover"
-      />
+  src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?q=80&w=1600&auto=format&fit=crop"
+  loading="lazy"
+  className="
+  w-full
+  h-72
+  rounded-[40px]
+  object-cover
+  group-hover:scale-110
+  transition-all duration-700 ease-out
+  transform-gpu
+  will-change-transform
+  "
+/>
 
       <div className="p-8">
         <h2 className="text-2xl font-bold">
@@ -969,12 +1302,41 @@ const categories = [
 
     </div>
 
-    <div className="bg-white rounded-3xl overflow-hidden text-black">
+    <div className="
+group
+bg-white
+rounded-[40px]
+overflow-hidden
+text-black
+hover:-translate-y-4
+transition-all duration-700
+shadow-2xl
+relative
+before:absolute
+before:inset-0
+before:bg-gradient-to-b
+before:from-white/[0.06]
+before:to-transparent
+before:opacity-0
+hover:before:opacity-100
+before:transition
+before:duration-500
+">
 
       <img
-        src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
-        className="h-64 w-full object-cover"
-      />
+  src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1600&auto=format&fit=crop"
+  loading="lazy"
+  className="
+  w-full
+  h-72
+  rounded-[40px]
+  object-cover
+  group-hover:scale-110
+  transition-all duration-700 ease-out
+  transform-gpu
+  will-change-transform
+  "
+/>
 
       <div className="p-8">
         <h2 className="text-2xl font-bold">
@@ -988,12 +1350,41 @@ const categories = [
 
     </div>
 
-    <div className="bg-white rounded-3xl overflow-hidden text-black">
+    <div className="
+group
+bg-white
+rounded-[40px]
+overflow-hidden
+text-black
+hover:-translate-y-4
+transition-all duration-700
+shadow-2xl
+relative
+before:absolute
+before:inset-0
+before:bg-gradient-to-b
+before:from-white/[0.06]
+before:to-transparent
+before:opacity-0
+hover:before:opacity-100
+before:transition
+before:duration-500
+">
 
       <img
-        src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518"
-        className="h-64 w-full object-cover"
-      />
+  src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=1600&auto=format&fit=crop"
+  loading="lazy"
+  className="
+  w-full
+  h-72
+  rounded-[40px]
+  object-cover
+  group-hover:scale-110
+  transition-all duration-700 ease-out
+  transform-gpu
+  will-change-transform
+  "
+/>
 
       <div className="p-8">
         <h2 className="text-2xl font-bold">
@@ -1007,11 +1398,34 @@ const categories = [
 
     </div>
 
-    <div className="bg-white rounded-3xl overflow-hidden text-black">
+    <div className="
+group
+bg-white
+rounded-[40px]
+overflow-hidden
+text-black
+hover:-translate-y-4
+transition-all duration-700
+shadow-2xl
+relative
+before:absolute
+before:inset-0
+before:bg-gradient-to-b
+before:from-white/[0.06]
+before:to-transparent
+before:opacity-0
+hover:before:opacity-100
+before:transition
+before:duration-500
+">
 
       <img
-        src="https://images.unsplash.com/photo-1483985988355-763728e1935b"
-        className="h-64 w-full object-cover"
+        src="https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=1600&auto=format&fit=crop"
+        className="
+h-72 w-full rounded-[40px] object-cover
+group-hover:scale-110
+transition-all duration-700 ease-out
+"
       />
 
       <div className="p-8">
@@ -1028,48 +1442,11 @@ const categories = [
 
   </div>
 
-</section>
 
-{/* CLIENTS */}
-<section className="py-24 px-6 bg-white text-black">
-
-  <div className="text-center mb-20">
-
-    <p className="uppercase tracking-[8px] text-gray-500 text-sm">
-      TRUSTED BY
-    </p>
-
-    <h1 className="text-5xl font-bold mt-6">
-      Global Partners
-    </h1>
-
-  </div>
-
-  <div className="grid md:grid-cols-5 gap-10 items-center max-w-6xl mx-auto opacity-70">
-
-    <h2 className="text-3xl font-bold text-center">
-      FITZONE
-    </h2>
-
-    <h2 className="text-3xl font-bold text-center">
-      ATHLEX
-    </h2>
-
-    <h2 className="text-3xl font-bold text-center">
-      VELORA
-    </h2>
-
-    <h2 className="text-3xl font-bold text-center">
-      SPORTIVA
-    </h2>
-
-    <h2 className="text-3xl font-bold text-center">
-      FORCEWEAR
-    </h2>
-
-  </div>
 
 </section>
+
+<div className="max-w-7xl mx-auto border-t border-white/5" />
 
 {/* TESTIMONIALS */}
 <section className="py-40 px-6 bg-white/[0.02]">
@@ -1080,7 +1457,17 @@ const categories = [
       CLIENTS
     </p>
 
-    <h1 className="text-5xl md:text-7xl font-bold mt-6">
+    <h1 className="
+text-5xl
+md:text-7xl
+font-bold
+mt-6
+leading-tight
+tracking-tight
+hover:text-white
+transition
+duration-500
+">
       Trusted Worldwide
     </h1>
 
@@ -1088,48 +1475,124 @@ const categories = [
 
   <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
 
-    <div className="border border-white/10 p-10 rounded-3xl">
+    <div className="
+border border-white/10
+p-10
+rounded-[40px]
+bg-white/[0.03]
+backdrop-blur-xl
+hover:bg-white/[0.05]
+hover:-translate-y-3
+hover:scale-[1.02]
+transition-all duration-500
+hover:shadow-[0_20px_60px_rgba(255,255,255,0.08)]
+">
+
+  <div className="flex items-center gap-4 mb-6">
+
+  <div className="w-14 h-14 rounded-full bg-white/10" />
+
+  <div>
+    <h3 className="font-bold">UK Distributor</h3>
+    <p className="text-gray-500 text-sm">
+      London, United Kingdom
+    </p>
+  </div>
+
+</div>
 
       <p className="text-gray-300 leading-8">
         “Outstanding product quality and
         fast international delivery.”
       </p>
 
-      <h3 className="mt-8 font-bold">
-        — UK Distributor
-      </h3>
-
     </div>
 
-    <div className="border border-white/10 p-10 rounded-3xl">
+    <div className="
+border border-white/10
+p-10
+rounded-[40px]
+bg-white/[0.03]
+backdrop-blur-xl
+hover:bg-white/[0.05]
+hover:-translate-y-3
+hover:scale-[1.02]
+transition-all duration-500
+hover:shadow-[0_20px_60px_rgba(255,255,255,0.08)]
+">
+
+<div className="flex items-center gap-4 mb-6">
+
+  <div className="w-14 h-14 rounded-full bg-white/10" />
+
+  <div>
+    <h3 className="font-bold">Germany Brand Owner</h3>
+    <p className="text-gray-500 text-sm">
+      Berlin, Germany
+    </p>
+  </div>
+
+</div>
 
       <p className="text-gray-300 leading-8">
         “Professional OEM manufacturing with
         premium stitching quality.”
       </p>
 
-      <h3 className="mt-8 font-bold">
-        — Germany Brand Owner
-      </h3>
-
     </div>
 
-    <div className="border border-white/10 p-10 rounded-3xl">
+    <div className="
+border border-white/10
+p-10
+rounded-[40px]
+bg-white/[0.03]
+backdrop-blur-xl
+hover:bg-white/[0.05]
+hover:-translate-y-3
+hover:scale-[1.02]
+transition-all duration-500
+hover:shadow-[0_20px_60px_rgba(255,255,255,0.08)]
+">
+
+  <div className="flex items-center gap-4 mb-6">
+
+  <div className="w-14 h-14 rounded-full bg-white/10" />
+
+  <div>
+    <h3 className="font-bold">UAE Importer</h3>
+    <p className="text-gray-500 text-sm">
+      Dubai, UAE
+    </p>
+  </div>
+
+</div>
 
       <p className="text-gray-300 leading-8">
         “One of the best sportswear suppliers
         we’ve worked with.”
       </p>
 
-      <h3 className="mt-8 font-bold">
-        — UAE Importer
-      </h3>
+
 
     </div>
 
   </div>
 
 </section>
+
+<div className="max-w-7xl mx-auto border-t border-white/5" />
+<div className="
+absolute
+w-[500px]
+h-[500px]
+bg-cyan-500/10
+blur-[140px]
+rounded-full
+top-0
+left-1/2
+-translate-x-1/2
+pointer-events-none
+" />
     {/* MANUFACTURING INFO */}
 <section className="py-40 px-6 bg-white/[0.02]">
 
@@ -1139,7 +1602,16 @@ const categories = [
       MANUFACTURING DETAILS
     </p>
 
-    <h1 className="text-5xl md:text-7xl font-bold mt-6">
+    <h1 className="
+text-5xl
+md:text-7xl
+font-bold
+mt-6
+leading-tight
+tracking-tight hover:text-white
+transition
+duration-500
+">
       Export Process
     </h1>
 
@@ -1148,9 +1620,21 @@ const categories = [
   <div className="grid md:grid-cols-4 gap-8 max-w-7xl mx-auto">
 
     {/* MOQ */}
-    <div className="border border-white/10 rounded-3xl p-10 bg-black">
+    <div className="
+group  overflow-hidden border border-white/10
+rounded-[40px]
+p-10
+bg-gradient-to-b
+from-black
+to-zinc-900
+hover:border-white/30
+hover:-translate-y-3
+hover:scale-[1.02]
+transition-all duration-500
+hover:shadow-[0_20px_60px_rgba(255,255,255,0.08)]
+">
 
-      <h2 className="text-3xl font-bold">
+      <h2 className="text-3xl font-black tracking-tight group-hover:translate-x-2 transition duration-500">
         MOQ
       </h2>
 
@@ -1166,9 +1650,21 @@ const categories = [
     </div>
 
     {/* SAMPLE */}
-    <div className="border border-white/10 rounded-3xl p-10 bg-black">
+    <div className="
+group overflow-hidden border border-white/10
+rounded-[40px]
+p-10
+bg-gradient-to-b
+from-black
+to-zinc-900
+hover:border-white/30
+hover:-translate-y-3
+hover:scale-[1.02]
+transition-all duration-500
+hover:shadow-[0_20px_60px_rgba(255,255,255,0.08)]
+">
 
-      <h2 className="text-3xl font-bold">
+      <h2 className="text-3xl font-black tracking-tight group-hover:translate-x-2 transition duration-500">
         Samples
       </h2>
 
@@ -1184,9 +1680,21 @@ const categories = [
     </div>
 
     {/* PRODUCTION */}
-    <div className="border border-white/10 rounded-3xl p-10 bg-black">
+    <div className="
+group overflow-hidden border border-white/10
+rounded-[40px]
+p-10
+bg-gradient-to-b
+from-black
+to-zinc-900
+hover:border-white/30
+hover:-translate-y-3
+hover:scale-[1.02]
+transition-all duration-500
+hover:shadow-[0_20px_60px_rgba(255,255,255,0.08)]
+">
 
-      <h2 className="text-3xl font-bold">
+      <h2 className="text-3xl font-black tracking-tight group-hover:translate-x-2 transition duration-500">
         Production
       </h2>
 
@@ -1202,9 +1710,21 @@ const categories = [
     </div>
 
     {/* SHIPPING */}
-    <div className="border border-white/10 rounded-3xl p-10 bg-black">
+    <div className="
+group overflow-hidden border border-white/10
+rounded-[40px]
+p-10
+bg-gradient-to-b
+from-black
+to-zinc-900
+hover:border-white/30
+hover:-translate-y-3
+hover:scale-[1.02]
+transition-all duration-500
+hover:shadow-[0_20px_60px_rgba(255,255,255,0.08)]
+">
 
-      <h2 className="text-3xl font-bold">
+      <h2 className="text-3xl font-black tracking-tight group-hover:translate-x-2 transition duration-500">
         Shipping
       </h2>
 
@@ -1222,1119 +1742,1562 @@ const categories = [
   </div>
 
 </section>
-    {/* FINAL CTA */}
-    <section className="text-center py-40 px-6">
 
-      <p className="uppercase tracking-[10px] text-gray-500 text-sm">
-        FUTURE OF SPORTSWEAR
-      </p>
 
-      <h1 className="text-7xl md:text-9xl font-bold mt-8 leading-none">
-        ELEVATE <br />
-        YOUR BRAND
-      </h1>
 
-      <button
-        onClick={() => setView("shop")}
-        className="mt-12 bg-white text-black px-10 py-5 rounded-full text-xl hover:scale-105 transition"
-      >
-        Explore Products
-      </button>
 
-    </section>
 
-  </div>
 
-)}
 
-      {/* ABOUT */}
 
-      {view === "about" && (
-  <div className="px-6 py-24 max-w-7xl mx-auto">
 
-    {/* HERO ABOUT */}
-    <div className="text-center mb-20">
-      <h1 className="text-5xl md:text-7xl font-bold">
-        About TS Exports
-      </h1>
 
-      <p className="text-gray-400 mt-6 max-w-3xl mx-auto leading-8">
-        We are a Sialkot-based premium sportswear manufacturer specializing in
-        high-performance apparel for global brands, clubs, and distributors.
-      </p>
-    </div>
 
-    {/* STATS */}
-    <div className="grid md:grid-cols-4 gap-6 mb-24">
-      {aboutStats.map((s, i) => (
-        <div
-          key={i}
-          className="border border-white/10 bg-white/[0.02] rounded-2xl p-8 text-center"
-        >
-          <h2 className="text-4xl font-bold">{s.value}</h2>
-          <p className="text-gray-400 mt-3">{s.label}</p>
-        </div>
-      ))}
-    </div>
 
-    {/* STORY SECTION */}
-    <div className="grid md:grid-cols-2 gap-16 items-center mb-32">
 
-      <div>
-        <h2 className="text-4xl font-bold mb-6">
-          Who We Are
-        </h2>
 
-        <p className="text-gray-400 leading-8">
-          TS Exports is built on precision manufacturing, export reliability,
-          and long-term partnerships. We work with brands worldwide to produce
-          custom sportswear with premium quality and consistent delivery.
-        </p>
 
-        <p className="text-gray-400 leading-8 mt-6">
-          From concept to final production, we handle every step including
-          fabric selection, sampling, bulk manufacturing, branding, and global shipping.
-        </p>
-      </div>
 
-      <img
-        src="https://images.unsplash.com/photo-1514996937319-344454492b37"
-        className="rounded-3xl h-[500px] object-cover"
-      />
-    </div>
 
-    {/* WHY CHOOSE US */}
-    <div className="mb-32">
 
-      <h2 className="text-5xl font-bold text-center mb-16">
-        Why Choose Us
-      </h2>
 
-      <div className="grid md:grid-cols-2 gap-10">
-        {whyUs.map((item, i) => (
-          <div
-            key={i}
-            className="border border-white/10 bg-white/[0.02] rounded-3xl p-10"
-          >
-            <h3 className="text-2xl font-bold">{item.title}</h3>
-            <p className="text-gray-400 mt-4 leading-8">
-              {item.desc}
-            </p>
-          </div>
-        ))}
-      </div>
-    </div>
 
-    {/* WHAT WE PROVIDE */}
-    <div className="mb-32 text-center">
 
-      <h2 className="text-5xl font-bold mb-12">
-        What We Provide
-      </h2>
 
-      <div className="flex flex-wrap justify-center gap-4">
-        {whatWeProvide.map((item, i) => (
-          <span
-            key={i}
-            className="px-6 py-3 border border-white/10 rounded-full bg-white/[0.02] text-gray-300"
-          >
-            {item}
-          </span>
-        ))}
-      </div>
 
-    </div>
 
-    {/* DIFFERENTIATION SECTION */}
-    <div className="text-center">
 
-      <h2 className="text-5xl font-bold mb-8">
-        What Makes Us Different
-      </h2>
 
-      <p className="text-gray-400 max-w-3xl mx-auto leading-8">
-        Unlike traditional manufacturers, we focus on brand building,
-        consistent quality control, and scalable production systems.
-        Our goal is not just to produce — but to help your brand grow globally.
-      </p>
 
-    </div>
 
-  </div>
-)}
 
-      {/* SHOP */}
 
-      {view === "shop" && (
 
-  <div
-    id="products-section"
-    className="p-6"
-  >
-{selectedCategory && (
-  <div className="mb-6 flex justify-between items-center">
 
-    <h2 className="text-xl font-bold">
-      Category: {selectedCategory}
-    </h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ```tsx
+{/* FINAL CTA */}
+<section className="
+relative
+overflow-hidden
+text-center
+py-[220px]
+px-6
+">
+
+  {/* GLOW */}
+  <div className="
+  absolute
+  top-1/2
+  left-1/2
+  -translate-x-1/2
+  -translate-y-1/2
+  w-[900px]
+  h-[900px]
+  bg-cyan-500/10
+  blur-[180px]
+  rounded-full
+  pointer-events-none
+  " />
+
+  <div className="relative z-10">
+
+    <p className="uppercase tracking-[10px] text-gray-500 text-sm">
+      FUTURE OF SPORTSWEAR
+    </p>
+
+    <h1 className="
+    text-[70px]
+    md:text-[180px]
+    font-black
+    mt-10
+    leading-[0.9]
+    tracking-[-8px]
+    uppercase
+    text-white/90
+    hover:text-white
+    transition-all
+    duration-700
+    ">
+      ELEVATE <br />
+      YOUR BRAND
+    </h1>
+
+    <p className="
+    max-w-3xl
+    mx-auto
+    mt-10
+    text-xl
+    leading-9
+    text-gray-400
+    ">
+      Built for modern sportswear brands,
+      private labels and global distributors
+      that demand premium manufacturing.
+    </p>
 
     <button
-      onClick={() => setSelectedCategory("")}
-      className="border px-4 py-2 rounded-xl"
+      onClick={() => setView("shop")}
+      className="
+      group
+      mt-14
+      relative
+      overflow-hidden
+      bg-white
+      text-black
+      px-12
+      py-5
+      rounded-full
+      text-xl
+      font-semibold
+      hover:scale-105
+      transition-all
+      duration-500
+      hover:shadow-[0_20px_80px_rgba(255,255,255,0.25)]
+      "
     >
-      Clear Filter
+
+      <span className="
+      absolute
+      inset-0
+      translate-x-[-120%]
+      group-hover:translate-x-[120%]
+      transition-transform
+      duration-1000
+      bg-gradient-to-r
+      from-transparent
+      via-white/60
+      to-transparent
+      " />
+
+      <span className="relative z-10">
+        Explore Products
+      </span>
+
     </button>
 
   </div>
-)}
-          {/* SEARCH */}
 
-          <input
-            placeholder="Search products..."
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            className="w-full p-4 mb-10 bg-white/10 border border-white/20 rounded-2xl"
-          />
+</section>
 
-          {/* PRODUCTS */}
-
-          <div className="grid md:grid-cols-3 gap-8">
-
-            {filteredProducts.map((p: any) => (
-
-              <div
-                key={p.id}
-                className="border border-white/10 rounded-3xl overflow-hidden bg-white/[0.02]"
-              >
-
-                {/* PRODUCT IMAGE */}
-
-                <img
-                  src={p.image}
-                  className="w-full h-72 object-cover"
-                />
-
-                {/* PRODUCT INFO */}
-
-                <div className="p-6">
-
-                  <h2 className="text-2xl font-bold">
-                    {p.name}
-                  </h2>
-
-                  <p className="text-gray-400 mt-2">
-                    {p.category}
-                  </p>
-
-                  <p className="mt-3">
-                    MOQ: {p.moq}
-                  </p>
-
-                  <p className="text-3xl font-bold mt-4">
-                    ${p.price}
-                  </p>
-<a
-  href={`https://wa.me/923428145366?text=Hello, I want to inquire about: ${p.name}`}
-  target="_blank"
-  className="mt-4 block text-center bg-green-500 text-white py-3 rounded-xl"
->
-  Contact on WhatsApp
-</a>
-
-<button
-  onClick={async () => {
-    await addDoc(collection(db, "inquiries"), {
-      product: p.name,
-      email: user?.email || "guest",
-      time: new Date().toISOString()
-    });
-
-    alert("Inquiry sent successfully!");
-  }}
-  className="mt-4 w-full bg-white text-black py-3 rounded-xl"
->
-  Request Quote
-</button>
-                  {/* DELETE BUTTON */}
-
-                  {admin && (
-
-                    <button
-                      onClick={() => deleteProduct(p.id)}
-                      className="mt-5 w-full border border-red-500 text-red-500 py-3 rounded-xl"
-                    >
-                      Delete Product
-                    </button>
-
-                  )}
-
-                </div>
-
-              </div>
-
-            ))}
-
-          </div>
-
-        </div>
-
-      )}
-
-      {/* ADMIN */}
-
-      {view === "admin" && (
-
-        <div className="max-w-md mx-auto p-6 py-20">
-
-          {!user ? (
-
-            <>
-
-              <h1 className="text-4xl font-bold mb-8">
-                Admin Login
-              </h1>
-
-              <input
-                placeholder="Email"
-                className="w-full p-4 mb-4 bg-white/10 border border-white/20 rounded-2xl"
-                onChange={(e) => setEmail(e.target.value)}
-              />
-
-              <input
-                type="password"
-                placeholder="Password"
-                className="w-full p-4 mb-4 bg-white/10 border border-white/20 rounded-2xl"
-                onChange={(e) => setPassword(e.target.value)}
-              />
-
-              <button
-                onClick={login}
-                className="w-full bg-white text-black py-4 rounded-2xl"
-              >
-                Login
-              </button>
-
-              <button
-                onClick={register}
-                className="w-full border border-white/20 py-4 rounded-2xl mt-4"
-              >
-                Register
-              </button>
-
-            </>
-
-          ) : admin ? (
-
-            <>
-
-              <h1 className="text-4xl font-bold mb-8">
-                Admin Dashboard
-              </h1>
-
-              {/* PRODUCT NAME */}
-
-              <input
-                placeholder="Product Name"
-                value={form.name}
-                className="w-full p-4 mb-4 bg-white/10 border border-white/20 rounded-2xl"
-                onChange={(e) =>
-                  setForm({ ...form, name: e.target.value })
-                }
-              />
-
-              {/* PRICE */}
-
-              <input
-                placeholder="Price"
-                value={form.price}
-                className="w-full p-4 mb-4 bg-white/10 border border-white/20 rounded-2xl"
-                onChange={(e) =>
-                  setForm({ ...form, price: e.target.value })
-                }
-              />
-
-              {/* CATEGORY */}
-
-              <select
-  value={form.category}
-  className="w-full p-4 mb-4 bg-white/10 border border-white/20 rounded-2xl"
-  onChange={(e) =>
-    setForm({ ...form, category: e.target.value })
-  }
->
-
-  <option value="">Select Category</option>
-
-  {categories.map((cat, i) => (
-
-    <option
-      key={i}
-      value={cat.name}
-      className="text-black"
-    >
-      {cat.name}
-    </option>
-
-  ))}
-
-  <option value="Other" className="text-black">
-    Other
-  </option>
-
-</select>
-
-{form.category === "Other" && (
-
-  <input
-    placeholder="Custom Category"
-    className="w-full p-4 mb-4 bg-white/10 border border-white/20 rounded-2xl"
-    onChange={(e) =>
-      setForm({
-        ...form,
-        category: e.target.value
-      })
-    }
-  />
+</div>
 
 )}
 
-              {/* IMAGE URL */}
-
-              <input
-                placeholder="Image URL"
-                value={form.image}
-                className="w-full p-4 mb-4 bg-white/10 border border-white/20 rounded-2xl"
-                onChange={(e) =>
-                  setForm({ ...form, image: e.target.value })
-                }
-              />
-
-              {/* MOQ */}
-
-              <input
-                placeholder="MOQ"
-                value={form.moq}
-                className="w-full p-4 mb-6 bg-white/10 border border-white/20 rounded-2xl"
-                onChange={(e) =>
-                  setForm({ ...form, moq: e.target.value })
-                }
-              />
-
-              {/* ADD PRODUCT */}
-
-              <button
-                onClick={addProduct}
-                className="w-full bg-white text-black py-4 rounded-2xl"
-              >
-                Add Product
-              </button>
-
-              {/* LOGOUT */}
-
-              <button
-                onClick={logout}
-                className="w-full mt-4 border border-red-500 text-red-500 py-4 rounded-2xl"
-              >
-                Logout
-              </button>
-
-            </>
-
-          ) : (
-
-            <div>
-
-              <p className="text-red-400 mb-4">
-                You are not admin.
-              </p>
-
-              <button
-                onClick={logout}
-                className="w-full border border-red-500 text-red-500 py-4 rounded-2xl"
-              >
-                Logout
-              </button>
-
-            </div>
-
-          )}
-
-        </div>
-
-      )}
-
-           {view === "contact" && (
-  <div className="max-w-7xl mx-auto px-6 py-24">
-
-    {/* HEADER */}
-    <div className="text-center mb-20">
-      <h1 className="text-5xl md:text-7xl font-bold">
-        Contact Us
-      </h1>
-      <p className="text-gray-400 mt-6 max-w-2xl mx-auto">
-        Get in touch with TS Exports for custom sportswear manufacturing,
-        bulk orders, OEM production, and global distribution.
-      </p>
-    </div>
-
-    {/* GRID */}
-    <div className="grid md:grid-cols-2 gap-16">
-
-      {/* LEFT - CONTACT INFO */}
-      <div className="space-y-8">
-
-        <div className="border border-white/10 p-8 rounded-3xl bg-white/[0.02]">
-          <h2 className="text-2xl font-bold">Location</h2>
-          <p className="text-gray-400 mt-3">Sialkot, Pakistan</p>
-        </div>
-
-        <div className="border border-white/10 p-8 rounded-3xl bg-white/[0.02]">
-          <h2 className="text-2xl font-bold">Email</h2>
-          <p className="text-gray-400 mt-3">info@tsexports.com</p>
-        </div>
-
-        <div className="border border-white/10 p-8 rounded-3xl bg-white/[0.02]">
-          <h2 className="text-2xl font-bold">WhatsApp</h2>
-          <p className="text-gray-400 mt-3">
-            +92 342 8145366
-          </p>
-
-          <a
-            href="https://wa.me/923428145366"
-            target="_blank"
-            className="inline-block mt-4 bg-green-500 text-white px-6 py-3 rounded-xl"
-          >
-            Chat on WhatsApp
-          </a>
-        </div>
-
-      </div>
-
-      {/* RIGHT - FORM */}
-      <div className="border border-white/10 p-10 rounded-3xl bg-white/[0.02]">
-
-        <h2 className="text-3xl font-bold mb-6">
-          Send Inquiry
-        </h2>
-
-        <input
-  placeholder="Your Name"
-  value={contactForm.name}
-  onChange={(e) =>
-    setContactForm({
-      ...contactForm,
-      name: e.target.value
-    })
-  }
-  className="w-full p-4 mb-4 bg-white/10 rounded-xl"
-/>
-
-        <input
-  placeholder="Your Email"
-  value={contactForm.email}
-  onChange={(e) =>
-    setContactForm({
-      ...contactForm,
-      email: e.target.value
-    })
-  }
-  className="w-full p-4 mb-4 bg-white/10 rounded-xl"
-/>
-
-     <input
-  placeholder="Company Name"
-  value={contactForm.company}
-  onChange={(e) =>
-    setContactForm({
-      ...contactForm,
-      company: e.target.value
-    })
-  }
-  className="w-full p-4 mb-4 bg-white/10 rounded-xl"
-/>
-
-       <textarea
-  placeholder="Your Message"
-  value={contactForm.message}
-  onChange={(e) =>
-    setContactForm({
-      ...contactForm,
-      message: e.target.value
-    })
-  }
-  className="w-full p-4 mb-6 bg-white/10 rounded-xl h-40"
-/>
-
-      <button
-  onClick={sendContactInquiry}
-  className="w-full bg-white text-black py-4 rounded-xl font-bold"
->
-  Send Message
-</button>
-
-        <p className="text-gray-500 text-sm mt-4">
-          We usually respond within 24 hours.
-        </p>
-
-      </div>
-
-    </div>
-
-    {/* BOTTOM CTA */}
-    <div className="text-center mt-24">
-      <h2 className="text-4xl font-bold">
-        Let’s Build Your Brand Together
-      </h2>
-      <p className="text-gray-400 mt-4">
-        OEM manufacturing • Private label • Bulk export
-      </p>
-      
-
-    </div>
-
-  </div>
-  
-)}
-
-{/* BLOGS PAGE */}
-{view === "blogs" && !selectedBlog && (
-
-  <div className="bg-[#f5f5f5] text-black min-h-screen">
-
-    {/* HERO */}
-    <section className="py-32 px-6 text-center">
-
-      <p className="uppercase tracking-[8px] text-gray-500 text-sm">
-        TS EXPORTS BLOGS
-      </p>
-
-      <h1 className="text-6xl md:text-8xl font-bold mt-6">
-        Manufacturing <br />
-        Insights
-      </h1>
-
-      <p className="max-w-3xl mx-auto mt-8 text-gray-600 leading-8 text-lg">
-        Explore sportswear manufacturing,
-        OEM production, branding and export industry insights.
-      </p>
-
-    </section>
-
-    {/* BLOG GRID */}
-    <section className="max-w-7xl mx-auto px-6 pb-32">
-
-      <div className="grid md:grid-cols-2 gap-10">
-
-        {blogs.map((blog) => (
-
-          <div
-            key={blog.id}
-            onClick={() => setSelectedBlog(blog)}
-            className="bg-white rounded-[40px] overflow-hidden shadow-xl cursor-pointer hover:-translate-y-2 transition duration-500"
-          >
-
-            <img
-              src={blog.image}
-              className="w-full h-[320px] object-cover"
-            />
-
-            <div className="p-10">
-
-              <p className="uppercase tracking-[5px] text-gray-500 text-sm">
-                {blog.category}
-              </p>
-
-              <h2 className="text-4xl font-bold mt-5 leading-tight">
-                {blog.title}
-              </h2>
-
-              <button className="mt-8 border border-black px-6 py-3 rounded-full hover:bg-black hover:text-white transition">
-
-                Read Article
-
-              </button>
-
-            </div>
-
-          </div>
-
-        ))}
-
-      </div>
-
-    </section>
-
-  </div>
-
-)}
-
-{/* SINGLE BLOG PAGE */}
-{selectedBlog && (
-
-  <div className="bg-white text-black min-h-screen">
-
-    {/* HERO IMAGE */}
-    <section className="relative h-[700px]">
-
-      <img
-        src={selectedBlog.image}
-        className="w-full h-full object-cover"
-      />
-
-      <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
-
-        <div className="text-center px-6 text-white max-w-5xl">
-
-          <p className="uppercase tracking-[8px] text-gray-300 text-sm">
-            {selectedBlog.category}
-          </p>
-
-          <h1 className="text-5xl md:text-8xl font-bold mt-8 leading-tight">
-            {selectedBlog.title}
-          </h1>
-
-        </div>
-
-      </div>
-
-    </section>
-
-    {/* CONTENT */}
-    <section className="max-w-5xl mx-auto px-6 py-32">
-
-      <p className="text-2xl leading-[55px] text-gray-700">
-        {selectedBlog.content}
-      </p>
-
-      {/* EXTRA CONTENT */}
-      <div className="mt-20 grid md:grid-cols-2 gap-10">
-
-        <div className="bg-[#f5f5f5] p-10 rounded-[35px]">
-
-          <h2 className="text-3xl font-bold mb-6">
-            Manufacturing Expertise
-          </h2>
-
-          <p className="text-gray-600 leading-8">
-            TS Exports uses premium fabrics,
-            advanced stitching systems and
-            export-quality production methods
-            trusted by global clients.
-          </p>
-
-        </div>
-
-        <div className="bg-[#f5f5f5] p-10 rounded-[35px]">
-
-          <h2 className="text-3xl font-bold mb-6">
-            Global Export Standards
-          </h2>
-
-          <p className="text-gray-600 leading-8">
-            Every product passes quality checks,
-            sizing inspection and export packaging
-            before worldwide shipment dispatch.
-          </p>
-
-        </div>
-
-      </div>
-
-      {/* BACK BUTTON */}
-      <button
-        onClick={() => setSelectedBlog(null)}
-        className="mt-20 bg-black text-white px-10 py-5 rounded-full"
-      >
-
-        Back To Blogs
-
-      </button>
-
-    </section>
-
-  </div>
-
-)}
-
-{/* ================= PRIVACY POLICY ================= */}
-{view === "privacy" && (
-
-  <div className="bg-black text-white">
-
-    {/* HERO */}
-    <section className="relative py-40 px-6 text-center overflow-hidden">
-
-      <div className="absolute inset-0 bg-gradient-to-b from-white/[0.03] to-transparent" />
-
-      <div className="relative z-10 max-w-5xl mx-auto">
-
-        <p className="uppercase tracking-[10px] text-gray-500 text-sm">
-          TS EXPORTS
-        </p>
-
-        <h1 className="text-6xl md:text-8xl font-bold mt-8 leading-tight">
-          Privacy <br />
-          Policy
-        </h1>
-
-        <p className="text-gray-400 max-w-3xl mx-auto mt-10 leading-8 text-lg">
-          TS Exports values transparency, privacy and data protection.
-          This policy explains how information is collected, used and protected.
-        </p>
-
-      </div>
-
-    </section>
-
-    {/* CONTENT */}
-    <section className="max-w-6xl mx-auto px-6 pb-32">
-
-      <div className="grid md:grid-cols-2 gap-10">
-
-        <div className="border border-white/10 rounded-3xl p-10 bg-white/[0.02]">
-          <h2 className="text-3xl font-bold mb-6">
-            Information We Collect
-          </h2>
-
-          <p className="text-gray-400 leading-8">
-            We may collect customer names, email addresses,
-            phone numbers, shipping information, inquiry details
-            and order-related information for communication,
-            production and delivery purposes.
-          </p>
-        </div>
-
-        <div className="border border-white/10 rounded-3xl p-10 bg-white/[0.02]">
-          <h2 className="text-3xl font-bold mb-6">
-            Usage Of Information
-          </h2>
-
-          <p className="text-gray-400 leading-8">
-            Information is used to process orders,
-            improve customer experience, provide support,
-            handle production updates and maintain
-            long-term business relationships.
-          </p>
-        </div>
-
-        <div className="border border-white/10 rounded-3xl p-10 bg-white/[0.02]">
-          <h2 className="text-3xl font-bold mb-6">
-            Security Protection
-          </h2>
-
-          <p className="text-gray-400 leading-8">
-            TS Exports implements secure systems
-            and restricted access procedures to
-            protect customer information from
-            unauthorized access or misuse.
-          </p>
-        </div>
-
-        <div className="border border-white/10 rounded-3xl p-10 bg-white/[0.02]">
-          <h2 className="text-3xl font-bold mb-6">
-            Third Party Services
-          </h2>
-
-          <p className="text-gray-400 leading-8">
-            Trusted third-party logistics, payment
-            and analytics services may process limited
-            information strictly required for business operations.
-          </p>
-        </div>
-
-      </div>
-
-      {/* LARGE SECTION */}
-      <div className="mt-20 border border-white/10 rounded-3xl p-14 bg-white/[0.02]">
-
-        <h2 className="text-5xl font-bold mb-10">
-          Data Transparency
-        </h2>
-
-        <p className="text-gray-400 leading-9 text-lg">
-          We are committed to responsible data handling practices.
-          Customer information is never sold or distributed for
-          unauthorized marketing purposes. We continuously improve
-          our digital infrastructure to ensure secure communication,
-          safe inquiry handling and protected business transactions.
-        </p>
-
-      </div>
-
-    </section>
-
-  </div>
-
-)}
-
-{/* ================= TERMS ================= */}
-{view === "terms" && (
-
-  <div className="bg-black text-white">
-
-    {/* HERO */}
-    <section className="py-40 px-6 text-center">
+{/* ABOUT */}
+
+{view === "about" && (
+
+<div className="relative overflow-hidden">
+
+  {/* TOP GLOW */}
+  <div className="
+  absolute
+  w-[700px]
+  h-[700px]
+  bg-cyan-500/10
+  blur-[160px]
+  rounded-full
+  left-1/2
+  top-0
+  -translate-x-1/2
+  pointer-events-none
+  " />
+
+  {/* HERO */}
+  <section className="
+  relative
+  min-h-screen
+  flex
+  items-center
+  justify-center
+  text-center
+  overflow-hidden
+  ">
+
+    <img
+      src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?q=80&w=1600&auto=format&fit=crop"
+      className="
+      absolute
+      inset-0
+      w-full
+      h-full
+      object-cover
+      opacity-20
+      scale-110
+      "
+    />
+
+    <div className="absolute inset-0 bg-black/70 backdrop-blur-sm" />
+
+    <div className="relative z-10 max-w-5xl mx-auto px-6">
 
       <p className="uppercase tracking-[10px] text-gray-500 text-sm">
         TS EXPORTS
       </p>
 
-      <h1 className="text-6xl md:text-8xl font-bold mt-8">
-        Terms & <br />
-        Conditions
+      <h1 className="
+      text-[70px]
+      md:text-[170px]
+      font-black
+      leading-[0.9]
+      tracking-[-8px]
+      uppercase
+      mt-8
+      ">
+        About <br />
+        TS Exports
       </h1>
 
-      <p className="text-gray-400 max-w-3xl mx-auto mt-10 leading-8 text-lg">
-        These terms define the conditions regarding manufacturing,
-        orders, payments, shipping and customer responsibilities.
+      <p className="
+      text-gray-400
+      mt-10
+      max-w-3xl
+      mx-auto
+      leading-9
+      text-xl
+      ">
+        We are a Sialkot-based premium sportswear manufacturer
+        specializing in high-performance apparel for global brands,
+        clubs and distributors worldwide.
       </p>
+
+    </div>
+
+  </section>
+
+  <div className="px-6 py-24 max-w-7xl mx-auto">
+
+    {/* STATS */}
+    <div className="grid md:grid-cols-4 gap-6 mb-32">
+
+      {aboutStats.map((s, i) => (
+
+        <div
+          key={i}
+          className="
+          group
+          relative
+          overflow-hidden
+          border
+          border-white/10
+          bg-white/[0.03]
+          backdrop-blur-xl
+          rounded-[35px]
+          p-10
+          text-center
+          hover:-translate-y-4
+          hover:scale-[1.03]
+          transition-all
+          duration-700
+          hover:shadow-[0_20px_80px_rgba(255,255,255,0.08)]
+          "
+        >
+
+          <div className="
+          absolute
+          inset-0
+          bg-gradient-to-b
+          from-white/[0.08]
+          to-transparent
+          opacity-0
+          group-hover:opacity-100
+          transition
+          duration-500
+          " />
+
+          <h2 className="
+          relative z-10
+          text-5xl
+          md:text-6xl
+          font-black
+          tracking-tight
+          ">
+            {s.value}
+          </h2>
+
+          <p className="relative z-10 text-gray-400 mt-4">
+            {s.label}
+          </p>
+
+        </div>
+
+      ))}
+
+    </div>
+
+    {/* WHO WE ARE */}
+    <section className="grid md:grid-cols-2 gap-20 items-center mb-40">
+
+      <div>
+
+        <p className="uppercase tracking-[8px] text-gray-500 text-sm">
+          WHO WE ARE
+        </p>
+
+        <h2 className="
+        text-5xl
+        md:text-7xl
+        font-black
+        mt-6
+        leading-tight
+        tracking-tight
+        ">
+          Built For <br />
+          Global Brands
+        </h2>
+
+        <p className="text-gray-400 leading-9 text-lg mt-8">
+          TS Exports is built on precision manufacturing,
+          export reliability and long-term partnerships.
+          We work with brands worldwide to produce
+          custom sportswear with premium quality
+          and consistent delivery.
+        </p>
+
+        <p className="text-gray-400 leading-9 text-lg mt-8">
+          From concept to final production,
+          we handle fabric sourcing, sampling,
+          private labeling, bulk manufacturing,
+          packaging and worldwide export logistics.
+        </p>
+
+      </div>
+
+      <div className="
+      group
+      relative
+      overflow-hidden
+      rounded-[40px]
+      ">
+
+        <img
+          src="https://images.unsplash.com/photo-1514996937319-344454492b37?q=80&w=1600&auto=format&fit=crop"
+          className="
+          rounded-[40px]
+          h-[650px]
+          w-full
+          object-cover
+          group-hover:scale-110
+          transition-all
+          duration-700
+          "
+        />
+
+        <div className="absolute inset-0 bg-black/20" />
+
+      </div>
 
     </section>
 
-    {/* CONTENT */}
-    <section className="max-w-6xl mx-auto px-6 pb-32">
+    {/* WHY CHOOSE US */}
+    <section className="mb-40">
 
-      <div className="space-y-10">
+      <div className="text-center mb-20">
 
-        <div className="border border-white/10 rounded-3xl p-12 bg-white/[0.02]">
+        <p className="uppercase tracking-[8px] text-gray-500 text-sm">
+          WHY TS EXPORTS
+        </p>
 
-          <h2 className="text-4xl font-bold mb-6">
-            Orders & Confirmation
-          </h2>
-
-          <p className="text-gray-400 leading-9 text-lg">
-            All orders are subject to design approval,
-            payment verification and production scheduling.
-            Production begins only after final confirmation
-            from both parties.
-          </p>
-
-        </div>
-
-        <div className="border border-white/10 rounded-3xl p-12 bg-white/[0.02]">
-
-          <h2 className="text-4xl font-bold mb-6">
-            Manufacturing Process
-          </h2>
-
-          <p className="text-gray-400 leading-9 text-lg">
-            Production timelines may vary depending on
-            customization, fabric sourcing, seasonal demand
-            and order quantities. TS Exports maintains
-            export-grade quality control standards during production.
-          </p>
-
-        </div>
-
-        <div className="border border-white/10 rounded-3xl p-12 bg-white/[0.02]">
-
-          <h2 className="text-4xl font-bold mb-6">
-            Payments
-          </h2>
-
-          <p className="text-gray-400 leading-9 text-lg">
-            Customers are required to complete agreed
-            payment terms before shipment dispatch.
-            Delayed payments may affect production
-            and delivery timelines.
-          </p>
-
-        </div>
-
-        <div className="border border-white/10 rounded-3xl p-12 bg-white/[0.02]">
-
-          <h2 className="text-4xl font-bold mb-6">
-            Intellectual Property
-          </h2>
-
-          <p className="text-gray-400 leading-9 text-lg">
-            Customer logos, artwork and branding
-            remain the intellectual property of their respective owners.
-            TS Exports uses provided assets strictly for manufacturing purposes.
-          </p>
-
-        </div>
+        <h2 className="
+        text-5xl
+        md:text-7xl
+        font-black
+        mt-6
+        tracking-tight
+        ">
+          Why Choose Us
+        </h2>
 
       </div>
+
+      <div className="grid md:grid-cols-2 gap-10">
+
+        {whyUs.map((item, i) => (
+
+          <div
+            key={i}
+            className="
+            group
+            relative
+            overflow-hidden
+            border
+            border-white/10
+            rounded-[40px]
+            p-12
+            bg-gradient-to-br
+            from-white/[0.05]
+            to-transparent
+            backdrop-blur-xl
+            hover:border-cyan-400/40
+            hover:-translate-y-4
+            hover:scale-[1.02]
+            transition-all
+            duration-700
+            "
+          >
+
+            <span className="
+            absolute
+            right-6
+            top-6
+            text-[120px]
+            font-black
+            text-white/[0.03]
+            leading-none
+            pointer-events-none
+            ">
+              0{i + 1}
+            </span>
+
+            <h3 className="text-3xl font-black tracking-tight">
+              {item.title}
+            </h3>
+
+            <p className="text-gray-400 mt-6 leading-8 text-lg">
+              {item.desc}
+            </p>
+
+          </div>
+
+        ))}
+
+      </div>
+
+    </section>
+
+    {/* WHAT WE PROVIDE */}
+    <section className="mb-40 text-center">
+
+      <p className="uppercase tracking-[8px] text-gray-500 text-sm">
+        SERVICES
+      </p>
+
+      <h2 className="
+      text-5xl
+      md:text-7xl
+      font-black
+      mt-6
+      mb-16
+      tracking-tight
+      ">
+        What We Provide
+      </h2>
+
+      <div className="flex flex-wrap justify-center gap-5">
+
+        {whatWeProvide.map((item, i) => (
+
+          <span
+            key={i}
+            className="
+            group
+            px-8
+            py-4
+            border
+            border-white/10
+            rounded-full
+            bg-white/[0.03]
+            text-gray-300
+            hover:bg-white
+            hover:text-black
+            hover:scale-105
+            transition-all
+            duration-500
+            cursor-pointer
+            "
+          >
+            {item}
+          </span>
+
+        ))}
+
+      </div>
+
+    </section>
+
+    {/* GLOBAL REACH */}
+    <section className="py-40 relative overflow-hidden">
+
+      <div className="text-center mb-24">
+
+        <p className="uppercase tracking-[8px] text-gray-500 text-sm">
+          GLOBAL NETWORK
+        </p>
+
+        <h1 className="
+        text-5xl
+        md:text-7xl
+        font-black
+        mt-6
+        tracking-tight
+        ">
+          Trusted Across Continents
+        </h1>
+
+      </div>
+
+      <div className="grid md:grid-cols-3 gap-8">
+
+        {[
+          "United Kingdom",
+          "Germany",
+          "United Arab Emirates",
+          "United States",
+          "Canada",
+          "Australia"
+        ].map((country, i) => (
+
+          <div
+            key={i}
+            className="
+            group
+            border border-white/10
+            rounded-[35px]
+            p-10
+            bg-white/[0.03]
+            hover:bg-white/[0.06]
+            hover:-translate-y-3
+            transition-all
+            duration-500
+            "
+          >
+
+            <h2 className="text-3xl font-bold">
+              {country}
+            </h2>
+
+            <p className="text-gray-400 mt-4 leading-8">
+              OEM manufacturing and export support
+              for sportswear brands and distributors.
+            </p>
+
+          </div>
+
+        ))}
+
+      </div>
+
+    </section>
+
+    {/* DIFFERENTIATION */}
+    <section className="text-center py-32">
+
+      <p className="uppercase tracking-[8px] text-gray-500 text-sm">
+        DIFFERENTIATION
+      </p>
+
+      <h2 className="
+      text-5xl
+      md:text-7xl
+      font-black
+      mt-6
+      tracking-tight
+      ">
+        What Makes Us Different
+      </h2>
+
+      <p className="
+      text-gray-400
+      max-w-4xl
+      mx-auto
+      leading-9
+      text-xl
+      mt-10
+      ">
+        Unlike traditional manufacturers,
+        we focus on brand building,
+        premium presentation,
+        scalable production systems
+        and long-term growth partnerships.
+        Our goal is not just manufacturing —
+        but helping sportswear brands grow globally.
+      </p>
 
     </section>
 
   </div>
 
+</div>
+
 )}
 
-{/* ================= SHIPPING POLICY ================= */}
-{view === "shipping" && (
+{/* SHOP */}
 
-  <div className="bg-black text-white">
+{view === "shop" && (
 
-    {/* HERO */}
-    <section className="py-40 px-6 text-center">
+<>
+  {/* SHOP HERO */}
+  <section className="
+  relative
+  py-40
+  text-center
+  overflow-hidden
+  ">
 
-      <p className="uppercase tracking-[10px] text-gray-500 text-sm">
-        GLOBAL EXPORT LOGISTICS
+    <div className="
+    absolute
+    w-[700px]
+    h-[700px]
+    bg-cyan-500/10
+    blur-[160px]
+    rounded-full
+    left-1/2
+    top-1/2
+    -translate-x-1/2
+    -translate-y-1/2
+    " />
+
+    <div className="relative z-10">
+
+      <p className="uppercase tracking-[8px] text-gray-500 text-sm">
+        PERFORMANCE COLLECTION
       </p>
 
-      <h1 className="text-6xl md:text-8xl font-bold mt-8">
-        Shipping <br />
-        Policy
+      <h1 className="
+      text-6xl
+      md:text-[140px]
+      font-black
+      tracking-[-6px]
+      leading-none
+      mt-6
+      ">
+        SPORTSWEAR
       </h1>
 
-      <p className="text-gray-400 max-w-3xl mx-auto mt-10 leading-8 text-lg">
-        Fast, reliable and secure worldwide shipping
-        for samples, bulk orders and OEM manufacturing projects.
+      <p className="
+      max-w-3xl
+      mx-auto
+      mt-8
+      text-gray-400
+      text-xl
+      leading-9
+      ">
+        Premium custom sportswear designed
+        for modern brands and elite performance.
       </p>
 
-    </section>
+    </div>
 
-    {/* CARDS */}
-    <section className="max-w-7xl mx-auto px-6 pb-32">
+  </section>
 
-      <div className="grid md:grid-cols-3 gap-8">
+  <div
+    id="products-section"
+    className="p-6 max-w-7xl mx-auto"
+  >
 
-        <div className="border border-white/10 rounded-3xl p-10 bg-white/[0.02]">
+    {selectedCategory && (
 
-          <h2 className="text-3xl font-bold mb-6">
-            Sample Orders
-          </h2>
+      <div className="mb-10 flex justify-between items-center">
 
-          <p className="text-gray-400 leading-8">
-            Sample development generally requires
-            5–7 business days depending on
-            customization requirements.
-          </p>
+        <h2 className="text-2xl font-bold">
+          Category: {selectedCategory}
+        </h2>
 
-        </div>
-
-        <div className="border border-white/10 rounded-3xl p-10 bg-white/[0.02]">
-
-          <h2 className="text-3xl font-bold mb-6">
-            Bulk Production
-          </h2>
-
-          <p className="text-gray-400 leading-8">
-            Bulk manufacturing timelines typically
-            range between 2–4 weeks depending
-            on order volume and fabric sourcing.
-          </p>
-
-        </div>
-
-        <div className="border border-white/10 rounded-3xl p-10 bg-white/[0.02]">
-
-          <h2 className="text-3xl font-bold mb-6">
-            Worldwide Delivery
-          </h2>
-
-          <p className="text-gray-400 leading-8">
-            TS Exports ships globally using trusted
-            logistics partners and export handling services.
-          </p>
-
-        </div>
+        <button
+          onClick={() => setSelectedCategory("")}
+          className="
+          border
+          border-white/10
+          px-5
+          py-3
+          rounded-2xl
+          hover:bg-white
+          hover:text-black
+          transition-all
+          duration-500
+          "
+        >
+          Clear Filter
+        </button>
 
       </div>
 
-      {/* BIG SECTION */}
-      <div className="mt-20 border border-white/10 rounded-3xl p-14 bg-white/[0.02]">
+    )}
 
-        <h2 className="text-5xl font-bold mb-10">
-          Export Logistics Support
-        </h2>
+    {/* SEARCH */}
+    <input
+      placeholder="Search products..."
+      value={search}
+      onChange={(e) => setSearch(e.target.value)}
+      className="
+      w-full
+      p-6
+      mb-12
+      bg-white/[0.04]
+      border
+      border-white/10
+      rounded-[25px]
+      backdrop-blur-xl
+      focus:outline-none
+      focus:border-cyan-400/40
+      transition-all
+      duration-500
+      text-lg
+      "
+    />
 
-        <p className="text-gray-400 leading-9 text-lg">
-          Our team provides complete export assistance including
-          shipment coordination, invoice handling, tracking support,
-          packaging standards and international dispatch management.
-          Customers receive shipment tracking details after dispatch
-          for transparent global delivery operations.
+    {/* PRODUCTS */}
+    <div className="grid md:grid-cols-3 gap-8">
+
+      {filteredProducts.map((p: any) => (
+
+        <div
+          key={p.id}
+          className="
+          group
+          relative
+          overflow-hidden
+          border
+          border-white/10
+          rounded-[40px]
+          bg-white/[0.03]
+          backdrop-blur-xl
+          hover:-translate-y-4
+          hover:scale-[1.02]
+          transition-all
+          duration-700
+          hover:shadow-[0_20px_80px_rgba(255,255,255,0.08)]
+          "
+        >
+
+          {/* IMAGE */}
+          <div className="relative overflow-hidden">
+
+            <img
+              src={p.image}
+              className="
+              w-full
+              h-[420px]
+              object-cover
+              group-hover:scale-110
+              transition-all
+              duration-700
+              "
+            />
+
+            <div className="
+            absolute
+            inset-0
+            bg-gradient-to-t
+            from-black/70
+            via-transparent
+            to-transparent
+            opacity-60
+            pointer-events-none
+            " />
+
+            <button className="
+            absolute
+            top-6
+            right-6
+            bg-white/10
+            backdrop-blur-xl
+            border
+            border-white/10
+            px-5
+            py-2
+            rounded-full
+            text-sm
+            opacity-0
+            group-hover:opacity-100
+            transition-all
+            duration-500
+            ">
+              Quick View
+            </button>
+
+          </div>
+
+          {/* INFO */}
+          <div className="p-8">
+
+            <h2 className="text-3xl font-black tracking-tight">
+              {p.name}
+            </h2>
+
+            <p className="text-gray-400 mt-3">
+              {p.category}
+            </p>
+
+            <div className="flex justify-between items-center mt-6">
+
+              <p className="text-gray-300">
+                MOQ: {p.moq}
+              </p>
+
+              <p className="text-4xl font-black">
+                ${p.price}
+              </p>
+
+            </div>
+
+            <a
+              href={`https://wa.me/923428145366?text=Hello, I want to inquire about: ${p.name}`}
+              target="_blank"
+              className="
+              mt-8
+              block
+              text-center
+              bg-green-500
+              text-white
+              py-4
+              rounded-2xl
+              font-semibold
+              hover:scale-[1.02]
+              transition-all
+              duration-500
+              "
+            >
+              Contact on WhatsApp
+            </a>
+
+            <button
+              onClick={async () => {
+                await addDoc(collection(db, "inquiries"), {
+                  product: p.name,
+                  email: user?.email || "guest",
+                  time: new Date().toISOString()
+                });
+
+                alert("Inquiry sent successfully!");
+              }}
+              className="
+              mt-4
+              w-full
+              bg-white
+              text-black
+              py-4
+              rounded-2xl
+              font-semibold
+              hover:scale-[1.02]
+              transition-all
+              duration-500
+              "
+            >
+              Request Quote
+            </button>
+
+            {admin && (
+
+              <button
+                onClick={() => deleteProduct(p.id)}
+                className="
+                mt-5
+                w-full
+                border
+                border-red-500
+                text-red-500
+                py-4
+                rounded-2xl
+                hover:bg-red-500
+                hover:text-white
+                transition-all
+                duration-500
+                "
+              >
+                Delete Product
+              </button>
+
+            )}
+
+          </div>
+
+        </div>
+
+      ))}
+
+    </div>
+
+  </div>
+
+</>
+
+)}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{/* ================= ULTRA PREMIUM LEGAL + FOOTER SECTION ================= */}
+
+
+
+{/* ================= PRIVACY POLICY ================= */}
+{view === "privacy" && (
+
+  <div className="bg-black text-white overflow-hidden">
+
+    {/* BACKGROUND GLOW */}
+    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-cyan-500/10 blur-[160px] rounded-full pointer-events-none" />
+
+    {/* HERO */}
+    <section className="relative py-48 px-6 text-center overflow-hidden">
+
+      <div className="absolute inset-0 bg-gradient-to-b from-cyan-500/[0.05] to-transparent" />
+
+      <div className="relative z-10 max-w-6xl mx-auto">
+
+        <p className="uppercase tracking-[12px] text-gray-500 text-sm">
+          TS EXPORTS
+        </p>
+
+        <h1 className="
+text-7xl
+md:text-[170px]
+font-black
+tracking-tight
+uppercase
+leading-none
+mt-8
+text-white
+">
+          Privacy <br />
+          Policy
+        </h1>
+
+        <p className="text-gray-400 max-w-3xl mx-auto mt-10 leading-9 text-xl">
+          Transparency, protection and secure business communication
+          designed for modern global manufacturing partnerships.
         </p>
 
       </div>
 
     </section>
 
+    {/* GLASS GRID */}
+    <section className="max-w-7xl mx-auto px-6 pb-32">
+
+      <div className="grid md:grid-cols-2 gap-10">
+
+        {[
+          {
+            title: "Information Collection",
+            desc: "We may collect customer names, business emails, shipping information, inquiry details and production-related communication for operational purposes."
+          },
+          {
+            title: "How Information Is Used",
+            desc: "Information is used for order processing, communication, production updates, customer support and long-term manufacturing relationships."
+          },
+          {
+            title: "Security Infrastructure",
+            desc: "TS Exports implements restricted-access systems and secure workflows to protect customer information from unauthorized access."
+          },
+          {
+            title: "Third Party Services",
+            desc: "Trusted logistics and analytics providers may process limited operational data required for export and business functionality."
+          }
+        ].map((item, i) => (
+
+          <div
+            key={i}
+            className="
+group
+relative
+overflow-hidden
+border border-white/10
+rounded-[40px]
+p-12
+bg-white/[0.03]
+backdrop-blur-xl
+hover:border-cyan-400/40
+hover:-translate-y-3
+transition-all duration-700
+before:absolute
+before:inset-0
+before:bg-gradient-to-b
+before:from-white/[0.05]
+before:to-transparent
+before:opacity-0
+hover:before:opacity-100
+before:transition
+"
+          >
+
+            <div className="relative z-10">
+
+              <div className="
+w-14 h-14 rounded-2xl
+bg-white/[0.06]
+border border-white/10
+flex items-center justify-center
+text-xl font-bold
+mb-8
+group-hover:scale-110
+transition
+duration-500
+">
+                0{i + 1}
+              </div>
+
+              <h2 className="text-3xl font-black tracking-tight">
+                {item.title}
+              </h2>
+
+              <p className="text-gray-400 leading-8 mt-6">
+                {item.desc}
+              </p>
+
+            </div>
+
+          </div>
+
+        ))}
+
+      </div>
+
+      {/* HUGE GLASS PANEL */}
+      <div className="
+mt-24
+relative
+overflow-hidden
+border border-white/10
+rounded-[50px]
+p-16
+bg-gradient-to-br from-white/[0.04] to-transparent
+backdrop-blur-2xl
+">
+
+        <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/[0.04] to-transparent" />
+
+        <div className="relative z-10">
+
+          <p className="uppercase tracking-[8px] text-gray-500 text-sm">
+            SECURE DIGITAL OPERATIONS
+          </p>
+
+          <h2 className="text-5xl md:text-7xl font-black mt-8 leading-tight">
+            Data <br />
+            Transparency
+          </h2>
+
+          <p className="text-gray-400 leading-9 text-xl max-w-4xl mt-10">
+            Customer information is never sold or distributed for unauthorized purposes.
+            We continuously improve our digital systems, export workflows and inquiry
+            infrastructure to maintain secure communication and reliable business operations.
+          </p>
+
+        </div>
+
+      </div>
+    </section>
+
   </div>
 
 )}
 
-{/* BLOG SECTION */}
-<section className="py-40 px-6 bg-stone-100 text-black">
 
-  <div className="text-center mb-24">
+
+{/* ================= TERMS ================= */}
+{view === "terms" && (
+
+  <div className="bg-black text-white overflow-hidden">
+
+    {/* HERO */}
+    <section className="relative py-48 px-6 text-center">
+
+      <div className="absolute inset-0 bg-gradient-to-b from-white/[0.04] to-transparent" />
+
+      <div className="relative z-10">
+
+        <p className="uppercase tracking-[12px] text-gray-500 text-sm">
+          BUSINESS TERMS
+        </p>
+
+        <h1 className="
+text-7xl
+md:text-[160px]
+font-black
+leading-none
+tracking-tight
+uppercase
+mt-8
+">
+          Terms & <br />
+          Conditions
+        </h1>
+
+        <p className="text-gray-400 max-w-3xl mx-auto mt-10 text-xl leading-9">
+          Manufacturing agreements designed for modern OEM,
+          private label and export operations.
+        </p>
+
+      </div>
+
+    </section>
+
+    {/* STACKED CARDS */}
+    <section className="max-w-6xl mx-auto px-6 pb-32 space-y-10">
+
+      {[
+        {
+          title: "Orders & Confirmation",
+          desc: "Production begins only after final design approval, payment verification and confirmation from both parties."
+        },
+        {
+          title: "Manufacturing Timelines",
+          desc: "Timelines vary depending on customization, fabric sourcing and production quantity requirements."
+        },
+        {
+          title: "Payments",
+          desc: "Customers must complete agreed payment terms before shipment dispatch and export processing."
+        },
+        {
+          title: "Intellectual Property",
+          desc: "Customer branding, logos and artwork remain property of their respective owners."
+        }
+      ].map((item, i) => (
+
+        <div
+          key={i}
+          className="
+group
+relative
+overflow-hidden
+border border-white/10
+rounded-[40px]
+p-14
+bg-white/[0.03]
+backdrop-blur-xl
+hover:border-cyan-400/40
+hover:-translate-y-2
+transition-all duration-700
+"
+        >
+
+          <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-cyan-400/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-700" />
+
+          <div className="flex flex-col md:flex-row md:items-start gap-10">
+
+            <div className="
+text-6xl
+font-black
+text-white/10
+leading-none
+">
+              0{i + 1}
+            </div>
+
+            <div>
+
+              <h2 className="text-4xl font-black tracking-tight">
+                {item.title}
+              </h2>
+
+              <p className="text-gray-400 leading-9 text-lg mt-6 max-w-4xl">
+                {item.desc}
+              </p>
+
+            </div>
+
+          </div>
+   </div>
+
+      ))}
+
+    </section>
+
+  </div>
+
+)}
+
+
+
+{/* ================= SHIPPING ================= */}
+{view === "shipping" && (
+
+  <div className="bg-black text-white overflow-hidden">
+
+    {/* HERO */}
+    <section className="relative py-48 px-6 text-center">
+
+      <div className="absolute inset-0 bg-gradient-to-b from-cyan-500/[0.05] to-transparent" />
+
+      <div className="relative z-10">
+
+        <p className="uppercase tracking-[10px] text-gray-500 text-sm">
+          GLOBAL EXPORT SYSTEM
+        </p>
+
+        <h1 className="
+text-7xl
+md:text-[160px]
+font-black
+leading-none
+tracking-tight
+uppercase
+mt-8
+">
+          Shipping <br />
+          Policy
+        </h1>
+
+        <p className="text-gray-400 max-w-3xl mx-auto mt-10 text-xl leading-9">
+          Reliable worldwide export logistics
+          for samples, OEM manufacturing and bulk production.
+        </p>
+
+      </div>
+
+    </section>
+
+    {/* TIMELINE CARDS */}
+    <section className="max-w-7xl mx-auto px-6 pb-32">
+
+      <div className="grid md:grid-cols-3 gap-8">
+
+        {[
+          {
+            title: "Sample Orders",
+            time: "5–7 DAYS",
+            desc: "Fast prototype and sample development workflows."
+          },
+          {
+            title: "Bulk Production",
+            time: "2–4 WEEKS",
+            desc: "Efficient manufacturing systems for scalable production."
+          },
+          {
+            title: "Worldwide Delivery",
+            time: "GLOBAL",
+            desc: "Reliable export logistics and international dispatch."
+          }
+        ].map((item, i) => (
+
+          <div
+            key={i}
+            className="
+group
+relative
+overflow-hidden
+rounded-[40px]
+border border-white/10
+p-12
+bg-gradient-to-b from-white/[0.04] to-transparent
+hover:border-cyan-400/40
+hover:-translate-y-3
+transition-all duration-700
+"
+          >
+
+            <h2 className="text-3xl font-black">
+              {item.title}
+            </h2>
+
+            <h1 className="
+text-6xl
+font-black
+mt-8
+bg-gradient-to-r from-white to-gray-500
+bg-clip-text text-transparent
+">
+              {item.time}
+            </h1>
+
+            <p className="text-gray-400 leading-8 mt-8">
+              {item.desc}
+            </p>
+
+          </div>
+
+        ))}
+
+      </div>
+
+      {/* MASSIVE PANEL */}
+      <div className="
+mt-24
+rounded-[50px]
+border border-white/10
+p-16
+bg-white/[0.03]
+backdrop-blur-2xl
+relative
+overflow-hidden
+">
+
+        <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/[0.04] to-transparent" />
+
+        <div className="relative z-10">
+
+          <p className="uppercase tracking-[8px] text-gray-500 text-sm">
+            EXPORT SUPPORT
+          </p>
+
+          <h2 className="text-5xl md:text-7xl font-black mt-8">
+            Logistics <br />
+            Assistance
+          </h2>
+
+          <p className="text-gray-400 leading-9 text-xl mt-10 max-w-4xl">
+            Complete export coordination including invoices,
+            shipment handling, packaging standards,
+            tracking support and international dispatch operations.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </div>
+
+)}
+
+
+
+{/* ================= FLOATING BLOG PREVIEW ================= */}
+<section className="relative py-44 px-6 bg-[#f5f5f5] text-black overflow-hidden">
+
+  <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-black/[0.03] blur-[120px] rounded-full pointer-events-none" />
+
+  <div className="relative z-10 text-center mb-24">
 
     <p className="uppercase tracking-[8px] text-gray-500 text-sm">
       INSIGHTS
     </p>
 
-    <h1 className="text-5xl md:text-7xl font-bold mt-6">
-      Latest Articles
+    <h1 className="
+text-6xl
+md:text-8xl
+font-black
+tracking-tight
+mt-8
+leading-none
+">
+      Latest <br />
+      Articles
     </h1>
 
   </div>
 
   <div className="grid md:grid-cols-3 gap-10 max-w-7xl mx-auto">
 
-    <div className="bg-white rounded-3xl overflow-hidden shadow-xl">
+    {[
+      {
+        title: "How Premium Sportswear Is Manufactured",
+        category: "Manufacturing",
+        image: "https://images.unsplash.com/photo-1512436991641-6745cdb1723f"
+      },
+      {
+        title: "Building A Global Sportswear Brand",
+        category: "Branding",
+        image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab"
+      },
+      {
+        title: "Why Sialkot Leads Sportswear Exports",
+        category: "Export",
+        image: "https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb"
+      }
+    ].map((blog, i) => (
 
-      <img
-        src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f"
-        className="h-72 w-full object-cover"
-      />
+      <div
+        key={i}
+        className="
+group
+bg-white
+rounded-[40px]
+overflow-hidden
+shadow-[0_30px_100px_rgba(0,0,0,0.08)]
+hover:-translate-y-4
+transition-all duration-700
+"
+      >
 
-      <div className="p-8">
+        <div className="overflow-hidden">
 
-        <p className="text-gray-500 text-sm">
-          Manufacturing
-        </p>
+          <img
+            src={blog.image}
+            className="
+h-80 w-full object-cover
+group-hover:scale-110
+transition-all duration-700
+"
+          />
 
-        <h2 className="text-3xl font-bold mt-4">
-          How Premium Sportswear Is Manufactured
-        </h2>
+        </div>
+
+        <div className="p-10">
+
+          <p className="uppercase tracking-[5px] text-gray-500 text-sm">
+            {blog.category}
+          </p>
+
+          <h2 className="text-4xl font-black mt-6 leading-tight">
+            {blog.title}
+          </h2>
+
+          <button className="
+mt-8
+border border-black/10
+px-6 py-3
+rounded-full
+hover:bg-black
+hover:text-white
+transition-all duration-500
+">
+            Read More
+          </button>
+
+        </div>
 
       </div>
 
-    </div>
+    ))}
 
-    <div className="bg-white rounded-3xl overflow-hidden shadow-xl">
+  </div>
 
-      <img
-        src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab"
-        className="h-72 w-full object-cover"
-      />
+</section>
 
-      <div className="p-8">
 
-        <p className="text-gray-500 text-sm">
-          Branding
-        </p>
 
-        <h2 className="text-3xl font-bold mt-4">
-          Building A Global Sportswear Brand
-        </h2>
+{/* ================= MASSIVE FINAL CTA ================= */}
+<section className="relative py-[220px] px-6 text-center overflow-hidden bg-black text-white">
 
-      </div>
+  {/* GLOW */}
+  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[900px] bg-cyan-500/10 blur-[180px] rounded-full" />
 
-    </div>
+  <div className="relative z-10 max-w-6xl mx-auto">
 
-    <div className="bg-white rounded-3xl overflow-hidden shadow-xl">
+    <p className="uppercase tracking-[12px] text-gray-500 text-sm">
+      START YOUR BRAND
+    </p>
 
-      <img
-        src="https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb"
-        className="h-72 w-full object-cover"
-      />
+    <h1 className="
+text-7xl
+md:text-[170px]
+font-black
+leading-none
+tracking-tight
+uppercase
+mt-10
+">
+      LET’S BUILD <br />
+      SOMETHING GREAT
+    </h1>
 
-      <div className="p-8">
+    <p className="
+text-gray-400
+max-w-3xl
+mx-auto
+mt-12
+text-2xl
+leading-10
+">
+      Premium OEM sportswear manufacturing
+      designed for modern global brands and distributors.
+    </p>
 
-        <p className="text-gray-500 text-sm">
-          Export
-        </p>
+    {/* BUTTONS */}
+    <div className="flex flex-col md:flex-row gap-6 justify-center mt-16">
 
-        <h2 className="text-3xl font-bold mt-4">
-          Why Sialkot Leads Sportswear Exports
-        </h2>
+      <button
+        onClick={() => setView("contact")}
+        className="
+bg-white
+text-black
+px-10 py-5
+rounded-full
+font-bold
+hover:scale-105
+transition-all duration-500
+"
+      >
+        Start Your Project
+      </button>
 
-      </div>
+      <button
+        onClick={() => setView("shop")}
+        className="
+border border-white/20
+px-10 py-5
+rounded-full
+hover:bg-white
+hover:text-black
+transition-all duration-500
+"
+      >
+        Explore Products
+      </button>
 
     </div>
 
@@ -2342,63 +3305,79 @@ const categories = [
 
 </section>
 
-      {/* ULTRA PREMIUM FOOTER */}
-<footer className="relative border-t border-black/10 bg-white text-black overflow-hidden">
 
-  {/* BACKGROUND TEXT */}
+
+{/* ================= ULTRA PREMIUM FOOTER ================= */}
+<footer className="relative overflow-hidden bg-[#050505] text-white border-t border-white/10">
+
+  {/* HUGE BACKGROUND TEXT */}
   <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
 
-    <h1 className="text-[120px] md:text-[240px] font-bold text-white/[0.03] leading-none select-none">
+    <h1 className="
+text-[120px]
+md:text-[280px]
+font-black
+tracking-tight
+text-white/[0.02]
+leading-none
+select-none
+">
       TS EXPORTS
     </h1>
 
   </div>
 
-  <div className="relative z-10 max-w-7xl mx-auto px-6 py-28">
+  {/* GLOW */}
+  <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-cyan-500/10 blur-[160px] rounded-full" />
 
-    {/* TOP AREA */}
+  <div className="relative z-10 max-w-7xl mx-auto px-6 py-32">
 
-    <div className="grid md:grid-cols-4 gap-16">
+    {/* TOP GRID */}
+    <div className="grid md:grid-cols-4 gap-20">
 
       {/* BRAND */}
       <div>
 
-        <h1 className="text-3xl font-bold tracking-[6px]">
+        <h1 className="text-4xl font-black tracking-[8px]">
           TS EXPORTS
         </h1>
 
-        <p className="text-gray-500 mt-8 leading-8">
+        <p className="text-gray-400 mt-8 leading-8">
           Premium sportswear manufacturer from Sialkot
           producing export-quality apparel for brands,
           teams and distributors worldwide.
         </p>
 
         {/* SOCIALS */}
-        <div className="flex gap-4 mt-8">
+        <div className="flex gap-4 mt-10">
 
-       <a
-  href="https://instagram.com/ri.zwana6887"
-  target="_blank"
-  className="w-12 h-12 rounded-full border border-black/10 flex items-center justify-center hover:bg-white hover:text-black transition"
->
-  IG
-</a>
+          {["IG", "FB", "WA"].map((s, i) => (
 
-        <a
-  href="https://facebook.com/Rizwana Javed"
-  target="_blank"
-  className="w-12 h-12 rounded-full border border-black/10 flex items-center justify-center hover:bg-white hover:text-black transition"
->
-  FB
-</a>
+            <a
+              key={i}
+              href={
+                s === "WA"
+                  ? "https://wa.me/923428145366"
+                  : s === "IG"
+                  ? "https://instagram.com"
+                  : "https://facebook.com"
+              }
+              target="_blank"
+              className="
+w-14 h-14 rounded-full
+border border-white/10
+bg-white/[0.03]
+flex items-center justify-center
+hover:bg-white
+hover:text-black
+hover:scale-110
+transition-all duration-500
+"
+            >
+              {s}
+            </a>
 
-         <a
-  href="https://wa.me/923428145366"
-  target="_blank"
-  className="w-12 h-12 rounded-full border border-black/10 flex items-center justify-center hover:bg-white hover:text-black transition"
->
-  WA
-</a>
+          ))}
 
         </div>
 
@@ -2407,98 +3386,50 @@ const categories = [
       {/* QUICK LINKS */}
       <div>
 
-        <h2 className="text-xl font-semibold mb-8">
-          Quick Links
+        <h2 className="text-2xl font-bold mb-10">
+          Navigation
         </h2>
 
-        <div className="space-y-5 text-gray-500">
+        <div className="space-y-5 text-gray-400">
 
-          <button
-            onClick={() => setView("home")}
-            className="block hover:text-white transition"
-          >
-            Home
-          </button>
+          {[
+            ["Home", "home"],
+            ["About", "about"],
+            ["Products", "shop"],
+            ["Blogs", "blogs"],
+            ["Contact", "contact"]
+          ].map(([label, viewName], i) => (
 
-          <button
-  onClick={() => setView("about")}
-  className="block hover:text-white transition"
->
-  About Us
-</button>
+            <button
+              key={i}
+              onClick={() => setView(viewName)}
+              className="
+block
+hover:text-white
+hover:translate-x-2
+transition-all duration-500
+"
+            >
+              {label}
+            </button>
 
-<button
-  onClick={() => setView("contact")}
-  className="block hover:text-white transition"
->
-  Contact Us
-</button>
-
-<button
-  onClick={() => setView("blogs")}
-  className="block hover:text-white transition"
->
-  Blogs
-</button>
+          ))}
 
         </div>
 
       </div>
 
- {/* PRODUCT CATEGORIES */}
-<div>
-
-  <h2 className="text-xl font-semibold mb-8">
-    Categories
-  </h2>
-
-  <div className="space-y-5 text-gray-500">
-
-    {categories.map((cat, i) => (
-
-      <button
-        key={i}
-        onClick={() => {
-
-          setSelectedCategory(cat.name);
-
-          setView("shop");
-
-          // SCROLL TO PRODUCTS TOP
-          setTimeout(() => {
-
-            const section =
-              document.getElementById("products-section");
-
-            section?.scrollIntoView({
-              behavior: "smooth"
-            });
-
-          }, 100);
-
-        }}
-        className="block hover:text-white transition"
-      >
-        {cat.name}
-      </button>
-
-    ))}
-
-  </div>
-
-</div>
-
       {/* CONTACT */}
       <div>
 
-        <h2 className="text-xl font-semibold mb-8">
+        <h2 className="text-2xl font-bold mb-10">
           Contact
         </h2>
 
-        <div className="space-y-6 text-gray-500 leading-7">
+        <div className="space-y-8 text-gray-400">
 
           <div>
-            <p className="text-white font-medium mb-1">
+            <p className="text-white font-semibold mb-2">
               Location
             </p>
 
@@ -2506,7 +3437,7 @@ const categories = [
           </div>
 
           <div>
-            <p className="text-white font-medium mb-1">
+            <p className="text-white font-semibold mb-2">
               Email
             </p>
 
@@ -2514,127 +3445,139 @@ const categories = [
           </div>
 
           <div>
-            <p className="text-white font-medium mb-1">
-              Phone
+            <p className="text-white font-semibold mb-2">
+              WhatsApp
             </p>
 
-            <p>+92 3426889767 </p>
+            <p>+92 342 8145366</p>
           </div>
-
         </div>
-
-        {/* BUTTON */}
-<button
-  onClick={() => setView("contact")}
-  className="mt-10 border border-white/20 px-8 py-4 rounded-full hover:bg-white hover:text-black transition"
->
-
-  Contact Now
-
-</button>
 
       </div>
 
-    </div>
+      {/* NEWSLETTER */}
+      <div>
 
-    {/* NEWSLETTER */}
-    <div className="mt-32 border-t border-black/10 pt-16">
+        <p className="uppercase tracking-[8px] text-gray-500 text-sm">
+          NEWSLETTER
+        </p>
 
-      <div className="grid md:grid-cols-2 gap-10 items-center">
+        <h2 className="text-4xl font-black mt-6 leading-tight">
+          Stay Updated
+        </h2>
 
-        <div>
+        <p className="text-gray-400 mt-6 leading-8">
+          Subscribe for manufacturing insights,
+          product launches and export updates.
+        </p>
 
-          <p className="uppercase tracking-[8px] text-gray-600 text-sm">
-            STAY UPDATED
-          </p>
+        <div className="mt-8 space-y-4">
 
-          <h2 className="text-4xl md:text-5xl font-bold mt-4">
-            Subscribe For Updates
-          </h2>
+          <input
+            placeholder="Enter your email"
+            value={subscriberEmail}
+            onChange={(e) =>
+              setSubscriberEmail(e.target.value)
+            }
+            className="
+w-full
+bg-white/[0.04]
+border border-white/10
+px-6 py-4
+rounded-full
+outline-none
+focus:border-cyan-400/40
+"
+          />
+
+          <button
+            onClick={async () => {
+
+              const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+              if (!subscriberEmail || !emailRegex.test(subscriberEmail)) {
+
+                alert("Please enter a valid email.");
+                return;
+
+              }
+
+              try {
+
+                await addDoc(collection(db, "subscribers"), {
+                  email: subscriberEmail,
+                  time: new Date().toISOString()
+                });
+
+                alert("Subscribed successfully!");
+                setSubscriberEmail("");
+
+              } catch {
+
+                alert("Something went wrong.");
+
+              }
+
+            }}
+            className="
+w-full
+bg-white
+text-black
+py-4
+rounded-full
+font-bold
+hover:scale-[1.02]
+transition-all duration-500
+"
+          >
+            Subscribe
+          </button>
 
         </div>
-
-      <div className="flex gap-4">
-
-  <input
-    placeholder="Enter your email"
-    value={subscriberEmail}
-    onChange={(e) => setSubscriberEmail(e.target.value)}
-    className="flex-1 bg-white/5 border border-black/10 px-6 py-4 rounded-full outline-none"
-  />
-
-  <button
-    onClick={async () => {
-
-   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-if (!subscriberEmail || !emailRegex.test(subscriberEmail)) {
-
-  alert("Unsuccessful subscription. Please enter a valid email address.");
-
-  return;
-}
-
-      try {
-
-        await addDoc(collection(db, "subscribers"), {
-          email: subscriberEmail,
-          time: new Date().toISOString()
-        });
-
-        alert("Subscribed successfully!");
-
-        setSubscriberEmail("");
-
-      } catch (err) {
-
-        alert("Something went wrong");
-
-      }
-
-    }}
-    className="bg-white text-black px-8 rounded-full hover:scale-105 transition"
-  >
-
-    Subscribe
-
-  </button>
-
-</div>
 
       </div>
 
     </div>
 
     {/* BOTTOM */}
-    <div className="mt-20 pt-10 border-t border-black/10 flex flex-col md:flex-row justify-between items-center gap-6 text-gray-500 text-sm">
+    <div className="
+mt-24
+pt-10
+border-t border-white/10
+flex flex-col md:flex-row
+justify-between
+items-center
+gap-6
+text-gray-500
+text-sm
+">
 
       <p>
         © 2026 TS Exports. All rights reserved.
       </p>
 
-      <div className="flex gap-8">
+      <div className="flex flex-wrap gap-8">
 
-       <button
-  onClick={() => setView("privacy")}
-  className="hover:text-white transition"
->
-  Privacy Policy
-</button>
+        <button
+          onClick={() => setView("privacy")}
+          className="hover:text-white transition"
+        >
+          Privacy Policy
+        </button>
 
-<button
-  onClick={() => setView("terms")}
-  className="hover:text-white transition"
->
-  Terms & Conditions
-</button>
+        <button
+          onClick={() => setView("terms")}
+          className="hover:text-white transition"
+        >
+          Terms & Conditions
+        </button>
 
-<button
-  onClick={() => setView("shipping")}
-  className="hover:text-white transition"
->
-  Shipping Policy
-</button>
+        <button
+          onClick={() => setView("shipping")}
+          className="hover:text-white transition"
+        >
+          Shipping Policy
+        </button>
 
       </div>
 
@@ -2642,8 +3585,7 @@ if (!subscriberEmail || !emailRegex.test(subscriberEmail)) {
 
   </div>
 
-</footer>
-
+  </footer>
 </div>
 );
 }
