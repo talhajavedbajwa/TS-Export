@@ -564,7 +564,7 @@ text-sm
   {/* HOME */}
 {view === "home" && (
 
-  <div>
+  <div className="overflow-x-hidden">
 
 {/* LUXURY HERO SLIDER */}
 <section className="relative min-h-screen overflow-hidden px-6">
@@ -585,14 +585,14 @@ text-sm
       <img
         src={slide.image}
         loading="lazy"
-        className="w-full h-full object-cover scale-105 animate-[pulse_8s_ease-in-out_infinite]"
+        className="w-full h-full object-cover animate-[pulse_8s_ease-in-out_infinite]"
       />
 
       {/* OVERLAY */}
       <div className="absolute inset-0 bg-black/65" />
 
       {/* CONTENT */}
-      <div className="absolute inset-0 flex items-center justify-center text-center px-6">
+      <div className="absolute inset-0 flex items-center justify-center text-center px-6 overflow-hidden">
 
         <div className="max-w-4xl">
 
