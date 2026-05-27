@@ -592,7 +592,7 @@ text-sm
       <div className="absolute inset-0 bg-black/65" />
 
       {/* CONTENT */}
-      <div className="absolute inset-0 flex items-center justify-center text-center px-6 overflow-hidden">
+      <div className="absolute inset-0 flex items-center justify-center text-center px-6 pt-32">
 
         <div className="max-w-4xl">
 
@@ -602,7 +602,7 @@ text-sm
 
           <h1 className="
           text-[42px]
-          sm:text-[58px]
+          sm:text-[42px]
           md:text-[100px]
           lg:text-[120px]
           font-semibold
@@ -2887,7 +2887,7 @@ backdrop-blur-2xl
 
         <h1 className="
 text-7xl
-md:text-[160px]
+md:text-[120px]
 font-black
 leading-none
 tracking-tight
@@ -3002,7 +3002,7 @@ leading-none
 
         <h1 className="
 text-7xl
-md:text-[160px]
+md:text-[120px]
 font-black
 leading-none
 tracking-tight
