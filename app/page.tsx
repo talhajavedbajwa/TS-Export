@@ -567,7 +567,7 @@ text-sm
   <div>
 
 {/* LUXURY HERO SLIDER */}
-<section className="relative h-screen overflow-hidden bg-black">
+<section className="relative min-h-screen overflow-hidden px-6">
 
   {/* SLIDES */}
   {heroSlides.map((slide, index) => (
@@ -601,12 +601,19 @@ text-sm
           </p>
 
           <h1 className="
-text-[58px]
-md:text-[160px]
-font-bold
-leading-none
-tracking-[-6px]
+text-[52px]
+sm:text-[72px]
+md:text-[110px]
+lg:text-[140px]
+xl:text-[170px]
+font-black
+leading-[0.9]
+tracking-[-4px]
 uppercase
+break-words
+max-w-full
+overflow-hidden
+px-2
 ">
 
             {slide.title}
