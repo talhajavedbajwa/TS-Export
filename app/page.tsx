@@ -812,10 +812,10 @@ hover:scale-105
                   <img
                     src={cat.img}
                     loading="lazy"
-                    className="w-full h-full rounded-[40px] object-cover group-hover:scale-110 transition-all duration-1000 ease-out transform-gpu will-change-transform group-hover:scale-110
+                    className="w-full h-full rounded-[40px] object-cover group-hover:scale-110 transition-all duration-1000 ease-out transform-gpu will-change-transform group-hover:scale-110"
         />
 
-        <div className="absolute inset-0 bg-gradient-to-t from-black /90 via-black/30 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent" />
 
                   <div className="group absolute bottom-8 left-8">
                     <h2 className="text-3xl font-black tracking-tight group-hover:translate-x-2 transition duration-500">
@@ -1009,7 +1009,7 @@ bg-clip-text text-transparent
                 <img
                   src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1600&auto=format&fit=crop"
                   loading="lazy"
-                  className="w-full h-full rounded-[40px] object-cover group-hover:scale-110 transition-all duration-1000 ease-out transform-gpu will-change-transform group-hover:scale-110
+                  className="w-full h-full rounded-[40px] object-cover group-hover:scale-110 transition-all duration-1000 ease-out transform-gpu will-change-transform group-hover:scale-110"
           
           />
 
@@ -1851,63 +1851,7 @@ hover:shadow-[0_20px_60px_rgba(255,255,255,0.08)]
                 </div>
 
               </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-              ```tsx
+              
               {/* FINAL CTA */}
               <section className="
 relative
