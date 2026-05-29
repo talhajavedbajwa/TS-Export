@@ -70,12 +70,39 @@ export default function Page() {
   }, []);
 
   const [user, setUser] = useState<any>(null);
-  const [admin, setAdmin] = useState(false);
+  const [admin, setAdmin] = useState(() => {
+  return localStorage.getItem("admin") === "true";
+});
+const loginAdmin = () => {
+  const pass = prompt("Enter admin password");
+
+  if (pass === "1234") {
+    setAdmin(true);
+    localStorage.setItem("admin", "true");
+    alert("Admin logged in");
+  } else {
+    alert("Wrong password");
+  }
+};
+const logoutAdmin = () => {
+  setAdmin(false);
+  localStorage.removeItem("admin");
+};
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   const [view, setView] = useState("home");
+  const PAGES = {
+  home: "home",
+  about: "about",
+  shop: "shop",
+  contact: "contact",
+  admin: "admin",
+  privacy: "privacy",
+  terms: "terms",
+  shipping: "shipping"
+};
   const [selectedCategory, setSelectedCategory] = useState("");
   useEffect(() => {
 
@@ -526,7 +553,7 @@ transition-all duration-500
             <button
               onClick={() => {
                 setSelectedCategory("");
-                setView("shop");
+                setView(PAGES.shop);
               }}
               className="
     flex items-center gap-2
@@ -564,7 +591,7 @@ transition-all duration-500
               <button
                 onClick={() => {
                   setSelectedCategory("");
-                  setView("shop");
+                  setView(PAGES.shop);
                 }}
                 className="
   w-full text-left
@@ -588,7 +615,7 @@ transition-all duration-500
 
                     setSelectedCategory(cat.name);
 
-                    setView("shop");
+                    setView(PAGES.shop);
 
                     setTimeout(() => {
 
@@ -620,12 +647,12 @@ text-sm
 
           </div>
 
-          <button onClick={() => setView("about")}>
+          <button onClick={() => setView(PAGES.about)}>
             About
           </button>
 
           {admin && (
-            <button onClick={() => setView("admin")}>
+            <button onClick={() => setView(PAGES.admin)}>
               Admin
             </button>
           )}
@@ -634,9 +661,10 @@ text-sm
             Blogs
           </button>
 
-          <button onClick={() => setView("contact")}>
+          <button onClick={() => setView(PAGES.contact)}>
             Contact
           </button>
+        
         </div>
 
       </div>
@@ -738,7 +766,7 @@ px-2
                     </p>
 
                     <button
-                      onClick={() => setView("shop")}
+                      onClick={() => setView(PAGES.shop)}
                       className="
 mt-10
 border border-white
@@ -804,7 +832,7 @@ hover:scale-105
                   key={i}
                   onClick={() => {
                     setSelectedCategory(cat.name);
-                    setView("shop");
+                    setView(PAGES.shop);
                   }}
                   className="relative h-[420px] rounded-3xl overflow-hidden cursor-pointer group"
                 >
@@ -1319,7 +1347,7 @@ pointer-events-none
                     </p>
 
                     <button
-                      onClick={() => setView("shop")}
+                      onClick={() => setView(PAGES.shop)}
                       className="mt-10 border border-white/20 px-8 py-4 rounded-full hover:bg-white
 hover:text-black
 hover:scale-105
@@ -1913,7 +1941,7 @@ px-6
                   </p>
 
                   <button
-                    onClick={() => setView("shop")}
+                    onClick={() => setView(PAGES.shop)}
                     className="
       group
       mt-14
@@ -3176,7 +3204,32 @@ overflow-hidden
 
             )}
 
+            {view === "contact" && (
+  <section className="min-h-screen bg-black text-white flex items-center justify-center px-6">
+    <div className="text-center max-w-xl">
+      
+      <h1 className="text-6xl font-black">Contact Us</h1>
 
+      <p className="text-gray-400 mt-6 text-lg">
+        Email: info@tsexports.com
+      </p>
+
+      <p className="text-gray-400 mt-3 text-lg">
+        WhatsApp: +92 342 8145366
+      </p>
+
+      <button
+        onClick={() =>
+          window.open("https://wa.me/923428145366", "_blank")
+        }
+        className="mt-10 bg-green-500 px-8 py-4 rounded-full"
+      >
+        Chat on WhatsApp
+      </button>
+
+    </div>
+  </section>
+)}
 
             {/* ================= FLOATING BLOG PREVIEW ================= */}
             <section className="relative py-44 px-6 bg-[#f5f5f5] text-black overflow-hidden">
@@ -3324,7 +3377,7 @@ leading-10
                 <div className="flex flex-col md:flex-row gap-6 justify-center mt-16">
 
                   <button
-                    onClick={() => setView("contact")}
+                    onClick={() => setView(PAGES.contact)}
                     className="
 bg-white
 text-black
@@ -3339,7 +3392,7 @@ transition-all duration-500
                   </button>
 
                   <button
-                    onClick={() => setView("shop")}
+                    onClick={() => setView(PAGES.shop)}
                     className="
 border border-white/20
 px-10 py-5
